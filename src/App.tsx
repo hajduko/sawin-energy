@@ -5,15 +5,12 @@ import HeatPump from './pages/heatpump/HeatPump.page';
 import Eoft from './pages/eoft/Eoft.page';
 import Commercial from './pages/commercial/Commercial.page';
 import Partners from './pages/partners/Partners.page';
+import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
     <>
-      <Link to='/'>Home</Link>
-      <Link to='/heatpump'>Heat Pump</Link>
-      <Link to='/eoft'>EOFT</Link>
-      <Link to='/commercial'>Commercial</Link>
-      <Link to='/partners'>Partners</Link>
+      <NavBar />
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
