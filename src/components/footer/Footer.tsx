@@ -1,25 +1,52 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import { Link } from 'react-router';
+import { MdOutlineEmail, MdOutlinePhone } from 'react-icons/md';
 
 const NavBar = () => {
   return (
-    <Flex bgColor='#f00' justify='center'>
-      <Box bgColor='#0f0' w={{ base: '100%', md: '56rem', lg: '72rem' }}>
+    <Flex bgColor='dark' justify='center'>
+      <Box w={{ base: '100%', md: '56rem', lg: '72rem' }}>
         <Flex
-          minH={{ base: '3rem', md: '4rem' }}
+          minH={{ base: '6rem', md: '8rem' }}
           w='100%'
+          flexDirection={'column'}
           align='center'
           justify='space-between'
-          gap={6}
-          paddingX={{ base: '1rem' }}>
-          <Box marginEnd='auto'>
-            <Link to='/'>Logo</Link>
-          </Box>
-          <Link to='/'>Home</Link>
-          <Link to='/heatpump'>Heat Pump</Link>
-          <Link to='/eoft'>EOFT</Link>
-          <Link to='/commercial'>Commercial</Link>
-          <Link to='/partners'>Partners</Link>
+          paddingY={{ base: '3rem' }}
+          gap={4}>
+          <Link to='/'>
+            <Heading color='white'>Logo</Heading>
+          </Link>
+          <Flex
+            w='100%'
+            align='center'
+            justify='space-around'
+            paddingBottom={{ base: '1rem' }}
+            borderBottomColor='white'
+            borderBottomWidth='2px'>
+            <Link to='mailto:info@ezsolutions.hu'>
+              <Flex align='center' gap={4}>
+                <MdOutlineEmail color='white' size='30px' />
+                <Heading as='h4' color='white'>
+                  info@ezsolutions.hu
+                </Heading>
+              </Flex>
+            </Link>
+            <Link to='tel:+36706189151'>
+              <Flex align='center' gap={4}>
+                <MdOutlinePhone color='white' size='30px' />
+                <Heading as='h4' color='white'>
+                  +36 70 618 9151
+                </Heading>
+              </Flex>
+            </Link>
+          </Flex>
+          <Flex align='center' width='100%' justify='space-between'>
+            <Text color='white'>2024 - SaWin Energy © Minden jog fenntartva</Text>
+            <Link to='/privacy'>
+              <Text color='white'>Privacy</Text>
+            </Link>
+          </Flex>
         </Flex>
       </Box>
     </Flex>
