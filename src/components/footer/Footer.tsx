@@ -27,17 +27,17 @@ const NavBar = () => {
             <Link to='mailto:info@ezsolutions.hu'>
               <Flex align='center' gap={4}>
                 <MdOutlineEmail color='white' size='30px' />
-                <Heading as='h4' color='white'>
+                <Text fontSize='lg' color='white'>
                   info@ezsolutions.hu
-                </Heading>
+                </Text>
               </Flex>
             </Link>
             <Link to='tel:+36706189151'>
               <Flex align='center' gap={4}>
                 <MdOutlinePhone color='white' size='30px' />
-                <Heading as='h4' color='white'>
+                <Text fontSize='lg' color='white'>
                   +36 70 618 9151
-                </Heading>
+                </Text>
               </Flex>
             </Link>
           </Flex>
