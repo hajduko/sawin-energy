@@ -1,10 +1,10 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import { Link } from 'react-router';
 
 const NavBar = () => {
   return (
-    <Flex bgColor='primary' justify='center'>
-      <Box bgColor='accent' w={{ base: '100%', md: '56rem', lg: '72rem' }}>
+    <Flex bgColor='dark' justify='center'>
+      <Box w={{ base: '100%', md: '56rem', lg: '72rem' }}>
         <Flex
           minH={{ base: '3rem', md: '4rem' }}
           w='100%'
@@ -13,13 +13,37 @@ const NavBar = () => {
           gap={6}
           paddingX={{ base: '1rem' }}>
           <Box marginEnd='auto'>
-            <Link to='/'>Logo</Link>
+            <Link to='/'>
+              <Heading as='h1' color='white'>
+                Logo
+              </Heading>
+            </Link>
           </Box>
-          <Link to='/'>Home</Link>
-          <Link to='/heatpump'>Heat Pump</Link>
-          <Link to='/eoft'>EOFT</Link>
-          <Link to='/commercial'>Commercial</Link>
-          <Link to='/partners'>Partners</Link>
+          <Link to='/'>
+            <Text fontSize='lg' color='white'>
+              Home
+            </Text>
+          </Link>
+          <Link to='/heatpump'>
+            <Text fontSize='lg' color='white'>
+              Heat Pump{' '}
+            </Text>
+          </Link>
+          <Link to='/eoft'>
+            <Text fontSize='lg' color='white'>
+              EOFT{' '}
+            </Text>
+          </Link>
+          <Link to='/commercial'>
+            <Text fontSize='lg' color='white'>
+              Commercial{' '}
+            </Text>
+          </Link>
+          <Link to='/partners'>
+            <Text fontSize='lg' color='white'>
+              Partners{' '}
+            </Text>
+          </Link>
         </Flex>
       </Box>
     </Flex>
