@@ -5,13 +5,7 @@ const NavBar = () => {
   return (
     <Flex bgColor='dark' justify='center'>
       <Box w={{ base: '100%', md: '56rem', lg: '72rem' }}>
-        <Flex
-          minH={{ base: '3rem', md: '4rem' }}
-          w='100%'
-          align='center'
-          justify='space-between'
-          gap={6}
-          paddingX={{ base: '1rem' }}>
+        <Flex minH={{ base: '3rem', md: '5rem' }} w='100%' align='center' justify='space-between' gap={12}>
           <Box marginEnd='auto'>
             <Link to='/'>
               <Heading as='h1' color='white'>
