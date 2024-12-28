@@ -18,7 +18,7 @@ const HeroCards: React.FC = () => {
   ];
 
   return (
-    <Flex maxWidth='700px' height='400px' overflow='hidden' gap={2}>
+    <Flex maxWidth='900px' height='400px' overflow='hidden' gap={2}>
       {cards.map((card) => (
         <HeroCard
           key={card.id}

@@ -13,28 +13,37 @@ const HeatPumpHero = () => {
       <Box pt={16}>
         <NavBar />
       </Box>
-      <Box w={{ base: '100%', lg: 'calc(50% + 31rem)' }} mr='0' ml='auto' mt={16} mb={20}>
+      <Box w={{ base: '100%', lg: 'calc(50% + 38rem)' }} mr='0' ml='auto' mt={16} mb={20}>
         <Grid
           templateColumns={{
             base: '1fr',
-            lg: '570px 1fr',
+            lg: '560px 1fr',
           }}
-          maxW='1270px'
-          gap={4}>
+          maxW='1360px'
+          gap={16}>
           <GridItem colSpan={1}>
             <Flex direction='column' align={{ base: 'center', lg: 'flex-start' }}>
-              <Heading as='h1' size='5xl' fontWeight='bold' color='dark'>
+              <Heading as='h1' size='6xl' fontWeight='700' color='dark' lineHeight='shorter'>
                 Hőszivattyús rendszerek
                 <br />- az otthonodra szabva!
               </Heading>
-              <Text fontSize='xl' color='dark' mt={12} textAlign={{ base: 'center', lg: 'left' }}>
-                Hőszivattyús gépészeti rendszerek szerelése teljeskörű szolgáltatással a tervezéstől a kivitelezésig.
-              </Text>
-              <Text fontSize='xl' color='dark' textAlign={{ base: 'center', lg: 'left' }}>
-                <span style={{ color: 'primary', fontWeight: 'bold' }}>Vegyél részt ingyenes tanácsadásunkon,</span> és
+              <Text fontSize='lg' color='dark' mt={10} textAlign={{ base: 'center', lg: 'left' }} lineHeight='tall'>
+                Hőszivattyús gépészeti rendszerek szerelése teljeskörű szolgáltatással a tervezéstől a kivitelezésig.{' '}
+                <br />
+                <span style={{ color: 'primary', fontWeight: '700' }}>Vegyél részt ingyenes tanácsadásunkon,</span> és
                 tedd meg az első lépést egy korszerű, energiatakarékos otthon felé!
               </Text>
-              <Button size='2xl' mt={12} bg={'primary'} w={'fit-content'} rounded={'8px'} pl={4} pr={2} fontSize='xl'>
+
+              <Button
+                size='2xl'
+                mt={10}
+                bg={'primary'}
+                w={'fit-content'}
+                rounded={'8px'}
+                pl={4}
+                pr={2}
+                fontSize='lg'
+                fontWeight='600'>
                 Jelentkezem a tanácsadásra!
                 <Box
                   bg={'light'}

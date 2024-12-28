@@ -1,5 +1,5 @@
-import { Box, Flex, Icon, IconButton, useDisclosure, Heading, Image, Text } from '@chakra-ui/react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { Box, Flex, IconButton, useDisclosure, Image, Text } from '@chakra-ui/react';
+import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router';
 import logo from '../../assets/sawin.svg';
 
@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <Box
       mx='auto'
-      maxWidth={{ base: '100%', lg: '62rem' }}
+      maxWidth={{ base: '100%', lg: '76rem' }}
       bg={'light'}
       py={'10px'}
       px={{ base: '20px', lg: '40px' }}
@@ -22,12 +22,12 @@ const NavBar = () => {
         </Flex>
         <Flex display={{ base: 'none', md: 'flex' }} gap={8}>
           <Link to='/'>
-            <Text color='dark' fontWeight={location.pathname === '/' ? 'bold' : 'normal'}>
+            <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/' ? '700' : '400'}>
               Főoldal
             </Text>
           </Link>
           <Link to='/heatpump'>
-            <Text color='dark' fontWeight={location.pathname === '/heatpump' ? 'bold' : 'normal'}>
+            <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
               Hőszivattyú
             </Text>
           </Link>

@@ -13,20 +13,20 @@ interface CardProps {
 const HeroCard: React.FC<CardProps> = ({ isHovered, isOpen, onMouseEnter, onMouseLeave, imageSrc, text }) => {
   return (
     <Box
-      flex={isHovered || isOpen ? 2 : 1}
+      flex={isHovered || isOpen ? 3 : 1}
       transition='flex 0.5s ease'
       height='100%'
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       bg='white'
-      borderRadius='md'
+      borderRadius='2xl'
       overflow='hidden'
       cursor='default'>
       <Box height='100%' display='flex' flexDirection='column' justifyContent='space-between' position='relative'>
         {isHovered ? (
           <>
             <Box p={6}>
-              <Heading as='h3' size='3xl' fontStyle='italic' textWrap='nowrap' truncate>
+              <Heading as='h3' size='4xl' fontWeight='500' fontStyle='italic' textWrap='nowrap' truncate>
                 {text}
               </Heading>
             </Box>
