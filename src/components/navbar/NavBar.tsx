@@ -22,10 +22,14 @@ const NavBar = () => {
         </Flex>
         <Flex display={{ base: 'none', md: 'flex' }} gap={8}>
           <Link to='/'>
-            <Text color='dark'>Home</Text>
+            <Text color='dark' fontWeight={location.pathname === '/' ? 'bold' : 'normal'}>
+              Főoldal
+            </Text>
           </Link>
           <Link to='/heatpump'>
-            <Text color='dark'>Heat Pump</Text>
+            <Text color='dark' fontWeight={location.pathname === '/heatpump' ? 'bold' : 'normal'}>
+              Hőszivattyú
+            </Text>
           </Link>
         </Flex>
         <Flex display={{ base: 'flex', md: 'none' }}>
