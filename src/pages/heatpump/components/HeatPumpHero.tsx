@@ -27,10 +27,10 @@ const HeatPumpHero = () => {
                 Hőszivattyús rendszerek
                 <br />- az otthonodra szabva!
               </Heading>
-              <Text fontSize='xl' color='dark' mt={12}>
+              <Text fontSize='xl' color='dark' mt={12} textAlign={{ base: 'center', lg: 'left' }}>
                 Hőszivattyús gépészeti rendszerek szerelése teljeskörű szolgáltatással a tervezéstől a kivitelezésig.
               </Text>
-              <Text fontSize='xl' color='dark'>
+              <Text fontSize='xl' color='dark' textAlign={{ base: 'center', lg: 'left' }}>
                 <span style={{ color: 'primary', fontWeight: 'bold' }}>Vegyél részt ingyenes tanácsadásunkon,</span> és
                 tedd meg az első lépést egy korszerű, energiatakarékos otthon felé!
               </Text>
@@ -50,7 +50,7 @@ const HeatPumpHero = () => {
               </Button>
             </Flex>
           </GridItem>
-          <GridItem colSpan={1} pr={4} overflow='hidden'>
+          <GridItem colSpan={1} pr={4} overflow='hidden' display={{ base: 'none', lg: 'block' }}>
             <HeroCards />
           </GridItem>
         </Grid>
