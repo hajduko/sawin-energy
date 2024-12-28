@@ -8,16 +8,17 @@ const NavBar = () => {
 
   return (
     <Box
-      mx={'auto'}
-      my={10}
-      maxWidth={['100%', '64rem']}
+      mx='auto'
+      maxWidth={{ base: '100%', lg: '62rem' }}
       bg={'light'}
       py={'10px'}
       px={{ base: '20px', lg: '40px' }}
-      rounded='full'>
+      rounded={{ base: 'none', lg: 'full' }}>
       <Flex minH={'51px'} align={'center'} justify={'space-between'}>
         <Flex>
-          <Image src={logo} height='25px' />
+          <Link to='/'>
+            <Image src={logo} height='25px' />
+          </Link>
         </Flex>
         <Flex display={{ base: 'none', md: 'flex' }} gap={8}>
           <Link to='/'>
