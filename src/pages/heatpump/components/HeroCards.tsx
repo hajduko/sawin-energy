@@ -12,13 +12,13 @@ const HeroCards: React.FC = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(0);
 
   const cards: CardData[] = [
-    { id: 0, imageSrc: 'https://placehold.co/350x300.png', text: 'Hűtés-fűtés' },
-    { id: 1, imageSrc: 'https://placehold.co/350x300.png', text: 'Gépészeti tervezés' },
-    { id: 2, imageSrc: 'https://placehold.co/350x300.png', text: 'Gyors kivitelezés' },
+    { id: 0, imageSrc: 'https://placehold.co/360x300.png', text: 'Hűtés-fűtés' },
+    { id: 1, imageSrc: 'https://placehold.co/360x300.png', text: 'Gépészeti tervezés' },
+    { id: 2, imageSrc: 'https://placehold.co/360x300.png', text: 'Gyors kivitelezés' },
   ];
 
   return (
-    <Flex maxWidth='900px' height='400px' overflow='hidden' gap={2}>
+    <Flex maxWidth='900px' height='440px' overflow='hidden' gap={2}>
       {cards.map((card) => (
         <HeroCard
           key={card.id}
