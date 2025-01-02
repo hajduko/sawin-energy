@@ -6,7 +6,7 @@ import logo from '../../assets/sawin.svg';
 const Footer = () => {
   return (
     <Flex bgColor='dark' justify='center'>
-      <Box w={{ base: '100%', lg: '62rem' }}>
+      <Box w={{ base: '100%', lg: '76rem' }}>
         <Flex
           minH={{ base: '6rem', md: '8rem' }}
           w='100%'
@@ -16,7 +16,7 @@ const Footer = () => {
           paddingY={{ base: '3rem' }}
           gap={6}>
           <Link to='/'>
-            <Image src={logo} height='25px' />
+            <Image src={logo} height='25px' mb={6} />
           </Link>
           <Flex
             w='100%'

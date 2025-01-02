@@ -7,8 +7,8 @@ const HeatPumpResults = () => {
         <Flex
           minH='380px'
           w='100%'
-          direction={{ base: 'column', md: 'row' }}
-          py={{ base: 12, md: 0 }}
+          direction={{ base: 'column', lg: 'row' }}
+          py={{ base: 12, lg: 0 }}
           align='center'
           justify='space-between'
           gap={12}>
