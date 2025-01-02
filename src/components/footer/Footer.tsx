@@ -21,6 +21,8 @@ const Footer = () => {
           <Flex
             w='100%'
             align='center'
+            h={{ base: '150px', md: '100%' }}
+            flexDirection={{ base: 'column', md: 'row' }}
             justify='space-around'
             paddingBottom={{ base: '1rem' }}
             borderBottomColor='white'
@@ -50,7 +52,7 @@ const Footer = () => {
               </Flex>
             </Link>
           </Flex>
-          <Flex align='center' width='100%' justify='space-between'>
+          <Flex align='center' width='100%' justify='space-between' px={{ base: 4, lg: 0 }}>
             <Text color='white'>2024 - SaWin Energy © Minden jog fenntartva</Text>
             <Link to='/privacy'>
               <Text color='white'>Privacy</Text>
