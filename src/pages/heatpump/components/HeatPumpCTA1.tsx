@@ -6,7 +6,12 @@ import bar_chart_square from '../../../assets/bar-chart-square.svg';
 import coins_hand from '../../../assets/coins-hand.svg';
 import tender from '../../../assets/tender.svg';
 
-const HeatPumpCTA1 = () => {
+interface Props {
+  dialogOpen: boolean;
+  setDialogOpen: (value: boolean) => void;
+}
+
+const HeatPumpCTA1 = ({ dialogOpen, setDialogOpen }: Props) => {
   return (
     <Flex bg='#ebedf0' justify='center' pb={20}>
       <Box
@@ -42,7 +47,8 @@ const HeatPumpCTA1 = () => {
                   rounded={'8px'}
                   fontSize='lg'
                   fontWeight='600'
-                  color='dark'>
+                  color='dark'
+                  onClick={() => setDialogOpen(!dialogOpen)}>
                   Jelentkezem a tanácsadásra!
                 </Button>
               </Flex>

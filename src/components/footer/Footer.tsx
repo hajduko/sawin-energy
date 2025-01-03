@@ -27,11 +27,11 @@ const Footer = () => {
             paddingBottom={{ base: '1rem' }}
             borderBottomColor='white'
             borderBottomWidth='2px'>
-            <Link to='mailto:info@ezsolutions.hu'>
+            <Link to='mailto:info@sawin.hu'>
               <Flex align='center' gap={4}>
                 <MdOutlineEmail color='white' size='30px' />
                 <Text fontSize='lg' color='white'>
-                  info@ezsolutions.hu
+                  info@sawin.hu
                 </Text>
               </Flex>
             </Link>

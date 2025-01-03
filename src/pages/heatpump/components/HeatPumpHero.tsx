@@ -5,7 +5,12 @@ import bg from '../../../assets/heatpump_hero_bg.svg';
 import { FaArrowRight } from 'react-icons/fa';
 import HeroCards from './HeroCards';
 
-const HeatPumpHero = () => {
+interface Props {
+  dialogOpen: boolean;
+  setDialogOpen: (value: boolean) => void;
+}
+
+const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
   return (
     <>
       <Image position='absolute' right='0px' top='0px' src={bg} maxH='1000px' maxW='100%' zIndex='-1' />
@@ -43,7 +48,8 @@ const HeatPumpHero = () => {
                 pl={4}
                 pr={2}
                 fontSize='lg'
-                fontWeight='600'>
+                fontWeight='600'
+                onClick={() => setDialogOpen(!dialogOpen)}>
                 Jelentkezem a tanácsadásra!
                 <Box
                   bg={'light'}
