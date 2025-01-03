@@ -16,10 +16,12 @@ const HeatPumpCTA1 = ({ dialogOpen, setDialogOpen }: Props) => {
     <Flex bg='#ebedf0' justify='center' pb={20}>
       <Box
         bgImage={`url(${cta_bg})`}
-        width={{ base: '100%', lg: '76rem' }}
+        width={{ base: '95%', lg: '76rem' }}
         bgRepeat='no-repeat'
+        bgSize='cover'
         minH='425px'
-        overflow='hidden'>
+        overflow='hidden'
+        rounded='2xl'>
         <Box bgGradient={'linear-gradient(to right, #062617CC, #40F29A14)'} h='100%' w='100%' rounded='2xl' p={12}>
           <Grid
             templateColumns={{

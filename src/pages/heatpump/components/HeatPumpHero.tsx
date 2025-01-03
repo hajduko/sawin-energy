@@ -18,7 +18,7 @@ const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
       <Box pt={{ base: 0, lg: 16 }}>
         <NavBar />
       </Box>
-      <Box w={{ base: '100%', lg: 'calc(50% + 38rem)' }} mr='0' ml='auto' mt={16} mb={20}>
+      <Box w={{ base: '95%', lg: 'calc(50% + 38rem)' }} mr='0' ml='auto' mt={16} mb={20}>
         <Grid
           templateColumns={{
             base: '1fr',
