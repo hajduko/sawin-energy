@@ -5,7 +5,7 @@ import tool from '../../../assets/tool.svg';
 const HeatPumpSolutions = () => {
   return (
     <Flex bg='#ebedf0' justify='center'>
-      <Box w={['100%', '76rem']}>
+      <Box w={{ base: '95%', lg: '76rem' }}>
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary' mt={20}>
           Hőszivattyús rendszerek
         </Heading>
@@ -15,12 +15,12 @@ const HeatPumpSolutions = () => {
         <Grid
           templateColumns={{
             base: '1fr',
-            lg: '1fr 1fr',
+            md: '1fr 1fr',
           }}
           minHeight='630px'
           mb={20}
           gap={8}>
-          <GridItem mb={{ base: 16, lg: 0 }}>
+          <GridItem mb={{ base: 16, md: 0 }}>
             <Box rounded='2xl' bgColor='white' height='100%' position='relative' maxW='600px' mx='auto'>
               <Float placement='top-center'>
                 <IconButton width='80px' height='80px' rounded='full' bgColor='accent' cursor='default'>
@@ -34,7 +34,7 @@ const HeatPumpSolutions = () => {
                 bgPos='center'
                 roundedTop='2xl'
               />
-              <Box height='260px' p={6}>
+              <Box minHeight='260px' p={6}>
                 <Heading as='h4' size='3xl' fontWeight='600' mb={8}>
                   Kényelem, kompromisszumok nélkül
                 </Heading>
@@ -74,7 +74,7 @@ const HeatPumpSolutions = () => {
                 bgPos='center'
                 roundedTop='2xl'
               />
-              <Box height='260px' p={6}>
+              <Box minHeight='260px' p={6}>
                 <Heading as='h4' size='3xl' fontWeight='600' mb={8}>
                   Hozd ki a maximumot a felújításból
                 </Heading>

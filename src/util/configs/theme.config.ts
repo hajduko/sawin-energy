@@ -36,9 +36,9 @@ export const system = createSystem(defaultConfig, {
         '6xl': { value: '46px' },
         '7xl': { value: '65px' },
       },
-      fontWeights: {
-        black: { value: '900' },
-      },
+    },
+    breakpoints: {
+      lg: '77em',
     },
   },
 });

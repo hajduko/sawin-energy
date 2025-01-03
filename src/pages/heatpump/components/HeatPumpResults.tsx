@@ -3,11 +3,11 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 const HeatPumpResults = () => {
   return (
     <Flex bg='dark' justify='center'>
-      <Box w={['100%', '76rem']}>
+      <Box w={{ base: '100%', lg: '76rem' }}>
         <Flex
           minH='380px'
           w='100%'
-          direction={{ base: 'column', lg: 'row' }}
+          direction={{ base: 'column', md: 'row' }}
           py={{ base: 12, lg: 0 }}
           align='center'
           justify='space-between'

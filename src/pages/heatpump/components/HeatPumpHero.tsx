@@ -10,7 +10,7 @@ const HeatPumpHero = () => {
     <>
       <Image position='absolute' right='0px' top='0px' src={bg} maxH='1000px' maxW='100%' zIndex='-1' />
       <Box bg='#ebedf0' position='absolute' w='100%' h='800px' zIndex='-2' />
-      <Box pt={16}>
+      <Box pt={{ base: 0, lg: 16 }}>
         <NavBar />
       </Box>
       <Box w={{ base: '100%', lg: 'calc(50% + 38rem)' }} mr='0' ml='auto' mt={16} mb={20}>
@@ -59,7 +59,7 @@ const HeatPumpHero = () => {
               </Button>
             </Flex>
           </GridItem>
-          <GridItem colSpan={1} pr={4} overflow='hidden' display={{ base: 'none', lg: 'block' }}>
+          <GridItem colSpan={1} pr={4} overflow='hidden' display={{ base: 'none', lg: 'inline-block' }}>
             <HeroCards />
           </GridItem>
         </Grid>
