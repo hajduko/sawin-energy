@@ -16,7 +16,7 @@ export const system = createSystem(defaultConfig, {
         primary: { value: '#017649' },
         light: { value: '#efffe5' },
         dark: { value: '#062617' },
-        accent: { value: '#0df157' },
+        accent: { value: '#07f258' },
       },
     },
     tokens: {

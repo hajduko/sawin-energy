@@ -7,6 +7,7 @@ import { Badge, Box, Button, Flex, Grid, GridItem, Heading, Image, Input, Text }
 import { useState } from 'react';
 import Popup from '../../components/popup/Popup';
 import HeatPumpTeam from './components/HeatPumpTeam';
+import HeatPumpTimeline from './components/HeatPumpTimeline';
 
 const HeatPump = () => {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
@@ -21,6 +22,7 @@ const HeatPump = () => {
       <HeatPumpSolutions />
       <HeatPumpCTA1 dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} />
       <HeatPumpTeam />
+      <HeatPumpTimeline />
 
       <Footer />
     </>
