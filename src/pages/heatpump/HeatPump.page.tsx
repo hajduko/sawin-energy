@@ -8,6 +8,7 @@ import { useState } from 'react';
 import Popup from '../../components/popup/Popup';
 import HeatPumpTeam from './components/HeatPumpTeam';
 import HeatPumpTimeline from './components/HeatPumpTimeline';
+import HeatPumpCTA2 from './components/HeatPumpCTA2';
 
 const HeatPump = () => {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
@@ -23,6 +24,7 @@ const HeatPump = () => {
       <HeatPumpCTA1 dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} />
       <HeatPumpTeam />
       <HeatPumpTimeline />
+      <HeatPumpCTA2 dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} />
 
       <Footer />
     </>
