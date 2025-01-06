@@ -1,14 +1,15 @@
+import { useState } from 'react';
+import Popup from '../../components/popup/Popup';
 import HeatPumpHero from './components/HeatPumpHero';
-import Footer from '../../components/footer/Footer';
 import HeatPumpResults from './components/HeatPumpResults';
 import HeatPumpSolutions from './components/HeatPumpSolutions';
 import HeatPumpCTA1 from './components/HeatPumpCTA1';
-import { useState } from 'react';
-import Popup from '../../components/popup/Popup';
 import HeatPumpTeam from './components/HeatPumpTeam';
 import HeatPumpTimeline from './components/HeatPumpTimeline';
+import HeatPumpProducts from './components/HeatPumpProducts';
 import HeatPumpCTA2 from './components/HeatPumpCTA2';
 import HeatPumpFAQ from './components/HeatPumpFAQ';
+import Footer from '../../components/footer/Footer';
 
 const HeatPump = () => {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
@@ -24,6 +25,7 @@ const HeatPump = () => {
       <HeatPumpCTA1 dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} />
       <HeatPumpTeam />
       <HeatPumpTimeline />
+      <HeatPumpProducts />
       <HeatPumpCTA2 dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} />
       <HeatPumpFAQ />
       <Footer />
