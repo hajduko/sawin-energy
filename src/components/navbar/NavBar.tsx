@@ -1,5 +1,5 @@
-import { Box, Flex, IconButton, useDisclosure, Image, Text } from '@chakra-ui/react';
-import { FaBars } from 'react-icons/fa';
+import { Box, Flex, IconButton, useDisclosure, Image, Text, Collapsible, Stack } from '@chakra-ui/react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router';
 import logo from '../../assets/sawin.svg';
 
@@ -32,12 +32,34 @@ const NavBar = () => {
             </Text>
           </Link>
         </Flex>
+
         <Flex display={{ base: 'flex', md: 'none' }}>
           <IconButton aria-label='Open Menu' size='lg' variant='ghost' onClick={onToggle}>
-            <FaBars />
+            {open ? <FaTimes /> : <FaBars />}
           </IconButton>
         </Flex>
       </Flex>
+      <Collapsible.Root
+        open={open}
+        width='100%'
+        onClick={(evt) => {
+          if ((evt.target as Element).closest('.navitem')) onToggle();
+        }}>
+        <Collapsible.Content>
+          <Stack p={4} textAlign='center' className='navitem' display={{ md: 'none' }}>
+            <Link to='/'>
+              <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/' ? '700' : '400'}>
+                Főoldal
+              </Text>
+            </Link>
+            <Link to='/heatpump'>
+              <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
+                Hőszivattyú
+              </Text>
+            </Link>
+          </Stack>
+        </Collapsible.Content>
+      </Collapsible.Root>
     </Box>
   );
 };

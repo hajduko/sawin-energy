@@ -52,7 +52,7 @@ const HeatPumpFAQ = () => {
                 <Accordion.ItemIndicator display={{ base: 'none', _open: 'block' }}>
                   <Image src={faq_minus} h='24px' w='24px' />
                 </Accordion.ItemIndicator>
-                <Text fontSize='xl' fontWeight='500' color='black'>
+                <Text fontSize='xl' fontWeight='500' color='black' textAlign='left'>
                   {item.question}
                 </Text>
                 <Accordion.ItemIndicator />
