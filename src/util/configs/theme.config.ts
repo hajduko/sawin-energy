@@ -35,9 +35,11 @@ export const system = createSystem(defaultConfig, {
         '5xl': { value: '36px' },
         '6xl': { value: '46px' },
         '7xl': { value: '65px' },
+        '8xl': { value: '104px' },
       },
     },
     breakpoints: {
+      sm: '37em',
       lg: '77em',
     },
   },

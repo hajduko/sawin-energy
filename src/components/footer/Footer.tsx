@@ -10,21 +10,23 @@ const Footer = () => {
         <Grid
           templateAreas={{ base: `"main" "contact" "footer"`, md: `"main contact" "footer footer"` }}
           templateColumns={{ base: '1fr', md: '5fr 2fr' }}>
-          <GridItem area='main'>
-            <Link to='/'>
-              <Image src={logo} height='25px' mb={8} />
-            </Link>
-            <Flex gap={10}>
+          <GridItem area='main' mb={{ base: 6, md: 0 }}>
+            <Flex flexDirection='column' align={{ base: 'center', md: 'flex-start' }}>
               <Link to='/'>
-                <Text color='white' fontSize='md' fontWeight={location.pathname === '/' ? '700' : '400'}>
-                  Főoldal
-                </Text>
+                <Image src={logo} height='25px' mb={8} />
               </Link>
-              <Link to='/heatpump'>
-                <Text color='white' fontSize='md' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
-                  Hőszivattyú
-                </Text>
-              </Link>
+              <Flex gap={10}>
+                <Link to='/'>
+                  <Text color='white' fontSize='md' fontWeight={location.pathname === '/' ? '700' : '400'}>
+                    Főoldal
+                  </Text>
+                </Link>
+                <Link to='/heatpump'>
+                  <Text color='white' fontSize='md' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
+                    Hőszivattyú
+                  </Text>
+                </Link>
+              </Flex>
             </Flex>
           </GridItem>
           <GridItem area='contact'>

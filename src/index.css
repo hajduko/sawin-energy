@@ -2,3 +2,27 @@
     margin-left: 22px;
     border-width: 2px;
 }
+
+.chakra-segment-group__root {
+    min-height: 56px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+
+.chakra-segment-group__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #667085;
+    padding: 0;
+}
+
+.chakra-segment-group__item[data-state="checked"] {
+    color: #07f258;
+}
+
+.chakra-segment-group__indicator {
+    background-color: #017649;
+}
