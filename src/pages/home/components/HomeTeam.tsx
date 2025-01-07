@@ -1,17 +1,4 @@
-import {
-  Box,
-  Card,
-  Flex,
-  Grid,
-  GridItem,
-  Heading,
-  IconButton,
-  Image,
-  SimpleGrid,
-  VStack,
-  Text,
-  Em,
-} from '@chakra-ui/react';
+import { Box, Flex, Heading, SimpleGrid, VStack, Text, Em } from '@chakra-ui/react';
 import { Avatar } from '../../../components/ui/avatar';
 
 const HomeTeam = () => {

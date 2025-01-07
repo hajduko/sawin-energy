@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Flex, Grid, GridItem, Heading, Text, Image, Card } from '@chakra-ui/react';
+import { Box, Flex, Grid, GridItem, Heading, Image, Card } from '@chakra-ui/react';
 import { SegmentedControl } from '../../../components/ui/segmented-control';
 import services from '../../../assets/images/home/services.png';
 import lightning_green from '../../../assets/icons/lightning_green.svg';
