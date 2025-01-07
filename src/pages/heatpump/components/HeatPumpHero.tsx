@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Heading, Image, Text, Grid, GridItem } from '@chakra-ui/react';
 import NavBar from '../../../components/navbar/NavBar';
-import bg from '../../../assets/heatpump_hero_bg.svg';
+import bg from '../../../assets/images/heatpump/heatpump_hero_bg.svg';
 
 import { FaArrowRight } from 'react-icons/fa';
 import HeroCards from './HeroCards';

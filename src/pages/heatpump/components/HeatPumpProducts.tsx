@@ -1,8 +1,8 @@
 import { Box, Flex, Grid, GridItem, Heading, IconButton, Image, Text, List } from '@chakra-ui/react';
-import left_arrow from '../../../assets/left_arrow.svg';
-import right_arrow from '../../../assets/right_arrow.svg';
-import check_circle from '../../../assets/check-circle.svg';
-import prod1 from '../../../assets/prod1.png';
+import left_arrow from '../../../assets/icons/left_arrow.svg';
+import right_arrow from '../../../assets/icons/right_arrow.svg';
+import check_circle from '../../../assets/icons/check-circle.svg';
+import prod1 from '../../../assets/images/heatpump/prod1.png';
 import { useState } from 'react';
 
 interface IProduct {

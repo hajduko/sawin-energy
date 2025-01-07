@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import Footer from '../../components/footer/Footer';
-import NavBar from '../../components/navbar/NavBar';
+import HomeHero from './components/HomeHero';
 
 const Home = () => {
   return (
@@ -8,7 +8,8 @@ const Home = () => {
       <Helmet>
         <title>Főoldal - Sawin Energy</title>
       </Helmet>
-      <NavBar />
+      <HomeHero />
+
       <Footer />
     </>
   );

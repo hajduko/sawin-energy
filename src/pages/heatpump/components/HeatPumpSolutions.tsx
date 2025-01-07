@@ -1,6 +1,8 @@
 import { Badge, Box, Flex, Float, Grid, GridItem, Heading, IconButton, Image, Text } from '@chakra-ui/react';
-import thermometer from '../../../assets/thermometer.svg';
-import tool from '../../../assets/tool.svg';
+import thermometer from '../../../assets/icons/thermometer.svg';
+import tool from '../../../assets/icons/tool.svg';
+import sol_1 from '../../../assets/images/heatpump/sol_1.png';
+import sol_2 from '../../../assets/images/heatpump/sol_2.jpg';
 
 const HeatPumpSolutions = () => {
   return (
@@ -27,13 +29,7 @@ const HeatPumpSolutions = () => {
                   <Image src={thermometer} />
                 </IconButton>
               </Float>
-              <Box
-                height='220px'
-                bgImage={`url(https://placehold.co/600x220.png)`}
-                bgSize='cover'
-                bgPos='center'
-                roundedTop='2xl'
-              />
+              <Box height='220px' bgImage={`url(${sol_1})`} bgSize='cover' bgPos='center' roundedTop='2xl' />
               <Box minHeight='260px' p={6}>
                 <Heading as='h4' size='3xl' fontWeight='600' mb={8}>
                   Kényelem, kompromisszumok nélkül
@@ -67,13 +63,7 @@ const HeatPumpSolutions = () => {
                   <Image src={tool} />
                 </IconButton>
               </Float>
-              <Box
-                height='220px'
-                bgImage={`url(https://placehold.co/600x220.png)`}
-                bgSize='cover'
-                bgPos='center'
-                roundedTop='2xl'
-              />
+              <Box height='220px' bgImage={`url(${sol_2})`} bgSize='cover' bgPos='center' roundedTop='2xl' />
               <Box minHeight='260px' p={6}>
                 <Heading as='h4' size='3xl' fontWeight='600' mb={8}>
                   Hozd ki a maximumot a felújításból

@@ -4,7 +4,7 @@ import { Field } from '../../components/ui/field';
 import { Checkbox } from '../../components/ui/checkbox';
 import { Link } from 'react-router';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import popup from '../../assets/popup.png';
+import popup from '../../assets/images/popup.png';
 import logo from '../../assets/sawin.svg';
 
 interface Props {

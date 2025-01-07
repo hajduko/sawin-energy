@@ -1,10 +1,10 @@
 import { Badge, Box, Button, Flex, Grid, GridItem, Heading, Image, Text } from '@chakra-ui/react';
-import cta_bg from '../../../assets/cta_bg.png';
-import building from '../../../assets/building.svg';
-import lightning from '../../../assets/lightning.svg';
-import bar_chart_square from '../../../assets/bar-chart-square.svg';
-import coins_hand from '../../../assets/coins-hand.svg';
-import tender from '../../../assets/tender.svg';
+import cta_bg from '../../../assets/images/heatpump/cta_bg.png';
+import building from '../../../assets/icons/building.svg';
+import lightning from '../../../assets/icons/lightning.svg';
+import bar_chart_square from '../../../assets/icons/bar-chart-square.svg';
+import coins_hand from '../../../assets/icons/coins-hand.svg';
+import tender from '../../../assets/icons/tender.svg';
 
 interface Props {
   dialogOpen: boolean;

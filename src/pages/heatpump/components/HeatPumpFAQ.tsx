@@ -1,6 +1,6 @@
 import { Accordion, Box, Flex, Heading, Image, Text } from '@chakra-ui/react';
-import faq_minus from '../../../assets/faq_minus.svg';
-import faq_plus from '../../../assets/faq_plus.svg';
+import faq_minus from '../../../assets/icons/faq_minus.svg';
+import faq_plus from '../../../assets/icons/faq_plus.svg';
 
 const HeatPumpFAQ = () => {
   const faqs = [

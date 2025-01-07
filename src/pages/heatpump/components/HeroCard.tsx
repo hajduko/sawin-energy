@@ -1,5 +1,5 @@
 import { Box, Heading, Image } from '@chakra-ui/react';
-import rect from '../../../assets/rect_green.svg';
+import rect from '../../../assets/images/heatpump/rect_green.svg';
 
 interface CardProps {
   isHovered: boolean;

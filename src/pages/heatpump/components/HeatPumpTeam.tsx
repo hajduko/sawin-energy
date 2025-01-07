@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text, Image } from '@chakra-ui/react';
-import team from '../../../assets/team.png';
+import team from '../../../assets/images/heatpump/team.png';
 
 const HeatPumpTeam = () => {
   return (

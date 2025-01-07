@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react';
-import cta_phone from '../../../assets/cta_phone.png';
-import cta_screen from '../../../assets/cta_screen.png';
+import cta_phone from '../../../assets/images/heatpump/cta_phone.png';
+import cta_screen from '../../../assets/images/heatpump/cta_screen.png';
 
 interface Props {
   dialogOpen: boolean;
