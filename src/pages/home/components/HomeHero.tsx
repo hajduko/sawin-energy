@@ -10,7 +10,7 @@ const HomeHero = () => {
 
   return (
     <>
-      <Image src={bg} position='absolute' top={-250} minH='1000px' zIndex={-1} fit='cover' />
+      <Image src={bg} position='absolute' top={-200} minH='100vh' zIndex={-1} fit='cover' />
       <Box h='100vh'>
         <Box bgColor='#062617B2' pt={{ base: 0, lg: 16 }}>
           <NavBar />

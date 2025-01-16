@@ -55,7 +55,6 @@ const HeatPumpFAQ = () => {
                 <Text fontSize='xl' fontWeight='500' color='black' textAlign='left'>
                   {item.question}
                 </Text>
-                <Accordion.ItemIndicator />
               </Accordion.ItemTrigger>
               <Accordion.ItemContent>
                 <Accordion.ItemBody pl={9} fontSize='md' color='#475467'>

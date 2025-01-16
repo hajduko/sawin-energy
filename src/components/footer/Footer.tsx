@@ -26,6 +26,14 @@ const Footer = () => {
                     Hőszivattyú
                   </Text>
                 </Link>
+                <Link to='/applications/residential'>
+                  <Text
+                    color='white'
+                    fontSize='md'
+                    fontWeight={location.pathname === '/applications/residential' ? '700' : '400'}>
+                    Lakossági pályázatok
+                  </Text>
+                </Link>
               </Flex>
             </Flex>
           </GridItem>
