@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 import NavBar from '../../../../components/navbar/NavBar';
 import bg from '../../../../assets/images/residential/hero_bg.jpg';
 import { FaArrowRight } from 'react-icons/fa';
