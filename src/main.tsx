@@ -8,20 +8,6 @@ import { system } from './util/configs/theme.config.ts';
 import { BrowserRouter } from 'react-router';
 import { HelmetProvider } from 'react-helmet-async';
 
-import type { Schema } from '../amplify/data/resource';
-import { generateClient } from 'aws-amplify/api';
-import { Amplify } from 'aws-amplify';
-
-import outputs from './amplify_outputs.json';
-
-Amplify.configure(outputs);
-
-const client = generateClient<Schema>();
-
-client.queries.sayHello({
-  name: 'Amplify',
-});
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
