@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import { Box, Flex, Grid, GridItem, Heading, Image, Card } from '@chakra-ui/react';
+import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text } from '@chakra-ui/react';
 import { SegmentedControl } from '../../../components/ui/segmented-control';
 import services from '../../../assets/images/home/services.png';
 import lightning_green from '../../../assets/icons/lightning_green.svg';
+import settings_outline from '../../../assets/icons/settings-outline-green.svg';
+import home_outline from '../../../assets/icons/home-outline-green.svg';
+import car from '../../../assets/icons/car.svg';
 
 const HomeServices = () => {
   const [value, setValue] = useState('Napelemes rendszerek');
@@ -12,7 +15,7 @@ const HomeServices = () => {
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
           Szolgáltatások
         </Heading>
-        <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' lineHeight='short' mb={6}>
+        <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' lineHeight='short' mb={16}>
           Szabadulj ki a Rezsicsapdából
           <br />
           megoldásainkkal
@@ -21,8 +24,9 @@ const HomeServices = () => {
         <SegmentedControl
           value={value}
           onValueChange={(e) => setValue(e.value)}
-          items={['Napelemes rendszerek', 'Gépészeti megoldásaink', 'Elektromos autó']}
+          items={['Napelemes rendszerek', 'Gépészeti megoldásaink', 'Hőszigetelés', 'Elektromos autó']}
           width='100%'
+          maxWidth='100%'
           mb={12}
         />
 
@@ -37,7 +41,10 @@ const HomeServices = () => {
               <GridItem colSpan={1}>
                 <Card.Root width='100%' height='230px' rounded='20px'>
                   <Card.Body>
-                    <Image src={lightning_green} height='24px' width='24px' fit='contain' />
+                    <Flex>
+                      <Image src={lightning_green} height='24px' width='24px' fit='contain' mr={4} />
+                      <Text color='primary'>Visszwattos napelemes rendszerek</Text>
+                    </Flex>
                   </Card.Body>
                   <Card.Footer flexDirection='column' alignItems='flex-start'>
                     <Card.Title fontSize='xl' fontWeight='600' mb={2}>
@@ -53,7 +60,10 @@ const HomeServices = () => {
               <GridItem colSpan={1}>
                 <Card.Root width='100%' height='230px' rounded='20px'>
                   <Card.Body>
-                    <Image src={lightning_green} height='24px' width='24px' fit='contain' />
+                    <Flex>
+                      <Image src={lightning_green} height='24px' width='24px' fit='contain' mr={4} />
+                      <Text color='primary'>Akkumulátoros rendszerek</Text>
+                    </Flex>
                   </Card.Body>
                   <Card.Footer flexDirection='column' alignItems='flex-start'>
                     <Card.Title fontSize='xl' fontWeight='600' mb={2}>
@@ -61,7 +71,7 @@ const HomeServices = () => {
                     </Card.Title>
                     <Card.Description fontSize='md' color='#475467'>
                       Legyen egy napelemes rendszer otthonod vagy üzemed energiatermelő központja. Így fűthetsz,
-                      hűthetsz vagy tölthetsz is a nappal!
+                      hűthetsz vagy autót is tölthetsz a nappal!
                     </Card.Description>
                   </Card.Footer>
                 </Card.Root>
@@ -73,7 +83,52 @@ const HomeServices = () => {
               <GridItem colSpan={1}>
                 <Card.Root width='100%' height='230px' rounded='20px'>
                   <Card.Body>
-                    <Image src={lightning_green} height='24px' width='24px' fit='contain' />
+                    <Flex>
+                      <Image src={settings_outline} height='24px' width='24px' fit='contain' mr={4} />
+                      <Text color='primary'>Lakossági és ipari hőszivattyúk</Text>
+                    </Flex>
+                  </Card.Body>
+                  <Card.Footer flexDirection='column' alignItems='flex-start'>
+                    <Card.Title fontSize='xl' fontWeight='600' mb={2}>
+                      Lépj le a gázról!
+                    </Card.Title>
+                    <Card.Description fontSize='md' color='#475467'>
+                      Hűts és fűts modern hőszivattyúval és szabadulj meg a gázszámlától örökre. Kínálatunkban lakossági
+                      monoblock hőszivattyúk és ipari méretű berendezések is elérhetők.
+                    </Card.Description>
+                  </Card.Footer>
+                </Card.Root>
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Card.Root width='100%' height='230px' rounded='20px'>
+                  <Card.Body>
+                    <Flex>
+                      <Image src={settings_outline} height='24px' width='24px' fit='contain' mr={4} />
+                      <Text color='primary'>Teljeskörű szerviz és garancia</Text>
+                    </Flex>
+                  </Card.Body>
+                  <Card.Footer flexDirection='column' alignItems='flex-start'>
+                    <Card.Title fontSize='xl' fontWeight='600' mb={2}>
+                      Garantált biztonság!
+                    </Card.Title>
+                    <Card.Description fontSize='md' color='#475467'>
+                      Termékeink hivatalos szervizeként biztosítjuk számodra a gyors probléma megoldást és személyre
+                      szabott garanciális feltételeket. Így tényleg biztonságban érezheted magad!
+                    </Card.Description>
+                  </Card.Footer>
+                </Card.Root>
+              </GridItem>
+            </>
+          )}
+          {value === 'Hőszigetelés' && (
+            <>
+              <GridItem colSpan={1}>
+                <Card.Root width='100%' height='230px' rounded='20px'>
+                  <Card.Body>
+                    <Flex>
+                      <Image src={home_outline} height='24px' width='24px' fit='contain' mr={4} />
+                      <Text color='primary'>TODO</Text>
+                    </Flex>
                   </Card.Body>
                   <Card.Footer flexDirection='column' alignItems='flex-start'>
                     <Card.Title fontSize='xl' fontWeight='600' mb={2}>
@@ -88,7 +143,10 @@ const HomeServices = () => {
               <GridItem colSpan={1}>
                 <Card.Root width='100%' height='230px' rounded='20px'>
                   <Card.Body>
-                    <Image src={lightning_green} height='24px' width='24px' fit='contain' />
+                    <Flex>
+                      <Image src={home_outline} height='24px' width='24px' fit='contain' mr={4} />
+                      <Text color='primary'>TODO</Text>
+                    </Flex>
                   </Card.Body>
                   <Card.Footer flexDirection='column' alignItems='flex-start'>
                     <Card.Title fontSize='xl' fontWeight='600' mb={2}>
@@ -107,14 +165,18 @@ const HomeServices = () => {
               <GridItem colSpan={1}>
                 <Card.Root width='100%' height='230px' rounded='20px'>
                   <Card.Body>
-                    <Image src={lightning_green} height='24px' width='24px' fit='contain' />
+                    <Flex>
+                      <Image src={car} height='24px' width='24px' fit='contain' mr={4} />
+                      <Text color='primary'>Elektromos autótöltők</Text>
+                    </Flex>
                   </Card.Body>
                   <Card.Footer flexDirection='column' alignItems='flex-start'>
                     <Card.Title fontSize='xl' fontWeight='600' mb={2}>
-                      TODO
+                      Töltsd elektromos autód Otthon!
                     </Card.Title>
                     <Card.Description fontSize='md' color='#475467'>
-                      TODO
+                      Élvezd az olcsó otthontöltés minden kényelmét! A szükséges áramot napelemmel is megtermelheted,
+                      így ingyen „tankolhatsz” a nap segítségével!
                     </Card.Description>
                   </Card.Footer>
                 </Card.Root>
@@ -122,14 +184,19 @@ const HomeServices = () => {
               <GridItem colSpan={1}>
                 <Card.Root width='100%' height='230px' rounded='20px'>
                   <Card.Body>
-                    <Image src={lightning_green} height='24px' width='24px' fit='contain' />
+                    <Flex>
+                      <Image src={car} height='24px' width='24px' fit='contain' mr={4} />
+                      <Text color='primary'>EV tartósbérlet</Text>
+                    </Flex>
                   </Card.Body>
                   <Card.Footer flexDirection='column' alignItems='flex-start'>
                     <Card.Title fontSize='xl' fontWeight='600' mb={2}>
-                      TODO
+                      Válts elektromos autóra könnyedén!
                     </Card.Title>
                     <Card.Description fontSize='md' color='#475467'>
-                      TODO
+                      Vegyél tartósbérletbe használt elektromos autót és használd ki, hogy konstrukciónkban a bérlet
+                      lejártakor megvásárolhatod a járművet. Céges partnerünkként lehetőséged van áfa visszaigénylésre
+                      is.
                     </Card.Description>
                   </Card.Footer>
                 </Card.Root>
@@ -138,7 +205,7 @@ const HomeServices = () => {
           )}
         </Grid>
 
-        <Image src={services} mt={12} />
+        <Image src={services} mt={12} rounded='20px' />
       </Box>
     </Flex>
   );

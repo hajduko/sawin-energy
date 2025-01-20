@@ -30,19 +30,46 @@ const HeatPumpProducts = () => {
       ],
     },
     {
-      name: 'TODO 1',
+      name: 'Fan-Coil',
       id: 1,
       img: prod1,
       props: [
-        { title: 'R32 vagy R290 gáz', desc: 'Magas- vagy alacsony hőmérsékletű rendszerekhez is!' },
-        { title: '6-16 kW', desc: 'Kis és nagy alapterületű ingatlanok fűtése és hűtése is megoldható.' },
+        { title: 'Hőszivattyúk tökéletes párja', desc: 'Fűtésre és hűtésre is képes hőleadó.' },
+        { title: '0,8-5,5 kW', desc: 'A legkisebb szobáktól az igazán nagy terekig kiszolgál.' },
+        { title: 'Igazán halk', desc: 'Kiegészítő radiátoros sugárzó technológia.' },
       ],
     },
     {
-      name: 'TODO 2',
+      name: 'Integrált mennyezeti fűtés',
       id: 2,
       img: prod1,
-      props: [{ title: 'R32 vagy R290 gáz', desc: 'Magas- vagy alacsony hőmérsékletű rendszerekhez is!' }],
+      props: [
+        { title: '2in1', desc: 'Mennyezeti vagy Fal, Fűtés és Hűtés' },
+        {
+          title: 'Integrált rendszer',
+          desc: 'Szigetelés+csőhálózat+záró gipszkarton, így egy azonnal festhető mennyezetet kapsz.',
+        },
+        {
+          title: 'Kiemelkedően költséghatékony',
+          desc: 'Alacsony hőmérsékletű rendszer=olcsó üzemeltetési költségek Gyors szerelés= alacsonyabb költségű kivitelezés.',
+        },
+      ],
+    },
+    {
+      name: 'Okos vezérlés',
+      id: 3,
+      img: prod1,
+      props: [
+        { title: 'Zónák kialakítása', desc: 'Akár szobánként is külön vezérelhető fűtés' },
+        {
+          title: 'Maximális komfort',
+          desc: 'Pontosan programozható és a te igényeidhez állítható hőfok vezérlés.',
+        },
+        {
+          title: 'Vezeték nélküli',
+          desc: 'Könnyen telepíthető akár felújításkor is, hiszen kábelezésre nincsen szükség.',
+        },
+      ],
     },
   ];
 

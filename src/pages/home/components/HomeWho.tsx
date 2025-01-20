@@ -11,7 +11,7 @@ const HomeWho = () => {
           Kiknek szól
         </Heading>
         <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' lineHeight='short' mb={16}>
-          Rendszereinket ajánljuk
+          Rendszereinket ajánljuk...
         </Heading>
 
         <Grid

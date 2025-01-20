@@ -33,7 +33,7 @@ const HeatPumpCTA1 = ({ dialogOpen, setDialogOpen }: Props) => {
             <GridItem colSpan={1}>
               <Flex flexDirection={'column'} h='100%' justify='space-between'>
                 <Heading as='h2' size='md' fontWeight='600' color='light'>
-                  Energetikai tanácsadás
+                  Ingyenes energetikai tanácsadás
                 </Heading>
                 <Heading as='h3' size='5xl' fontWeight='600' color='white' letterSpacing='wide'>
                   Dönts magabiztosan

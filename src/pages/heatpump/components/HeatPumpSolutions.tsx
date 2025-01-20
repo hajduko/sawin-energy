@@ -12,7 +12,7 @@ const HeatPumpSolutions = () => {
           Hőszivattyús rendszerek
         </Heading>
         <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' mb={20}>
-          A te projectedhez is van megoldásunk
+          A te projektedhez is van megoldásunk
         </Heading>
         <Grid
           templateColumns={{
@@ -36,13 +36,13 @@ const HeatPumpSolutions = () => {
                 </Heading>
                 <Text fontSize='lg'>
                   Új építésű ingatlanodnál a hőszivattyús gépészet összes előnyét ki tudod használni. Egy szakmailag
-                  méretezett berendezés, hő-leadó rendszer és okos vezérlés láthatatlanul dolgoznak otthonod
+                  méretezett berendezés, hőleadó rendszer és okos vezérlés láthatatlanul dolgoznak otthonod
                   komfortjáért, az év minden napján.
                 </Text>
               </Box>
               <Box p={6} pt={0}>
                 <Text fontSize='xl' fontWeight='600' mb={2}>
-                  Kedvenc megoldásunk
+                  Kedvenc megoldásunk újépítéshez
                 </Text>
                 <Badge fontSize='sm' fontWeight='500' padding={2} bgColor='dark' color='light' mr={2} mb={2}>
                   Monoblokk hőszivattyú
@@ -68,15 +68,15 @@ const HeatPumpSolutions = () => {
                 <Heading as='h4' size='3xl' fontWeight='600' mb={8}>
                   Hozd ki a maximumot a felújításból
                 </Heading>
-                <Text fontSize='lg'>
+                <Text fontSize='lg' hyphens='auto'>
                   Növeld ingatlanod értékét és spórolj a rezsiszámláidon. Egy pontosan tervezett és minőséggel
-                  kivitelezett hőszivattyús gépészet segítségével fenntartható, költséghatékony és modern otthont
-                  teremthetsz.
+                  kivitelezett hőszivattyús gépészet segítségével egy régebbi ingatlanból is fenntartható,
+                  költséghatékony és modern otthont teremthetsz.
                 </Text>
               </Box>
               <Box p={6} pt={0}>
                 <Text fontSize='xl' fontWeight='600' mb={2}>
-                  Kedvenc megoldásunk
+                  Kedvenc megoldásunk felújításhoz
                 </Text>
                 <Badge fontSize='sm' fontWeight='500' padding={2} bgColor='dark' color='light' mr={2} mb={2}>
                   Monoblokk hőszivattyú

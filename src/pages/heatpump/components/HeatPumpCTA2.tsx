@@ -26,9 +26,14 @@ const HeatPumpCTA2 = ({ dialogOpen, setDialogOpen }: Props) => {
           justify='space-between'
           width={{ base: '100%', md: '540px' }}
           zIndex={3}>
-          <Heading as='h3' size='5xl' fontWeight='600' color='white' zIndex={3} mb={{ base: '4', md: '0' }}>
-            Élj a pályázati lehetőségekkel
-          </Heading>
+          <Box>
+            <Heading as='h2' size='md' fontWeight='600' color='white'>
+              Ingyenes pályázatírás
+            </Heading>
+            <Heading as='h3' size='5xl' fontWeight='600' color='white' zIndex={3} mb={{ base: '4', md: '0' }}>
+              Élj a pályázati lehetőségekkel
+            </Heading>
+          </Box>
           <Text fontSize='xl' color='light' zIndex={3} mb={{ base: '4', md: '0' }}>
             Teljeskörű pályázati ügyintézést vállalunk, ha a hőszivattyús beruházásodat valamelyik elérhető támogatásból
             szeretnéd megvalósítani. Legyen szó az Energetikai otthonfelújítási támogatásról vagy a 3+3 milliós

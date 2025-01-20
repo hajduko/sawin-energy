@@ -13,17 +13,20 @@ const HeatPumpFAQ = () => {
     {
       id: '1',
       question: 'Hogyan lesz melegvizem télen-nyáron?',
-      answer: 'TODO',
+      answer:
+        'A hőszivattyú bármilyen időben képes melegvizet előállítani. Működése során mindíg előnyben részesíti a melegvíz készítést. Nyáron a hűtési funkcióról percek alatt automatikusan átáll melegvíz készítési funkcióra. Ehhez szükésges egy emelt hőcserélővel rendelkező, legalább 150 lieteres melegvíz tartály beépítése a rendszerbe. ',
     },
     {
       id: '2',
       question: 'Mekkora teljesítményű hőszivattyúra van szükségem?',
-      answer: 'TODO',
+      answer:
+        'A ház négyzetmétere alapján, vagy hasonló ökölszabályok szerint nem lehet hőszivattyút méretezni. A pontos méretezéshez mérnöki pontosságú hőszükséglet és hőterhelés számítást kell végezni az ingatlan összes hőtani paramétere alapján. Ezt a számítást kell a kiválasztott berendezés működési és üzemi paramétereihez illeszteni. ',
     },
     {
       id: '3',
       question: 'Mikor van szükségem a H tarifára?',
-      answer: 'TODO',
+      answer:
+        'Hacsak nincsen már meglévő szaldós szolár rendszer, akkor mindenképpen érdemnes és megtérülő beruházás a H tarifás mérőóra kialakítása. H tarifán a fűtési időszakban 26ft/kW kedvezményes áron működtethetjük a hőszivattyút, ami jelentős megtakarítást eredményez. A H-tartifás mérőhely kiépítéséhez arra jogosult villanyszerelőinkkel külön ajánlatot adunk. Az ár szolgáltatónként és a jelenlegi villanyóra elhelyezésétől függően változik.',
     },
   ];
   return (

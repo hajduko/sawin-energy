@@ -9,6 +9,10 @@ const HomeUs = () => {
     <>
       <Flex bg='#ebedf0' justify='center'>
         <Box w={{ base: '95%', lg: '76rem' }} mb={20} mt={20}>
+          <Heading as='h2' size='md' fontWeight='600' color='primary' mb={2}>
+            Rólunk
+          </Heading>
+
           <Grid
             templateColumns={{
               base: '1fr',
@@ -17,14 +21,10 @@ const HomeUs = () => {
             gap={{ base: 0, md: 16 }}
             mb={20}>
             <GridItem colSpan={1}>
-              <Heading as='h2' size='md' fontWeight='600' color='primary' mb={2}>
-                Rólunk
-              </Heading>
               <Heading as='h3' size='5xl' fontWeight='600' color='black' mb={6} lineHeight={1.2}>
-                Megtérülő befektetések
+                Megtérülő befektetések,
                 <br /> megújuló energia
               </Heading>
-
               <Text fontSize='xl' textAlign='justify' color='#475467' mb={{ base: 4, lg: 0 }}>
                 Cégünk innovatív, megújuló megoldások teljes palettáját szolgáltatja családod és céged számára. Mindig
                 teljeskörű szolgáltatást nyújtunk, ahol az engedélyeztetéssel, kivitelezéssel járó terhet levesszük a

@@ -16,7 +16,7 @@ const ResidentialAvailable = () => {
     { id: 1, name: 'Projektösszeg:', data: 'max. 6 millió Ft' },
     { id: 2, name: 'Vissza nem térítendő:', data: '3 millió Ft' },
     { id: 3, name: 'Támogatott hitel:', data: '3 millió Ft' },
-    { id: 4, name: 'Hitel kamat:', data: '4% (becsült)' },
+    { id: 4, name: 'Hitel kamat:', data: '4,75% (becsült)' },
     { id: 5, name: 'Futamidő:', data: 'max. 10 év' },
     { id: 6, name: 'Önerő:', data: 'nincs' },
   ];

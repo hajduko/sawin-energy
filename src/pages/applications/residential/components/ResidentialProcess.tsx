@@ -7,42 +7,42 @@ const ResidentialProcess = () => {
     {
       id: '0',
       title: '24 órán belül jelentkezünk!',
-      text: 'TODO',
+      text: 'Személyes tanácsadód a jelentkezést követően azonnal felveszi veled a kapcsolatot.',
     },
     {
       id: '1',
       title: 'Ingyenes tanácsadásban vehetsz részt!',
-      text: 'TODO',
+      text: 'Akár másnap ingyenes előzetes tanácsadáson vehetsz részt, hogy megismerjük az igényeidet és te is megismerhesd a lehetőségeidet. A tanácsadás folyamán minden kérdésedre választ kapsz.',
     },
     {
       id: '2',
       title: 'Meghatározzuk a tökéletes beruházást!',
-      text: 'TODO',
+      text: 'Egy ingatlan felmérést végzünk, ami után 3 munkanapon belül pontos számításokat készítünk a számodra tökéletes beruházásokra és meghatározzuk ezek bekerülését, megtérülését, pontos méretezését, valamint előzetesen elvégezzük a hozzájuk tartozó energetikai számításokat is.',
     },
     {
       id: '3',
       title: 'Elmondjuk mennyit spórolhatsz!',
-      text: 'TODO',
+      text: 'Tervezőink ismertetik a felmérés alapján elkészített különféle kalkulációk eredményét és közösen kiválasztjuk a megvalósításra kerülő beruházást.',
     },
     {
       id: '4',
       title: 'Részletes ajánlatot készítünk!',
-      text: 'TODO',
+      text: '3 napon belül megküldött ajánlatunk tartalmazza többek között az eredeti energetikai besorolást az energetikai javulási százalékot, az új energetikai besorolást, a beruházás árát, a havi törlesztés és az új havi rezsi összegét és az ingatlan várható értéknövekményét.',
     },
     {
       id: '5',
       title: 'Ellenőrizzük a beruházásodat és szerződünk!',
-      text: 'TODO',
+      text: 'Szerződéskötés előtt újra ellenőrizzük ingatlanod technikai állapotát, és a felmérés pontosságát. Amennyiben minden rendben, leszerződünk a kivitelezési munkákra.',
     },
     {
       id: '6',
       title: 'Elkészítjük a kiviteli terveket és technikai dokumentációkat!',
-      text: 'TODO',
+      text: 'Tervezőink elkészítik a beruházásod pontos kiviteli terveit és a pályázathoz szükséges dokumentumokat (pl. energetikai tanusítványok).',
     },
     {
       id: '7',
       title: 'Megvalósítjuk a beruházást!',
-      text: 'TODO',
+      text: 'Szerződést követő 30 napon belül leszállítjuk az összes terméket a kivitelezéshez és a szerződés szerint ütemezve hozzáfogunk otthonod energetikai fejlesztéséhez.',
     },
   ];
 
@@ -62,15 +62,16 @@ const ResidentialProcess = () => {
             <Heading as='h3' size='5xl' fontWeight='600'>
               Nem hiszünk a félmegoldásokban!
             </Heading>
-            <Text fontSize='xl' mt={5}>
+            <Text fontSize='xl' mt={5} mb={20}>
               Szolgáltatásunk teljeskörű, az ingyenes tanácsadástól a kivitelezés befejezéséig tart.
             </Text>
-            <Text fontSize='2xl' fontWeight='500' color='primary' mt={5} mb={10}>
-              Mire számíthatsz, ha felveszed velünk a kapcsolatot?
-            </Text>
+
             <Image src={process_img} w='100%' />
           </GridItem>
           <GridItem colSpan={1}>
+            <Text fontSize='2xl' fontWeight='500' color='primary' mt={5} mb={10}>
+              Mire számíthatsz, ha felveszed velünk a kapcsolatot?
+            </Text>
             <Accordion.Root collapsible multiple size='lg' variant='plain'>
               {process.map((item) => (
                 <Accordion.Item

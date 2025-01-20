@@ -33,7 +33,9 @@ export const SegmentedControl = React.forwardRef<HTMLDivElement, SegmentedContro
       <For each={data}>
         {(item) => (
           <SegmentGroup.Item key={item.value} value={item.value} disabled={item.disabled}>
-            <SegmentGroup.ItemText>{item.label}</SegmentGroup.ItemText>
+            <SegmentGroup.ItemText hyphens='auto' fontSize={{ base: '11px', sm: 'sm' }}>
+              {item.label}
+            </SegmentGroup.ItemText>
             <SegmentGroup.ItemHiddenInput />
           </SegmentGroup.Item>
         )}

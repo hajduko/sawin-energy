@@ -12,40 +12,13 @@ const HomeTeam = () => {
           Egy jó berendezés csak félsiker!
         </Heading>
 
-        {/* Top Row: Team Members */}
-        <SimpleGrid columns={{ base: 2, md: 4 }} gap={6}>
-          {[
-            { name: 'Horváth Márkus', role: 'Operatív vezető' },
-            { name: 'Vesztergom Gábor', role: 'Kivitelezési vezető' },
-            { name: 'Mahan Shafiei', role: 'Gépész mérnök' },
-            { name: 'Hajdu Kolos', role: 'Mérnökinformatikus' },
-          ].map((member, index) => (
-            <VStack key={index} p={4} bg='light' borderRadius='lg' minHeight='216px'>
-              <Avatar size='2xl' h='96px' w='96px' name={member.name} mb={3} />
-              <Text fontWeight='600' fontSize='lg'>
-                {member.name}
-              </Text>
-              <Text color='primary' fontSize='md'>
-                {member.role}
-              </Text>
-            </VStack>
-          ))}
-        </SimpleGrid>
-
-        {/* Bottom Row: Highlighted Members */}
-        <SimpleGrid columns={{ base: 1, md: 2 }} gap={6} mt={8}>
+        <SimpleGrid columns={{ base: 1, md: 1 }} gap={6} mb={8}>
           {[
             {
               name: 'Dr. Jakab Tamás',
               role: 'Cégvezető, alapító',
               quote:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            },
-            {
-              name: 'Jakab Dávid',
-              role: 'Értékesítési vezető',
-              quote:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                'A mi Impact üzletünkben a társadalmi és környezeti hasznosság és a profit kéz a kézben járnak. Nem a GDP, hanem a GNH, az Össznemzeti Boldogság indexét akarjuk növelni.',
             },
           ].map((highlight, index) => (
             <VStack key={index} minH='287px' p={6} bg='light' borderRadius='lg' align='center'>
@@ -56,8 +29,37 @@ const HomeTeam = () => {
               <Text color='primary' fontSize='md'>
                 {highlight.role}
               </Text>
-              <Text mt={2} color='gray.800' fontSize='sm' hyphens='auto'>
+              <Text
+                mt={2}
+                color='gray.800'
+                fontSize='sm'
+                hyphens='auto'
+                textAlign='center'
+                w={{ base: '100%', md: '75%' }}>
                 <Em>"{highlight.quote}"</Em>
+              </Text>
+            </VStack>
+          ))}
+        </SimpleGrid>
+
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} gap={6}>
+          {[
+            { name: 'Horváth Márkus', role: 'Ügyvezető, operatív vezető' },
+            { name: 'Jakab Dávid', role: 'Tulajdonosi képviselő' },
+            { name: 'Kovács László', role: 'Értékesítési vezető' },
+            { name: 'Mahan Shafiei', role: 'Felülvizsgálat és fejlesztés' },
+            { name: 'Hajdu Kolos', role: 'Szoftverfejlesztés' },
+            { name: 'Konkolyi Péter', role: 'Építész szakág' },
+            { name: 'Vesztergom Gábor', role: 'Gépészeti szakág' },
+            { name: 'Jobbágy Norbert', role: 'Előgyártás' },
+          ].map((member, index) => (
+            <VStack key={index} p={4} bg='light' borderRadius='lg' minHeight='216px'>
+              <Avatar size='2xl' h='96px' w='96px' name={member.name} mb={3} />
+              <Text fontWeight='600' fontSize='lg'>
+                {member.name}
+              </Text>
+              <Text color='primary' fontSize='md'>
+                {member.role}
               </Text>
             </VStack>
           ))}

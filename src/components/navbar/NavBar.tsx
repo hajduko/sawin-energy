@@ -65,6 +65,14 @@ const NavBar = () => {
                 Hőszivattyú
               </Text>
             </Link>
+            <Link to='/applications/residential'>
+              <Text
+                color='dark'
+                fontSize='xl'
+                fontWeight={location.pathname === '/applications/residential' ? '700' : '400'}>
+                Lakossági pályázatok
+              </Text>
+            </Link>
           </Stack>
         </Collapsible.Content>
       </Collapsible.Root>

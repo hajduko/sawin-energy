@@ -10,7 +10,7 @@ const HomeHero = () => {
 
   return (
     <>
-      <Image src={bg} position='absolute' top={-200} minH='100vh' zIndex={-1} fit='cover' />
+      <Image src={bg} position='absolute' top={0} minH='100vh' zIndex={-1} fit='cover' />
       <Box h='100vh'>
         <Box bgColor='#062617B2' pt={{ base: 0, lg: 16 }}>
           <NavBar />
@@ -19,7 +19,7 @@ const HomeHero = () => {
           <Flex w={{ base: '95%', lg: '76rem' }} h='100%' flexDirection='column' align='center'>
             <Heading
               as='h1'
-              fontSize={{ base: '6xl', sm: '7xl', md: '80px', lg: '8xl' }}
+              fontSize={{ base: '6xl', sm: '7xl', md: '80px', lg: '95px' }}
               lineHeight={{ base: '60px', sm: '80px', md: '100px', lg: '130px' }}
               fontWeight='700'
               color='accent'
@@ -34,7 +34,7 @@ const HomeHero = () => {
               </Text>
             </Heading>
             <IconButton
-              mt={20}
+              mt={40}
               color='dark'
               bgColor='accent'
               rounded='full'

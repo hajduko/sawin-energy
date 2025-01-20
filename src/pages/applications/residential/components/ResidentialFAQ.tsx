@@ -7,23 +7,26 @@ const ResidentialFAQ = () => {
     {
       id: '0',
       question: 'Mi történik a meglévő gázkazánommal?',
-      answer:
-        'Felújításnál, ha később még hőszigetelni is fogjuk a házat mindenképpen bent hagyjuk a gázkazánt, ami nagy hidegbe rásegít a fűtésre, mivel a hőszivattyú teljesítményét a költségek csökkentése érdekében a hőszigetelt állapotra méretezzük. Kérésre egyéb esetben is bent hagyjuk a meglévő gázkazánt, azonban ez műszakilag nem indokolt.',
+      eoft: 'asdfasdfasdfasdfwerljchjmskdfhglkjhdgjkhsdfkgvmsdfngjkfdkjghfgjhsdflkjgh',
+      voft: 'asdffffffffffffffffffffffasdfasdfasdfasdfsdfghertnzberteimkjvdrhgvkjshlk',
     },
     {
       id: '1',
-      question: 'Hogyan lesz melegvizem télen-nyáron?',
-      answer: 'TODO',
+      question: 'Mi történik a meglévő gázkazánommal?',
+      eoft: '',
+      voft: '',
     },
     {
       id: '2',
-      question: 'Mekkora teljesítményű hőszivattyúra van szükségem?',
-      answer: 'TODO',
+      question: 'Mi történik a meglévő gázkazánommal?',
+      eoft: '',
+      voft: '',
     },
     {
       id: '3',
-      question: 'Mikor van szükségem a H tarifára?',
-      answer: 'TODO',
+      question: 'Mi történik a meglévő gázkazánommal?',
+      eoft: '',
+      voft: '',
     },
   ];
   return (
@@ -57,8 +60,20 @@ const ResidentialFAQ = () => {
                 </Text>
               </Accordion.ItemTrigger>
               <Accordion.ItemContent>
-                <Accordion.ItemBody pl={9} fontSize='md' color='#475467'>
-                  {item.answer}
+                <Accordion.ItemBody pl={9} pr={9} fontSize='md' color='#475467'>
+                  <Box borderColor='primary' borderWidth={2} borderRadius='20px' padding={6} mb={6}>
+                    <Heading color='black' mb={2}>
+                      EOFT
+                    </Heading>
+                    <Text>{item.eoft}</Text>
+                  </Box>
+
+                  <Box borderColor='primary' borderWidth={2} borderRadius='20px' padding={6}>
+                    <Heading color='black' mb={2}>
+                      VOFT
+                    </Heading>
+                    <Text>{item.voft}</Text>
+                  </Box>
                 </Accordion.ItemBody>
               </Accordion.ItemContent>
             </Accordion.Item>
