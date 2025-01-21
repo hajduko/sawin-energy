@@ -1,4 +1,4 @@
-import { Accordion, Box, Flex, Heading, Image, Text, List, SimpleGrid } from '@chakra-ui/react';
+import { Accordion, Box, Flex, Heading, Image, Text, SimpleGrid } from '@chakra-ui/react';
 import faq_minus from '../../../../assets/icons/faq_minus.svg';
 import faq_plus from '../../../../assets/icons/faq_plus.svg';
 
