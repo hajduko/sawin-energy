@@ -1,9 +1,13 @@
 import { Box, Button, Flex, Heading, Image, Text, Grid, GridItem } from '@chakra-ui/react';
 import NavBar from '../../../components/navbar/NavBar';
+
 import bg from '../../../assets/images/heatpump/heatpump_hero_bg.svg';
+import card_0 from '../../../assets/images/heatpump/card_0.png';
+import card_1 from '../../../assets/images/heatpump/card_1.png';
+import card_2 from '../../../assets/images/heatpump/card_2.jpg';
+import rect from '../../../assets/images/heatpump/rect_green.svg';
 
 import { FaArrowRight } from 'react-icons/fa';
-import HeroCards from './HeroCards';
 
 interface Props {
   dialogOpen: boolean;
@@ -11,6 +15,12 @@ interface Props {
 }
 
 const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
+  const cards = [
+    { text: 'Hűtés-fűtés', imageSrc: card_0 },
+    { text: 'Gépészeti tervezés', imageSrc: card_1 },
+    { text: 'Gyors kivitelezés', imageSrc: card_2 },
+  ];
+
   return (
     <>
       <Image position='absolute' right='0px' top='0px' src={bg} maxH='1000px' maxW='100%' zIndex='-1' />
@@ -18,16 +28,16 @@ const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
       <Box pt={{ base: 0, lg: 16 }}>
         <NavBar />
       </Box>
-      <Box w={{ base: '95%', lg: 'calc(50% + 38rem)' }} mr='0' ml='auto' mt={16} mb={20}>
+      <Box w={{ base: '95%', lg: '76rem' }} mx='auto' mt={16} mb={20}>
         <Grid
           templateColumns={{
             base: '1fr',
             lg: '560px 1fr',
           }}
-          maxW='1360px'
-          gap={16}>
-          <GridItem colSpan={1}>
-            <Flex direction='column' align={{ base: 'center', lg: 'flex-start' }}>
+          minHeight='440px'
+          gap={24}>
+          <GridItem colSpan={1} h='100%'>
+            <Flex direction='column' h='100%' align={{ base: 'center', lg: 'flex-start' }} justify='space-between'>
               <Heading as='h1' size='6xl' fontWeight='700' color='dark' lineHeight='shorter'>
                 Hőszivattyús rendszerek
                 <br />- az otthonodra szabva!
@@ -65,8 +75,46 @@ const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
               </Button>
             </Flex>
           </GridItem>
-          <GridItem colSpan={1} pr={4} overflow='hidden' display={{ base: 'none', lg: 'inline-block' }}>
-            <HeroCards />
+          <GridItem colSpan={1} overflow='hidden' display={{ base: 'none', lg: 'inline-block' }}>
+            <Flex flexDirection='row' gap={4} height='100%'>
+              {cards.map((card) => (
+                <Box
+                  key={card.text}
+                  flex={2}
+                  _hover={{ flex: '5' }}
+                  bgColor='primary'
+                  transition='flex 0.5s ease-in-out'
+                  rounded='2xl'
+                  overflow='hidden'
+                  bg='white'
+                  position='relative'
+                  className='group'
+                  p={6}>
+                  <Heading as='h3' size='4xl' fontWeight='500' fontStyle='italic' textWrap='wrap'>
+                    {card.text}
+                  </Heading>
+                  <Image
+                    src={rect}
+                    position='absolute'
+                    right={0}
+                    bottom='100%'
+                    _groupHover={{ bottom: '59%' }}
+                    transition='bottom 0.5s ease-in-out'
+                  />
+                  <Image
+                    src={card.imageSrc}
+                    position='absolute'
+                    bottom={0}
+                    left={0}
+                    fit='cover'
+                    h='100%'
+                    w='100%'
+                    _groupHover={{ h: '60%' }}
+                    transition='height 0.5s ease-in-out'
+                  />
+                </Box>
+              ))}
+            </Flex>
           </GridItem>
         </Grid>
       </Box>
