@@ -70,7 +70,7 @@ const Footer = () => {
               </Text>
               <Link to='/privacy'>
                 <Text color='white' fontSize='md'>
-                  Privacy
+                  Adatvédelmi nyilatkozat
                 </Text>
               </Link>
             </Flex>

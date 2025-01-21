@@ -91,7 +91,7 @@ const HeatPumpProducts = () => {
           Termékek
         </Heading>
         <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' mb={6}>
-          Egy megbízható hőszivattyús rendszer csak magas minőségű alapanyagokból készülhet!
+          Egy megbízható hőszivattyús rendszer csak magas minőségű eszközökből készülhet!
         </Heading>
         {products.map((prod) => (
           <Box
@@ -153,10 +153,17 @@ const HeatPumpProducts = () => {
                       h='56px'
                       w='56px'
                       mr={6}
-                      onClick={prev}>
+                      onClick={prev}
+                      _hover={{ bgColor: 'accent', border: '0' }}>
                       <Image src={left_arrow} />
                     </IconButton>
-                    <IconButton rounded='full' bgColor='primary' h='56px' w='56px' onClick={next}>
+                    <IconButton
+                      rounded='full'
+                      bgColor='primary'
+                      h='56px'
+                      w='56px'
+                      onClick={next}
+                      _hover={{ bgColor: 'accent' }}>
                       <Image src={right_arrow} />
                     </IconButton>
                   </Flex>

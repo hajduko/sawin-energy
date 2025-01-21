@@ -72,7 +72,7 @@ const HeatPumpTimeline = () => {
                 Ingatlan felmérés és tervezés
               </TimelineTitle>
               <Text textStyle='md' color='white' pb={2}>
-                Felmérjük az ingatlanod és EZ szoftverünk segítségével megtervezzük a hőszivattyús gépészeti
+                Felmérjük az ingatlanod és Impact szoftverünk segítségével megtervezzük a hőszivattyús gépészeti
                 rendszeredet. Pontos méretezésünk alapja egy összetett hőveszteség számítás, melyet energetikus
                 szakembereink végeznek. A felmérés után pontosítjuk az előzetes rezsi és megtérülés számításainkat, így
                 pontosan tudhatod mire számíthatsz miután a rendszer működésbe állt.

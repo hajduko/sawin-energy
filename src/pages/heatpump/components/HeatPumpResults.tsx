@@ -25,7 +25,7 @@ const HeatPumpResults = () => {
               365 nap
             </Heading>
             <Text fontSize='lg' color='white'>
-              Fűt és hűt, ezért az év minden napján tökéletes klímát biztosít
+              fűt és hűt, ezért az év minden napján tökéletes klímát biztosít
             </Text>
           </Box>
           <Box textAlign='center'>
@@ -33,7 +33,7 @@ const HeatPumpResults = () => {
               5x
             </Heading>
             <Text fontSize='lg' color='white'>
-              Hatékonyabb, mint a modern kondenzációs kazánok
+              hatékonyabb, mint a modern kondenzációs kazánok
             </Text>
           </Box>
         </Flex>

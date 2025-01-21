@@ -26,3 +26,8 @@
 .chakra-segment-group__indicator {
     background-color: #017649;
 }
+
+.home-who-grid:hover .home-who-item:not(:hover) { opacity: 0.7; }
+
+.heat-grid:hover .heat-grid-item:not(:hover) { opacity: 0.4; }
+

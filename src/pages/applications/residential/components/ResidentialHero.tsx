@@ -3,10 +3,15 @@ import NavBar from '../../../../components/navbar/NavBar';
 import bg from '../../../../assets/images/residential/hero_bg.jpg';
 import { FaArrowRight } from 'react-icons/fa';
 
-const ResidentialHero = () => {
+interface Props {
+  dialogOpen: boolean;
+  setDialogOpen: (value: boolean) => void;
+}
+
+const ResidentialHero = ({ dialogOpen, setDialogOpen }: Props) => {
   return (
     <Box bgImage={`url(${bg})`} width='100%' bgRepeat='no-repeat' bgSize='cover' minH='730px'>
-      <Box bgColor='#062617B2' minH='730px'>
+      <Box bgColor='#062617BF' minH='730px'>
         <Box pt={{ base: 0, lg: 16 }}>
           <NavBar />
         </Box>
@@ -33,7 +38,8 @@ const ResidentialHero = () => {
                 pr={2}
                 color={'dark'}
                 fontSize='lg'
-                fontWeight='600'>
+                fontWeight='600'
+                onClick={() => setDialogOpen(!dialogOpen)}>
                 Jelentkezem a tanácsadásra!
                 <Box
                   bg={'light'}

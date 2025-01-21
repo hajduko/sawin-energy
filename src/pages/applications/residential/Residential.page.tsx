@@ -18,7 +18,7 @@ const Residential = () => {
         <title>Lakossági pályázatok - Sawin Energy</title>
       </Helmet>
       <Popup open={dialogOpen} setOpen={setDialogOpen} />
-      <ResidentialHero />
+      <ResidentialHero dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} />
       <ResidentialAvailable />
       <ResidentialCTA dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} />
       <ResidentialDiscounts />

@@ -20,8 +20,9 @@ const HomeWho = () => {
             sm: '1fr 1fr',
             md: '1fr 1fr 1fr',
           }}
-          gap={6}>
-          <GridItem colSpan={1}>
+          gap={6}
+          className='home-who-grid'>
+          <GridItem colSpan={1} className='home-who-item' transition={'opacity 0.3s ease-in-out'}>
             <Card.Root width='100%' minHeight='364px' rounded='20px' bgColor='primary'>
               <Card.Body>
                 <IconButton width='56px' height='56px' rounded='full' bgColor='accent' cursor='default' mb={8}>
@@ -38,7 +39,7 @@ const HomeWho = () => {
               </Card.Body>
             </Card.Root>
           </GridItem>
-          <GridItem colSpan={1}>
+          <GridItem colSpan={1} className='home-who-item' transition={'opacity 0.3s ease-in-out'}>
             <Card.Root width='100%' minHeight='364px' rounded='20px' bgColor='primary'>
               <Card.Body>
                 <IconButton width='56px' height='56px' rounded='full' bgColor='accent' cursor='default' mb={8}>
@@ -55,7 +56,7 @@ const HomeWho = () => {
               </Card.Body>
             </Card.Root>
           </GridItem>
-          <GridItem colSpan={1}>
+          <GridItem colSpan={1} className='home-who-item' transition={'opacity 0.3s ease-in-out'}>
             <Card.Root width='100%' minHeight='364px' rounded='20px' bgColor='primary'>
               <Card.Body>
                 <IconButton width='56px' height='56px' rounded='full' bgColor='accent' cursor='default' mb={8}>

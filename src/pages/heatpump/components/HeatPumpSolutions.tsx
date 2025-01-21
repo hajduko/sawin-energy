@@ -1,7 +1,7 @@
 import { Badge, Box, Flex, Float, Grid, GridItem, Heading, IconButton, Image, Text } from '@chakra-ui/react';
 import thermometer from '../../../assets/icons/thermometer.svg';
 import tool from '../../../assets/icons/tool.svg';
-import sol_1 from '../../../assets/images/heatpump/sol_1.png';
+import sol_1 from '../../../assets/images/heatpump/sol_1.jpg';
 import sol_2 from '../../../assets/images/heatpump/sol_2.jpeg';
 
 const HeatPumpSolutions = () => {
@@ -21,8 +21,9 @@ const HeatPumpSolutions = () => {
           }}
           minHeight='630px'
           mb={20}
-          gap={8}>
-          <GridItem mb={{ base: 16, md: 0 }}>
+          gap={8}
+          className='heat-grid'>
+          <GridItem mb={{ base: 16, md: 0 }} className='heat-grid-item' transition={'opacity 0.3s ease-in-out'}>
             <Box rounded='2xl' bgColor='white' height='100%' position='relative' maxW='600px' mx='auto'>
               <Float placement='top-center'>
                 <IconButton width='80px' height='80px' rounded='full' bgColor='accent' cursor='default'>
@@ -56,7 +57,7 @@ const HeatPumpSolutions = () => {
               </Box>
             </Box>
           </GridItem>
-          <GridItem>
+          <GridItem className='heat-grid-item' transition={'opacity 0.3s ease-in-out'}>
             <Box rounded='2xl' bgColor='white' height='100%' position='relative' maxW='600px' mx='auto'>
               <Float placement='top-center'>
                 <IconButton width='80px' height='80px' rounded='full' bgColor='accent' cursor='default'>

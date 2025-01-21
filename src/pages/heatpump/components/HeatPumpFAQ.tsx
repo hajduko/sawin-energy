@@ -33,10 +33,10 @@ const HeatPumpFAQ = () => {
     <Flex bg='#ebedf0' justify='center'>
       <Box w={{ base: '95%', md: '48rem' }} mb={20}>
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
-          FAQ
+          Gyakran ismételt kérdések
         </Heading>
         <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' mb={6}>
-          Teremtsünk értéket közösen!
+          Hőszivattyú tudástár
         </Heading>
 
         <Accordion.Root collapsible multiple size='lg' variant='plain' defaultValue={['0']}>

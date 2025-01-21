@@ -78,7 +78,7 @@ const ResidentialDiscounts = () => {
                       <Image src={file_pen_outline} />
                     </IconButton>
                     <Text fontSize='22px' fontWeight='600' color='white' ml={5}>
-                      Hiteldokumentumok elkészítése
+                      Pályázati dokumentumok elkészítése
                     </Text>
                   </Flex>
                 </Flex>
@@ -99,8 +99,7 @@ const ResidentialDiscounts = () => {
             <GridItem colSpan={1}>
               <Flex flexDirection='column' h='100%' justify='center'>
                 <Heading as='h3' size='5xl' fontWeight='600' color='white'>
-                  Verhetetlen
-                  <br /> áron adjuk
+                  Verhetetlen áron kivitelezzük
                 </Heading>
               </Flex>
             </GridItem>

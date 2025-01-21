@@ -16,9 +16,9 @@ interface Props {
 
 const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
   const cards = [
-    { text: 'Hűtés-fűtés', imageSrc: card_0 },
-    { text: 'Gépészeti tervezés', imageSrc: card_1 },
-    { text: 'Gyors kivitelezés', imageSrc: card_2 },
+    { text: 'Hőszivattyús rendszerek', imageSrc: card_0 },
+    { text: 'Gépészeti csomagok', imageSrc: card_1 },
+    { text: 'Hőszivattyús hőleadók', imageSrc: card_2 },
   ];
 
   return (

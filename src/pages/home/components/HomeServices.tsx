@@ -1,7 +1,7 @@
 import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs } from '@chakra-ui/react';
 
 import solar from '../../../assets/images/home/solar.jpg';
-import mechanical from '../../../assets/images/home/mechanical.png';
+import heatpump from '../../../assets/images/home/heatpump.png';
 import insulation from '../../../assets/images/home/insulation.jpeg';
 import ecar from '../../../assets/images/home/ecar.jpg';
 
@@ -33,10 +33,10 @@ const HomeServices = () => {
       ],
     },
     {
-      title: 'Gépészeti megoldásaink',
-      value: 'mechanical',
+      title: 'Hőszivattyús rendszerek',
+      value: 'heatpump',
       icon: settings_outline,
-      img: mechanical,
+      img: heatpump,
       cards: [
         {
           title: 'Lakossági és ipari hőszivattyúk',
@@ -109,7 +109,10 @@ const HomeServices = () => {
         <Tabs.Root defaultValue='solar' variant='enclosed' fitted orientation='horizontal'>
           <Tabs.List>
             {services.map((service) => (
-              <Tabs.Trigger key={service.value} value={service.value}>
+              <Tabs.Trigger
+                key={service.value}
+                value={service.value}
+                _selected={{ color: 'accent', bgColor: 'primary' }}>
                 {service.title}
               </Tabs.Trigger>
             ))}

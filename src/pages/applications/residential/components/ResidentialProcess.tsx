@@ -26,7 +26,7 @@ const ResidentialProcess = () => {
     },
     {
       id: '4',
-      title: 'Megtörténik a kivitelezés, így élvezheted egy modernebb otthon kényelmét',
+      title: 'Megtörténik a kivitelezés, és már élvezheted is egy modernebb otthon kényelmét',
       text: 'A pályázat elbírálása után kollégáink elvégzik a kivitelezést. Minden rendszerünk garanciális és garancia időn túli szervizét is cégünk vállalja, mivel minden általunk forgalmazott termék gyári szervize is vagyunk.',
     },
   ];
