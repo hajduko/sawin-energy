@@ -112,7 +112,7 @@ const ResidentialFAQ = () => {
           Pályázati tudástár
         </Heading>
 
-        <Accordion.Root collapsible multiple size='lg' variant='plain' defaultValue={['0']}>
+        <Accordion.Root collapsible multiple size='lg' variant='plain'>
           {faqs.map((item) => (
             <Accordion.Item
               key={item.id}
