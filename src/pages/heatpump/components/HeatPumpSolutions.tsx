@@ -2,7 +2,7 @@ import { Badge, Box, Flex, Float, Grid, GridItem, Heading, IconButton, Image, Te
 import thermometer from '../../../assets/icons/thermometer.svg';
 import tool from '../../../assets/icons/tool.svg';
 import sol_1 from '../../../assets/images/heatpump/sol_1.png';
-import sol_2 from '../../../assets/images/heatpump/sol_2.jpg';
+import sol_2 from '../../../assets/images/heatpump/sol_2.jpeg';
 
 const HeatPumpSolutions = () => {
   return (

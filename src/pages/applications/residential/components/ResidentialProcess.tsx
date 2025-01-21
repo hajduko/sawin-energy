@@ -6,43 +6,28 @@ const ResidentialProcess = () => {
   const process = [
     {
       id: '0',
-      title: '24 órán belül jelentkezünk!',
-      text: 'Személyes tanácsadód a jelentkezést követően azonnal felveszi veled a kapcsolatot.',
+      title: 'Jelentkezz az ingyenes tanácsadásra',
+      text: 'Jelentkezz pályázati tanácsadásunkra és akár jelentkezésed másnapján ingyenes előzetes tanácsadáson vehetsz részt, hogy megismerjük az igényeidet és te is megismerhesd a lehetőségeidet. A tanácsadás folyamán minden pályázattal kapcsolatos kérdésedre választ kapsz, valamint megvizsgáljuk, hogy melyik pályázatra vagy jogosult és anyagilag hogyan jársz a legjobban a kívánt beruházás megvalósításakor.',
     },
     {
       id: '1',
-      title: 'Ingyenes tanácsadásban vehetsz részt!',
-      text: 'Akár másnap ingyenes előzetes tanácsadáson vehetsz részt, hogy megismerjük az igényeidet és te is megismerhesd a lehetőségeidet. A tanácsadás folyamán minden kérdésedre választ kapsz.',
+      title: 'Meghatározzuk a számodra tökéletes beruházást',
+      text: 'Egy helyszíni ingatlan felmérést végzünk, ami alapján pontos számításokat készítünk a számodra tökéletes beruházásokról és meghatározzuk ezek bekerülését, megtérülését, pontos méretezését, valamint előzetesen elvégezzük a hozzájuk tartozó energetikai és pályázati számításokat is.',
     },
     {
       id: '2',
-      title: 'Meghatározzuk a tökéletes beruházást!',
-      text: 'Egy ingatlan felmérést végzünk, ami után 3 munkanapon belül pontos számításokat készítünk a számodra tökéletes beruházásokra és meghatározzuk ezek bekerülését, megtérülését, pontos méretezését, valamint előzetesen elvégezzük a hozzájuk tartozó energetikai számításokat is.',
+      title: 'Részletes ajánlatot készítünk a pályázathoz és szerződünk',
+      text: 'Ajánlatunk a kivitelezés és termékek költségén túl tartalmazza többek között a pályázati támogatás pontos részleteit, a havi hitel törlesztést, az új havi rezsi összegét és az ingatlan várható értéknövekményét. Ezen felül pontos energetikai dokumentációt is tartalmaz, vagyis az ingatlan jelenlegi energetikai besorolását, az energetikai javulási százalékot és az új energetikai besorolást. Amennyiben elfogadod az ajánlatot leszerződjük a kivitelezést.',
     },
     {
       id: '3',
-      title: 'Elmondjuk mennyit spórolhatsz!',
-      text: 'Tervezőink ismertetik a felmérés alapján elkészített különféle kalkulációk eredményét és közösen kiválasztjuk a megvalósításra kerülő beruházást.',
+      title: 'Beadjuk a pályázati dokumentumokat és elkészítjük a kiviteli terveket',
+      text: 'A szerződés megkötése után elkészítjük a pontos kiviteli terveket, valamint veled közösen szakértőink elkészítik a pályázatok beadásához szükséges összes dokumentációt. Majd a pályázat beadásra kerül.',
     },
     {
       id: '4',
-      title: 'Részletes ajánlatot készítünk!',
-      text: '3 napon belül megküldött ajánlatunk tartalmazza többek között az eredeti energetikai besorolást az energetikai javulási százalékot, az új energetikai besorolást, a beruházás árát, a havi törlesztés és az új havi rezsi összegét és az ingatlan várható értéknövekményét.',
-    },
-    {
-      id: '5',
-      title: 'Ellenőrizzük a beruházásodat és szerződünk!',
-      text: 'Szerződéskötés előtt újra ellenőrizzük ingatlanod technikai állapotát, és a felmérés pontosságát. Amennyiben minden rendben, leszerződünk a kivitelezési munkákra.',
-    },
-    {
-      id: '6',
-      title: 'Elkészítjük a kiviteli terveket és technikai dokumentációkat!',
-      text: 'Tervezőink elkészítik a beruházásod pontos kiviteli terveit és a pályázathoz szükséges dokumentumokat (pl. energetikai tanusítványok).',
-    },
-    {
-      id: '7',
-      title: 'Megvalósítjuk a beruházást!',
-      text: 'Szerződést követő 30 napon belül leszállítjuk az összes terméket a kivitelezéshez és a szerződés szerint ütemezve hozzáfogunk otthonod energetikai fejlesztéséhez.',
+      title: 'Megtörténik a kivitelezés, így élvezheted egy modernebb otthon kényelmét',
+      text: 'A pályázat elbírálása után kollégáink elvégzik a kivitelezést. Minden rendszerünk garanciális és garancia időn túli szervizét is cégünk vállalja, mivel minden általunk forgalmazott termék gyári szervize is vagyunk.',
     },
   ];
 

@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text, Image, Grid, GridItem, List, IconButton } from '@chakra-ui/react';
-import us from '../../../assets/images/home/us.png';
+import us from '../../../assets/images/home/us.jpeg';
 import rocket from '../../../assets/icons/rocket.svg';
 import magnifying_glass from '../../../assets/icons/magnifying_glass.svg';
 import check_full from '../../../assets/icons/check-full.svg';
@@ -41,7 +41,7 @@ const HomeUs = () => {
             </GridItem>
           </Grid>
 
-          <Image src={us} />
+          <Image src={us} rounded='20px' fit='cover' maxHeight='550px' width='100%' />
         </Box>
       </Flex>
       <Flex bg='dark' justify='center'>

@@ -3,6 +3,9 @@ import left_arrow from '../../../assets/icons/left_arrow.svg';
 import right_arrow from '../../../assets/icons/right_arrow.svg';
 import check_circle from '../../../assets/icons/check-circle.svg';
 import prod1 from '../../../assets/images/heatpump/prod1.png';
+import prod2 from '../../../assets/images/heatpump/prod2.png';
+import prod3 from '../../../assets/images/heatpump/prod3.png';
+import prod4 from '../../../assets/images/heatpump/prod4.jpg';
 import { useState } from 'react';
 
 interface IProduct {
@@ -32,7 +35,7 @@ const HeatPumpProducts = () => {
     {
       name: 'Fan-Coil',
       id: 1,
-      img: prod1,
+      img: prod2,
       props: [
         { title: 'Hőszivattyúk tökéletes párja', desc: 'Fűtésre és hűtésre is képes hőleadó.' },
         { title: '0,8-5,5 kW', desc: 'A legkisebb szobáktól az igazán nagy terekig kiszolgál.' },
@@ -42,23 +45,26 @@ const HeatPumpProducts = () => {
     {
       name: 'Integrált mennyezeti fűtés',
       id: 2,
-      img: prod1,
+      img: prod3,
       props: [
-        { title: '2in1', desc: 'Mennyezeti vagy Fal, Fűtés és Hűtés' },
         {
-          title: 'Integrált rendszer',
-          desc: 'Szigetelés+csőhálózat+záró gipszkarton, így egy azonnal festhető mennyezetet kapsz.',
+          title: 'Alacsony telepítési költség',
+          desc: 'A panelek felhelyezés után a rendszer azonnal vakolható.',
         },
         {
           title: 'Kiemelkedően költséghatékony',
-          desc: 'Alacsony hőmérsékletű rendszer=olcsó üzemeltetési költségek Gyors szerelés= alacsonyabb költségű kivitelezés.',
+          desc: 'A rendszer alacsony hőmérsékletű, így a fűtési költségek alacsonyabbak.',
+        },
+        {
+          title: 'Nagyon sokoldalú',
+          desc: 'Mennyezeti vagy falfűtésként is telepíthető, és fűtésre-hűtésre is képes rendszer.',
         },
       ],
     },
     {
       name: 'Okos vezérlés',
       id: 3,
-      img: prod1,
+      img: prod4,
       props: [
         { title: 'Zónák kialakítása', desc: 'Akár szobánként is külön vezérelhető fűtés' },
         {

@@ -1,5 +1,5 @@
 import { Badge, Box, Button, Flex, Grid, GridItem, Heading, Image, Text } from '@chakra-ui/react';
-import cta_bg from '../../../assets/images/heatpump/cta_bg.png';
+import cta_bg from '../../../assets/images/heatpump/cta_bg.jpeg';
 import building from '../../../assets/icons/building.svg';
 import lightning from '../../../assets/icons/lightning.svg';
 import bar_chart_square from '../../../assets/icons/bar-chart-square.svg';
