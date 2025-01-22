@@ -27,7 +27,7 @@ const ResidentialAvailable = () => {
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary' mt={20}>
           Elérhető pályázatok
         </Heading>
-        <Heading as='h3' size='5xl' textAlign='center' fontWeight='600'>
+        <Heading as='h3' size={{ base: '4xl', sm: '5xl' }} textAlign='center' fontWeight='600'>
           Energetikai modernizáció az otthonfelújítási támogatások segítségével
         </Heading>
         <Text fontSize='xl' textAlign='center' fontWeight='500' maxW='46rem' width='100%' mx='auto' mt={5} mb={20}>
@@ -48,10 +48,10 @@ const ResidentialAvailable = () => {
             <Box rounded='2xl' bgColor='white' height='100%' position='relative' maxW='600px' mx='auto'>
               <Box height='220px' bgImage={`url(${sol_1})`} bgSize='cover' bgPos='center' roundedTop='2xl' />
               <Box minHeight='260px' p={6}>
-                <Heading as='h4' size='3xl' fontWeight='600' mb={4}>
+                <Heading as='h4' size={{ base: '2xl', sm: '3xl' }} fontWeight='600' mb={4}>
                   Energetikai Otthonfelújítási Támogatás
                 </Heading>
-                <Text fontSize='lg'>
+                <Text fontSize={{ base: 'md', sm: 'lg' }}>
                   Az Energetikai Otthonfelújítási Támogatásban (EOFT) csak 2007 január 1. előtt épült ingatlanok
                   vehetnek részt és azokon mindenképpen energetikai korszerűsítést kell végrehajtani. A megvalósított
                   beruházással minimum 30%-os energetikai megtakarítást kell elérni, amit energetikai tanúsítványokkal
@@ -78,6 +78,16 @@ const ResidentialAvailable = () => {
                     ))}
                   </Table.Body>
                 </Table.Root>
+                {/* <Box display={{ base: 'block', sm: 'none' }}>
+                  {items_1.map((item) => (
+                    <Flex key={item.id} justify='space-between' mb={2}>
+                      <Text fontSize='lg' fontWeight='600'>
+                        {item.name}
+                      </Text>
+                      <Text fontSize='lg'>{item.data}</Text>
+                    </Flex>
+                  ))}
+                </Box> */}
               </Box>
             </Box>
           </GridItem>

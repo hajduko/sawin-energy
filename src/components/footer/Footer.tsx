@@ -15,7 +15,10 @@ const Footer = () => {
               <Link to='/'>
                 <Image src={logo} height='25px' mb={8} />
               </Link>
-              <Flex gap={10}>
+              <Flex
+                gap={{ base: 4, md: 10 }}
+                flexDirection={{ base: 'column', md: 'row' }}
+                align={{ base: 'center', md: 'flex-start' }}>
                 <Link to='/'>
                   <Text color='white' fontSize='md' fontWeight={location.pathname === '/' ? '700' : '400'}>
                     Főoldal

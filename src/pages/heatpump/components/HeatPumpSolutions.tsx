@@ -11,7 +11,7 @@ const HeatPumpSolutions = () => {
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary' mt={20}>
           Hőszivattyús rendszerek
         </Heading>
-        <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' mb={20}>
+        <Heading as='h3' size={{ base: '4xl', sm: '5xl' }} textAlign='center' fontWeight='600' mb={20}>
           A te projektedhez is van megoldásunk
         </Heading>
         <Grid
@@ -32,7 +32,7 @@ const HeatPumpSolutions = () => {
               </Float>
               <Box height='220px' bgImage={`url(${sol_1})`} bgSize='cover' bgPos='center' roundedTop='2xl' />
               <Box minHeight='260px' p={6}>
-                <Heading as='h4' size='3xl' fontWeight='600' mb={8}>
+                <Heading as='h4' size='3xl' fontWeight='600' mb={8} hyphens='auto'>
                   Kényelem, kompromisszumok nélkül
                 </Heading>
                 <Text fontSize='lg'>

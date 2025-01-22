@@ -35,7 +35,8 @@ const ScrollToTop = () => {
       rounded='full'
       h='56px'
       w='56px'
-      onClick={() => scrollToTop()}>
+      onClick={() => scrollToTop()}
+      zIndex={999}>
       <Image src={arrow} />
     </IconButton>
   );

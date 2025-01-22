@@ -8,7 +8,7 @@ const HomeUs = () => {
   return (
     <>
       <Flex bg='#ebedf0' justify='center'>
-        <Box w={{ base: '95%', lg: '76rem' }} mb={20} mt={20}>
+        <Box w={{ base: '95%', lg: '76rem' }} mb={{ base: 12, md: 20 }} mt={{ base: 12, md: 20 }}>
           <Heading as='h2' size='md' fontWeight='600' color='primary' mb={2}>
             Rólunk
           </Heading>
@@ -19,7 +19,7 @@ const HomeUs = () => {
               md: '60fr 55fr',
             }}
             gap={{ base: 0, md: 16 }}
-            mb={20}>
+            mb={{ base: 12, md: 20 }}>
             <GridItem colSpan={1}>
               <Heading as='h3' size='5xl' fontWeight='600' color='black' mb={6} lineHeight={1.2}>
                 Megtérülő befektetések,
@@ -45,18 +45,18 @@ const HomeUs = () => {
         </Box>
       </Flex>
       <Flex bg='dark' justify='center'>
-        <Box w={{ base: '95%', lg: '76rem' }} mb={20} mt={20}>
+        <Box w={{ base: '95%', lg: '76rem' }} mb={{ base: 12, md: 20 }} mt={{ base: 12, md: 20 }}>
           <Grid
             templateColumns={{
               base: '1fr',
               md: '1fr 1fr',
             }}
-            gap={{ base: 16, md: 20, lg: 32 }}>
+            gap={{ base: 10, lg: 32 }}>
             <GridItem colSpan={1}>
               <IconButton width='56px' height='56px' rounded='full' bgColor='accent' cursor='default' mb={4}>
                 <Image src={rocket} width='20px' height='20px' />
               </IconButton>
-              <Heading as='h2' size='5xl' fontWeight='600' mb={16} color='light'>
+              <Heading as='h2' size='5xl' fontWeight='600' mb={{ base: 8, md: 16 }} color='light'>
                 Mit adunk ügyfeleinknek?
               </Heading>
               <List.Root variant='plain'>
@@ -108,7 +108,7 @@ const HomeUs = () => {
               <IconButton width='56px' height='56px' rounded='full' bgColor='accent' cursor='default' mb={4}>
                 <Image src={magnifying_glass} width='20px' height='20px' />
               </IconButton>
-              <Heading as='h2' size='5xl' fontWeight='600' mb={16} color='light'>
+              <Heading as='h2' size='5xl' fontWeight='600' mb={{ base: 8, md: 16 }} color='light'>
                 Mi különböztet meg minket?
               </Heading>
               <List.Root variant='plain'>

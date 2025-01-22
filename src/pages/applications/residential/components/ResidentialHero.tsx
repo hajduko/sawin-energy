@@ -17,8 +17,19 @@ const ResidentialHero = ({ dialogOpen, setDialogOpen }: Props) => {
         </Box>
         <Flex justify='center' align='center' minH={{ base: 'calc(100% - 71px)', lg: 'calc(100% - 135px)' }}>
           <Box w={{ base: '95%', lg: '76rem' }} h='100%' pt={20} pb={36}>
-            <Flex w={{ base: '100%', lg: '62%' }} h='100%' flexDirection='column' justify='space-between'>
-              <Heading as='h1' size='6xl' fontWeight='700' color='white' lineHeight='shorter'>
+            <Flex
+              w={{ base: '100%', lg: '62%' }}
+              h='100%'
+              flexDirection='column'
+              justify='space-between'
+              align={{ base: 'center', lg: 'flex-start' }}>
+              <Heading
+                as='h1'
+                size={{ base: '5xl', sm: '6xl' }}
+                fontWeight='700'
+                color='white'
+                lineHeight='shorter'
+                textAlign={{ base: 'center', lg: 'left' }}>
                 Hozd ki a maximumot az Otthonfelújítási Támogatásból!
               </Heading>
               <Text fontSize='lg' color='white' mt={10} textAlign={{ base: 'center', lg: 'left' }} lineHeight='tall'>
@@ -35,7 +46,7 @@ const ResidentialHero = ({ dialogOpen, setDialogOpen }: Props) => {
                 w={'fit-content'}
                 rounded={'8px'}
                 pl={4}
-                pr={2}
+                pr={{ base: 4, sm: 2 }}
                 color={'dark'}
                 fontSize='lg'
                 fontWeight='600'
@@ -47,7 +58,7 @@ const ResidentialHero = ({ dialogOpen, setDialogOpen }: Props) => {
                   w={'47px'}
                   rounded='5px'
                   ml={4}
-                  display='flex'
+                  display={{ base: 'none', sm: 'flex' }}
                   alignItems='center'
                   justifyContent='center'>
                   <FaArrowRight color='dark' />

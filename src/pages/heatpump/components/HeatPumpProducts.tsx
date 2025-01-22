@@ -90,7 +90,7 @@ const HeatPumpProducts = () => {
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
           Termékek
         </Heading>
-        <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' mb={6}>
+        <Heading as='h3' size={{ base: '4xl', sm: '5xl' }} textAlign='center' fontWeight='600' mb={6}>
           Egy megbízható hőszivattyús rendszer csak magas minőségű eszközökből készülhet!
         </Heading>
         {products.map((prod) => (

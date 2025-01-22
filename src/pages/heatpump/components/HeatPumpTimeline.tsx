@@ -14,7 +14,7 @@ const HeatPumpTimeline = () => {
         <Heading as='h2' size='md' fontWeight='600' color='primary'>
           Teljeskörű szolgáltatás
         </Heading>
-        <Heading as='h3' size='5xl' fontWeight='600' mb={6} color='white'>
+        <Heading as='h3' size={{ base: '4xl', sm: '5xl' }} fontWeight='600' mb={6} color='white'>
           Átlátható folyamat a tanácsadástól a garanciáig!
         </Heading>
 

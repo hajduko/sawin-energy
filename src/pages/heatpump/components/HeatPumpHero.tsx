@@ -38,7 +38,13 @@ const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
           gap={24}>
           <GridItem colSpan={1} h='100%'>
             <Flex direction='column' h='100%' align={{ base: 'center', lg: 'flex-start' }} justify='space-between'>
-              <Heading as='h1' size='6xl' fontWeight='700' color='dark' lineHeight='shorter'>
+              <Heading
+                as='h1'
+                size='6xl'
+                fontWeight='700'
+                color='dark'
+                lineHeight='shorter'
+                textAlign={{ base: 'center', lg: 'left' }}>
                 Hőszivattyús rendszerek
                 <br />- az otthonodra szabva!
               </Heading>
@@ -56,7 +62,7 @@ const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
                 w={'fit-content'}
                 rounded={'8px'}
                 pl={4}
-                pr={2}
+                pr={{ base: 4, sm: 2 }}
                 fontSize='lg'
                 fontWeight='600'
                 onClick={() => setDialogOpen(!dialogOpen)}>
@@ -67,7 +73,7 @@ const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
                   w={'47px'}
                   rounded='5px'
                   ml={4}
-                  display='flex'
+                  display={{ base: 'none', sm: 'flex' }}
                   alignItems='center'
                   justifyContent='center'>
                   <FaArrowRight color='black' />

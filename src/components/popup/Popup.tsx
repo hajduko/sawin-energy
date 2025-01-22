@@ -36,9 +36,9 @@ const Popup = ({ open, setOpen }: Props) => {
     <DialogRoot lazyMount open={open} onOpenChange={(e) => setOpen(e.open)} size='xl' scrollBehavior='inside'>
       <DialogContent p={6} rounded='3xl'>
         <Image src={popup}></Image>
-        <Flex flexDirection='column' width='545px' mx='auto' align='center' pt={6}>
+        <Flex flexDirection='column' maxWidth='545px' mx='auto' align='center' pt={6}>
           <Image src={logo} height='23px' fit='contain' />
-          <DialogHeader textAlign='center' fontSize='3xl' fontWeight='600'>
+          <DialogHeader textAlign='center' fontSize='3xl' fontWeight='600' lineHeight={1.2}>
             Teremtsünk értéket közösen!
           </DialogHeader>
           <Text textAlign='center' mb={4} fontSize='md'>
@@ -47,7 +47,7 @@ const Popup = ({ open, setOpen }: Props) => {
           </Text>
         </Flex>
         <DialogBody p={0}>
-          <Flex flexDirection='column' width='393px' mx='auto' align='center' pt={2}>
+          <Flex flexDirection='column' maxWidth='393px' mx='auto' align='center' pt={2}>
             <form onSubmit={handleSubmit(onSubmit)}>
               <Field label='Név' pb={4}>
                 <Input

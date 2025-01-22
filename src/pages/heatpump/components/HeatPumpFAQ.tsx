@@ -35,7 +35,7 @@ const HeatPumpFAQ = () => {
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
           Gyakran ismételt kérdések
         </Heading>
-        <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' mb={6}>
+        <Heading as='h3' size={{ base: '4xl', sm: '5xl' }} textAlign='center' fontWeight='600' mb={6}>
           Hőszivattyú tudástár
         </Heading>
 
@@ -50,12 +50,12 @@ const HeatPumpFAQ = () => {
               _last={{ mb: 0 }}>
               <Accordion.ItemTrigger>
                 <Accordion.ItemIndicator display={{ base: 'block', _open: 'none' }}>
-                  <Image src={faq_plus} h='24px' w='24px' />
+                  <Image src={faq_plus} minW='24px' />
                 </Accordion.ItemIndicator>
                 <Accordion.ItemIndicator display={{ base: 'none', _open: 'block' }}>
-                  <Image src={faq_minus} h='24px' w='24px' />
+                  <Image src={faq_minus} minW='24px' />
                 </Accordion.ItemIndicator>
-                <Text fontSize='xl' fontWeight='500' color='black' textAlign='left'>
+                <Text fontSize={{ base: 'lg', sm: 'xl' }} fontWeight='500' color='black' textAlign='left'>
                   {item.question}
                 </Text>
               </Accordion.ItemTrigger>

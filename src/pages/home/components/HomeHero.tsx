@@ -19,7 +19,7 @@ const HomeHero = () => {
           <Flex w={{ base: '95%', lg: '76rem' }} h='100%' flexDirection='column' align='center'>
             <Heading
               as='h1'
-              fontSize={{ base: '6xl', sm: '7xl', md: '80px', lg: '95px' }}
+              fontSize={{ base: '5xl', sm: '7xl', md: '80px', lg: '95px' }}
               lineHeight={{ base: '60px', sm: '80px', md: '100px', lg: '130px' }}
               fontWeight='700'
               color='accent'

@@ -96,27 +96,38 @@ const HomeServices = () => {
 
   return (
     <Flex bg='#ebedf0' justify='center'>
-      <Box w={{ base: '95%', lg: '76rem' }} mt={20} mb={20}>
+      <Box w={{ base: '95%', lg: '76rem' }} mt={{ base: 12, md: 20 }} mb={{ base: 12, md: 20 }}>
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
           Szolgáltatások
         </Heading>
-        <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' lineHeight='short' mb={16}>
+        <Heading
+          as='h3'
+          size={{ base: '4xl', sm: '5xl' }}
+          textAlign='center'
+          fontWeight='600'
+          lineHeight='short'
+          mb={{ base: 8, md: 16 }}>
           Szabadulj ki a Rezsicsapdából
           <br />
           megoldásainkkal
         </Heading>
 
-        <Tabs.Root defaultValue='solar' variant='enclosed' fitted orientation='horizontal'>
+        <Tabs.Root
+          defaultValue='solar'
+          variant='enclosed'
+          fitted
+          orientation='horizontal'
+          display={{ base: 'none', md: 'block' }}>
           <Tabs.List>
             {services.map((service) => (
               <Tabs.Trigger
                 key={service.value}
                 value={service.value}
-                _selected={{ color: 'accent', bgColor: 'primary' }}>
+                _selected={{ color: 'accent', bgColor: 'primary' }}
+                minH={{ base: 20, md: 12 }}>
                 {service.title}
               </Tabs.Trigger>
             ))}
-            <Tabs.Indicator />
           </Tabs.List>
 
           <Box minHeight='694px' width='full'>
@@ -137,7 +148,69 @@ const HomeServices = () => {
                   gap={6}>
                   {service.cards.map((card) => (
                     <GridItem key={card.subtitle} colSpan={1}>
-                      <Card.Root width='100%' height='230px' rounded='20px'>
+                      <Card.Root width='100%' minHeight='230px' h='100%' rounded='20px'>
+                        <Card.Body>
+                          <Flex>
+                            <Image src={service.icon} height='24px' width='24px' fit='contain' mr={4} />
+                            <Text color='primary'>{card.title}</Text>
+                          </Flex>
+                        </Card.Body>
+                        <Card.Footer flexDirection='column' alignItems='flex-start'>
+                          <Card.Title fontSize='xl' fontWeight='600' mb={2}>
+                            {card.subtitle}
+                          </Card.Title>
+                          <Card.Description fontSize='md' color='#475467'>
+                            {card.description}
+                          </Card.Description>
+                        </Card.Footer>
+                      </Card.Root>
+                    </GridItem>
+                  ))}
+                </Grid>
+                <Image src={service.img} mt={12} rounded='20px' fit='cover' height='400px' width='100%' />
+              </Tabs.Content>
+            ))}
+          </Box>
+        </Tabs.Root>
+
+        <Tabs.Root
+          defaultValue='solar'
+          variant='enclosed'
+          fitted
+          orientation='vertical'
+          display={{ base: 'block', md: 'none' }}>
+          <Tabs.List>
+            {services.map((service) => (
+              <Tabs.Trigger
+                key={service.value}
+                value={service.value}
+                _selected={{ color: 'accent', bgColor: 'primary' }}
+                minH={{ base: 12 }}>
+                {service.title}
+              </Tabs.Trigger>
+            ))}
+          </Tabs.List>
+
+          <Box minHeight='694px' width='full'>
+            {services.map((service) => (
+              <Tabs.Content
+                key={service.value}
+                value={service.value}
+                _open={{
+                  animationName: 'fade-in, scale-in',
+                  animationDuration: '300ms',
+                }}
+                p={0}>
+                <Grid
+                  templateColumns={{
+                    base: '1fr',
+                    md: '1fr 1fr',
+                  }}
+                  mt={8}
+                  gap={6}>
+                  {service.cards.map((card) => (
+                    <GridItem key={card.subtitle} colSpan={1}>
+                      <Card.Root width='100%' minHeight='230px' h='100%' rounded='20px'>
                         <Card.Body>
                           <Flex>
                             <Image src={service.icon} height='24px' width='24px' fit='contain' mr={4} />

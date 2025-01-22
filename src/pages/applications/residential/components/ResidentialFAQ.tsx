@@ -123,17 +123,17 @@ const ResidentialFAQ = () => {
               _last={{ mb: 0 }}>
               <Accordion.ItemTrigger>
                 <Accordion.ItemIndicator display={{ base: 'block', _open: 'none' }}>
-                  <Image src={faq_plus} h='24px' w='24px' />
+                  <Image src={faq_plus} minW='24px' />
                 </Accordion.ItemIndicator>
                 <Accordion.ItemIndicator display={{ base: 'none', _open: 'block' }}>
-                  <Image src={faq_minus} h='24px' w='24px' />
+                  <Image src={faq_minus} minW='24px' />
                 </Accordion.ItemIndicator>
-                <Text fontSize='xl' fontWeight='500' color='black' textAlign='left'>
+                <Text fontSize='xl' fontWeight='500' color='black' textAlign='left' hyphens='auto'>
                   {item.question}
                 </Text>
               </Accordion.ItemTrigger>
               <Accordion.ItemContent>
-                <Accordion.ItemBody pl={9} pr={9} fontSize='md' color='#475467'>
+                <Accordion.ItemBody pl={{ base: 0, sm: 9 }} pr={{ base: 0, sm: 9 }} fontSize='md' color='#475467'>
                   <SimpleGrid columns={{ base: 1, md: 2 }} gap={6}>
                     <Box borderColor='primary' borderWidth={2} borderRadius='20px' padding={6}>
                       <Heading color='black' mb={2}>

@@ -47,11 +47,17 @@ const ResidentialProcess = () => {
             <Heading as='h3' size='5xl' fontWeight='600'>
               Nem hiszünk a félmegoldásokban!
             </Heading>
-            <Text fontSize='xl' mt={5} mb={20}>
+            <Text fontSize='xl' mt={5} mb={{ base: 8, lg: 20 }}>
               Szolgáltatásunk teljeskörű, az ingyenes tanácsadástól a kivitelezés befejezéséig tart.
             </Text>
 
-            <Image src={process_img} w='100%' />
+            <Image
+              src={process_img}
+              w='100%'
+              maxH={{ base: '500px', lg: 'auto' }}
+              fit={{ base: 'cover', lg: 'contain' }}
+              rounded='2xl'
+            />
           </GridItem>
           <GridItem colSpan={1}>
             <Text fontSize='2xl' fontWeight='500' color='primary' mt={5} mb={10}>
