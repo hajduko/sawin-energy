@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs } from '@chakra-ui/react';
+import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs, Separator } from '@chakra-ui/react';
 
 import solar from '../../../assets/images/home/solar.jpg';
 import heatpump from '../../../assets/images/home/heatpump.png';
@@ -95,7 +95,7 @@ const HomeServices = () => {
   ];
 
   return (
-    <Flex bg='#ebedf0' justify='center'>
+    <Flex bg='#ebedf0' justify='center' id='services'>
       <Box w={{ base: '95%', lg: '76rem' }} mt={{ base: 12, md: 20 }} mb={{ base: 12, md: 20 }}>
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
           Szolgáltatások
@@ -120,13 +120,23 @@ const HomeServices = () => {
           display={{ base: 'none', md: 'block' }}>
           <Tabs.List>
             {services.map((service) => (
-              <Tabs.Trigger
-                key={service.value}
-                value={service.value}
-                _selected={{ color: 'accent', bgColor: 'primary' }}
-                minH={{ base: 20, md: 12 }}>
-                {service.title}
-              </Tabs.Trigger>
+              <>
+                <Tabs.Trigger
+                  key={service.value}
+                  value={service.value}
+                  _selected={{ color: 'accent', bgColor: 'primary' }}
+                  minH={{ base: 20, md: 12 }}>
+                  {service.title}
+                </Tabs.Trigger>
+                <Separator
+                  orientation='vertical'
+                  height='10'
+                  size='md'
+                  display={{ base: 'block', _last: 'none' }}
+                  my='auto'
+                  borderColor='gray.300'
+                />
+              </>
             ))}
           </Tabs.List>
 

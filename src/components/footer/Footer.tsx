@@ -57,11 +57,11 @@ const Footer = () => {
                 </Text>
               </Flex>
             </Link>
-            <Link to='tel:+36706189151'>
+            <Link to='https://maps.app.goo.gl/PT61SbnRXygy87zA9'>
               <Flex align='center' gap={6}>
                 <MdOutlineHouse color='white' size='24px' />
                 <Text fontSize='md' color='white' fontWeight='600'>
-                  1051 Budapest, Nádor utca 17.
+                  1051 Budapest, Nádor utca 11.
                 </Text>
               </Flex>
             </Link>

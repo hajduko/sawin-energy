@@ -1,10 +1,11 @@
 import { Box, Flex, IconButton, useDisclosure, Image, Text, Collapsible, Stack } from '@chakra-ui/react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import logo from '../../assets/sawin.svg';
 
 const NavBar = () => {
   const { open, onToggle } = useDisclosure();
+  const navigate = useNavigate();
 
   return (
     <Box
@@ -26,6 +27,17 @@ const NavBar = () => {
               Főoldal
             </Text>
           </Link>
+
+          <Box
+            onClick={() => {
+              navigate('/', { state: { targetId: 'services' } });
+            }}
+            cursor='pointer'>
+            <Text color='dark' fontSize='xl' fontWeight='400'>
+              Hőmegtartó beruházások
+            </Text>
+          </Box>
+
           <Link to='/heatpump'>
             <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
               Hőszivattyú
