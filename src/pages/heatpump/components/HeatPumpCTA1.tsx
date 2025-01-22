@@ -22,20 +22,31 @@ const HeatPumpCTA1 = ({ dialogOpen, setDialogOpen }: Props) => {
         minH='425px'
         overflow='hidden'
         rounded='2xl'>
-        <Box bgGradient={'linear-gradient(to right, #062617CC, #40F29A14)'} h='100%' w='100%' rounded='2xl' p={12}>
+        <Box
+          bgGradient={'linear-gradient(to right, #062617CC, #40F29A14)'}
+          h='100%'
+          w='100%'
+          rounded='2xl'
+          p={{ base: 4, sm: 12 }}>
           <Grid
             templateColumns={{
               base: '1fr',
-              lg: '5fr 4fr',
+              md: '5fr 4fr',
             }}
             height='100%'
             gap={6}>
             <GridItem colSpan={1}>
-              <Flex flexDirection={'column'} h='100%' justify='space-between'>
+              <Flex flexDirection={'column'} h='100%' minH='425px' justify='space-between'>
                 <Heading as='h2' size='md' fontWeight='600' color='light'>
                   Ingyenes energetikai tanácsadás
                 </Heading>
-                <Heading as='h3' size='5xl' fontWeight='600' color='white' letterSpacing='wide'>
+                <Heading
+                  as='h3'
+                  size={{ base: '4xl', sm: '5xl' }}
+                  fontWeight='600'
+                  color='white'
+                  letterSpacing='wide'
+                  lineHeight={{ base: 'shorter', md: 'none' }}>
                   Dönts magabiztosan
                 </Heading>
                 <Text fontSize='lg' color='white' fontWeight='500'>
@@ -50,12 +61,14 @@ const HeatPumpCTA1 = ({ dialogOpen, setDialogOpen }: Props) => {
                   fontSize='lg'
                   fontWeight='600'
                   color='dark'
-                  onClick={() => setDialogOpen(!dialogOpen)}>
+                  onClick={() => setDialogOpen(!dialogOpen)}
+                  mt={{ base: 4, md: 0 }}
+                  textWrap='wrap'>
                   Jelentkezem a tanácsadásra!
                 </Button>
               </Flex>
             </GridItem>
-            <GridItem colSpan={1}>
+            <GridItem colSpan={1} display={{ base: 'none', sm: 'block' }}>
               <Flex wrap={'wrap'} gap={2}>
                 <Badge
                   height='75px'

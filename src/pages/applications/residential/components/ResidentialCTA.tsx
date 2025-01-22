@@ -17,23 +17,35 @@ const ResidentialCTA = ({ dialogOpen, setDialogOpen }: Props) => {
   return (
     <Flex bg='#ebedf0' justify='center' pb={20}>
       <Box bg='primary' width={{ base: '95%', lg: '76rem' }} minH='330px' overflow='hidden' rounded='2xl'>
-        <Box bgImage={`url(${cta_bg})`} bgRepeat='no-repeat' bgSize='cover' h='100%' w='100%' rounded='2xl' p={16}>
+        <Box
+          bgImage={`url(${cta_bg})`}
+          bgRepeat='no-repeat'
+          bgSize='cover'
+          h='100%'
+          w='100%'
+          rounded='2xl'
+          p={{ base: 4, md: 8, lg: 16 }}>
           <Grid
             templateColumns={{
               base: '1fr',
+              md: '1fr 1fr',
               lg: '2fr 1fr',
             }}
             height='100%'
-            gap={20}>
+            gap={{ base: 4, md: 20 }}>
             <GridItem colSpan={1}>
               <Flex flexDirection={'column'} h='100%' justify='center'>
-                <Heading as='h2' size='4xl' fontWeight='600' color='white' letterSpacing='wide'>
+                <Heading as='h2' size={{ base: '3xl', lg: '4xl' }} fontWeight='600' color='white' letterSpacing='wide'>
                   Személyes tanácsadódtól bármilyen a pályázatokkal kapcsolatos kérdésedre választ kaphatsz.
                 </Heading>
               </Flex>
             </GridItem>
             <GridItem colSpan={1}>
-              <Flex flexDirection={'column'} h='100%' justify='space-between'>
+              <Flex
+                flexDirection={'column'}
+                h='100%'
+                justify={{ base: 'space-around', lg: 'space-between' }}
+                gap={{ base: 4, md: 0 }}>
                 <Button
                   size='2xl'
                   bg='accent'

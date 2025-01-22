@@ -20,8 +20,8 @@ const HomeTeam = () => {
               quote:
                 'A mi Impact üzletünkben a társadalmi és környezeti hasznosság és a profit kéz a kézben járnak. Nem a GDP, hanem a GNH, az Össznemzeti Boldogság indexét akarjuk növelni.',
             },
-          ].map((highlight, index) => (
-            <VStack key={index} minH='287px' p={6} bg='light' borderRadius='lg' align='center'>
+          ].map((highlight) => (
+            <VStack key={highlight.name} minH='287px' p={6} bg='light' borderRadius='lg' align='center'>
               <Avatar size='2xl' h='96px' w='96px' name={highlight.name} mb={3} />
               <Text fontWeight='600' fontSize='lg'>
                 {highlight.name}
@@ -52,13 +52,13 @@ const HomeTeam = () => {
             { name: 'Konkolyi Péter', role: 'Építész szakág' },
             { name: 'Vesztergom Gábor', role: 'Gépészeti szakág' },
             { name: 'Jobbágy Norbert', role: 'Előgyártás' },
-          ].map((member, index) => (
-            <VStack key={index} p={4} bg='light' borderRadius='lg' minHeight='216px'>
+          ].map((member) => (
+            <VStack key={member.name} p={4} bg='light' borderRadius='lg' minHeight='216px'>
               <Avatar size='2xl' h='96px' w='96px' name={member.name} mb={3} />
-              <Text fontWeight='600' fontSize='lg'>
+              <Text fontWeight='600' fontSize='lg' textAlign='center'>
                 {member.name}
               </Text>
-              <Text color='primary' fontSize='md'>
+              <Text color='primary' fontSize='md' textAlign='center'>
                 {member.role}
               </Text>
             </VStack>

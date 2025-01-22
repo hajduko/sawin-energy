@@ -18,7 +18,7 @@ const HeatPumpCTA2 = ({ dialogOpen, setDialogOpen }: Props) => {
         minH='540px'
         overflow='hidden'
         rounded='2xl'
-        p={12}
+        p={{ base: 4, sm: 12 }}
         position='relative'>
         <Flex
           flexDirection={'column'}
@@ -30,7 +30,13 @@ const HeatPumpCTA2 = ({ dialogOpen, setDialogOpen }: Props) => {
             <Heading as='h2' size='md' fontWeight='600' color='white'>
               Ingyenes pályázatírás
             </Heading>
-            <Heading as='h3' size='5xl' fontWeight='600' color='white' zIndex={3} mb={{ base: '4', md: '0' }}>
+            <Heading
+              as='h3'
+              size={{ base: '4xl', sm: '5xl' }}
+              fontWeight='600'
+              color='white'
+              zIndex={3}
+              mb={{ base: '4', md: '0' }}>
               Élj a pályázati lehetőségekkel
             </Heading>
           </Box>
@@ -51,23 +57,22 @@ const HeatPumpCTA2 = ({ dialogOpen, setDialogOpen }: Props) => {
             fontWeight='600'
             color='dark'
             onClick={() => setDialogOpen(!dialogOpen)}
-            zIndex={3}>
+            zIndex={3}
+            textWrap='wrap'>
             Jelentkezem a tanácsadásra!
           </Button>
         </Flex>
         <Image
           src={cta_phone}
           display={{ base: 'none', md: 'block' }}
-          opacity={{ base: '40%', lg: '100%' }}
           position='absolute'
-          right={300}
+          right={{ base: 0, lg: 300 }}
           bottom={0}
           zIndex={2}
         />
         <Image
           src={cta_screen}
-          display={{ base: 'none', md: 'block' }}
-          opacity={{ base: '40%', lg: '100%' }}
+          display={{ base: 'none', lg: 'block' }}
           position='absolute'
           right={0}
           bottom={0}

@@ -45,7 +45,7 @@ const ResidentialDiscounts = () => {
             </GridItem>
             <GridItem colSpan={1}>
               <SimpleGrid columns={{ base: 1, md: 2 }} columnGap={8} h='100%' minH='150px'>
-                <Flex flexDirection='column' h='100%' justify='space-between'>
+                <Flex flexDirection='column' h='100%' justify='space-between' gap={{ base: 0, md: 8 }}>
                   <Flex align='center' h='70px'>
                     <IconButton cursor='default' height='56px' width='56px' rounded='full' bgColor='accent'>
                       <Image src={home_outline} />
@@ -64,7 +64,7 @@ const ResidentialDiscounts = () => {
                   </Flex>
                 </Flex>
 
-                <Flex flexDirection='column' h='100%' justify='space-between'>
+                <Flex flexDirection='column' h='100%' justify='space-between' gap={{ base: 0, md: 8 }}>
                   <Flex align='center' h='70px'>
                     <IconButton cursor='default' height='56px' width='56px' rounded='full' bgColor='accent'>
                       <Image src={sun_outline} />
@@ -105,7 +105,7 @@ const ResidentialDiscounts = () => {
             </GridItem>
             <GridItem colSpan={1}>
               <SimpleGrid columns={{ base: 1, md: 2 }} columnGap={8} h='100%' minH='150px'>
-                <Flex flexDirection='column' h='100%' justify='space-between'>
+                <Flex flexDirection='column' h='100%' justify='space-between' gap={{ base: 0, md: 8 }}>
                   <Flex align='center' h='70px'>
                     <IconButton cursor='default' height='56px' width='56px' rounded='full' bgColor='accent'>
                       <Image src={sort_outline} />
@@ -126,7 +126,7 @@ const ResidentialDiscounts = () => {
                   </Flex>
                 </Flex>
 
-                <Flex flexDirection='column' h='100%' justify='space-between'>
+                <Flex flexDirection='column' h='100%' justify='space-between' gap={{ base: 0, md: 8 }}>
                   <Flex align='center' h='70px'>
                     <IconButton cursor='default' height='56px' width='56px' rounded='full' bgColor='accent'>
                       <Image src={shield_outline} />
