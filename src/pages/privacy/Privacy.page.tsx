@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, List, Table, Text } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import { Helmet } from 'react-helmet-async';
 import NavBar from '../../components/navbar/NavBar';
 import Footer from '../../components/footer/Footer';
