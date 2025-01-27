@@ -1,11 +1,14 @@
-import { Button, Flex, Image, Input, Text } from '@chakra-ui/react';
+import { Flex, Image, Input, Text } from '@chakra-ui/react';
+import { Button } from '../../components/ui/button';
 import { DialogBody, DialogCloseTrigger, DialogContent, DialogHeader, DialogRoot } from '../../components/ui/dialog';
 import { Field } from '../../components/ui/field';
 import { Checkbox } from '../../components/ui/checkbox';
 import { Link } from 'react-router';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import apiGatewayService from '../../util/configs/api.config';
 import popup from '../../assets/images/popup.png';
 import logo from '../../assets/sawin.svg';
+import { useState } from 'react';
 
 interface Props {
   open: boolean;
@@ -26,10 +29,23 @@ const Popup = ({ open, setOpen }: Props) => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>();
+  const [submitting, setSubmitting] = useState(false);
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
-    alert('Form submitted!');
-    console.log(data);
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    setSubmitting(true);
+    try {
+      const response = await apiGatewayService.submitContactForm(data);
+
+      if (response.status === 200) {
+        setOpen(false); // Close the popup
+      }
+    } catch (error) {
+      // Handle error
+      console.error('Form submission failed:', error);
+      alert('Hiba történt! Kérjük próbálja meg újra!');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -116,7 +132,9 @@ const Popup = ({ open, setOpen }: Props) => {
                 fontSize='lg'
                 fontWeight='600'
                 color='white'
-                type='submit'>
+                type='submit'
+                loading={submitting}
+                loadingText='Küldés...'>
                 Jelentkezem a tanácsadásra!
               </Button>
             </form>

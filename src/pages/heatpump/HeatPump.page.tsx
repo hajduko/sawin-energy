@@ -15,8 +15,6 @@ import { Helmet } from 'react-helmet-async';
 const HeatPump = () => {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
 
-  console.log(dialogOpen);
-
   return (
     <>
       <Helmet>
