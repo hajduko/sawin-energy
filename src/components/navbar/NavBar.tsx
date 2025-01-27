@@ -1,11 +1,12 @@
-import { Box, Flex, IconButton, useDisclosure, Image, Text, Collapsible, Stack } from '@chakra-ui/react';
+import { Box, Flex, IconButton, useDisclosure, Image, Collapsible } from '@chakra-ui/react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link, useNavigate } from 'react-router';
+import { Link } from 'react-router';
 import logo from '../../assets/sawin.svg';
+import DesktopNav from './desktop/DesktopNav';
+import MobileNav from './mobile/MobileNav';
 
 const NavBar = () => {
   const { open, onToggle } = useDisclosure();
-  const navigate = useNavigate();
 
   return (
     <Box
@@ -14,43 +15,17 @@ const NavBar = () => {
       bg={'light'}
       py={'10px'}
       px={{ base: '20px', lg: '40px' }}
-      rounded={{ base: 'none', lg: 'full' }}>
+      rounded={{ base: 'none', lg: 'full' }}
+      position='relative'>
       <Flex minH={'51px'} align={'center'} justify={'space-between'}>
         <Flex>
           <Link to='/'>
             <Image src={logo} height='25px' />
           </Link>
         </Flex>
-        <Flex display={{ base: 'none', md: 'flex' }} gap={8}>
-          <Link to='/'>
-            <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/' ? '700' : '400'}>
-              Főoldal
-            </Text>
-          </Link>
 
-          <Box
-            onClick={() => {
-              navigate('/', { state: { targetId: 'services' } });
-            }}
-            cursor='pointer'>
-            <Text color='dark' fontSize='xl' fontWeight='400'>
-              Hőmegtartó beruházások
-            </Text>
-          </Box>
-
-          <Link to='/heatpump'>
-            <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
-              Hőszivattyú
-            </Text>
-          </Link>
-          <Link to='/applications/residential'>
-            <Text
-              color='dark'
-              fontSize='xl'
-              fontWeight={location.pathname === '/applications/residential' ? '700' : '400'}>
-              Lakossági pályázatok
-            </Text>
-          </Link>
+        <Flex display={{ base: 'none', md: 'flex' }} mx={4}>
+          <DesktopNav />
         </Flex>
 
         <Flex display={{ base: 'flex', md: 'none' }}>
@@ -59,33 +34,18 @@ const NavBar = () => {
           </IconButton>
         </Flex>
       </Flex>
+
       <Collapsible.Root
         open={open}
         width='100%'
         onClick={(evt) => {
           if ((evt.target as Element).closest('.navitem')) onToggle();
-        }}>
+        }}
+        position='absolute'
+        top={'51px'}
+        left={0}>
         <Collapsible.Content>
-          <Stack p={4} textAlign='center' className='navitem' display={{ md: 'none' }}>
-            <Link to='/'>
-              <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/' ? '700' : '400'}>
-                Főoldal
-              </Text>
-            </Link>
-            <Link to='/heatpump'>
-              <Text color='dark' fontSize='xl' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
-                Hőszivattyú
-              </Text>
-            </Link>
-            <Link to='/applications/residential'>
-              <Text
-                color='dark'
-                fontSize='xl'
-                fontWeight={location.pathname === '/applications/residential' ? '700' : '400'}>
-                Lakossági pályázatok
-              </Text>
-            </Link>
-          </Stack>
+          <MobileNav />
         </Collapsible.Content>
       </Collapsible.Root>
     </Box>

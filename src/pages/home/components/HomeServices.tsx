@@ -95,7 +95,7 @@ const HomeServices = () => {
   ];
 
   return (
-    <Flex bg='#ebedf0' justify='center' id='services'>
+    <Flex bg='#ebedf0' justify='center' id='#services'>
       <Box w={{ base: '95%', lg: '76rem' }} mt={{ base: 12, md: 20 }} mb={{ base: 12, md: 20 }}>
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
           Szolgáltatások
@@ -129,6 +129,7 @@ const HomeServices = () => {
                   {service.title}
                 </Tabs.Trigger>
                 <Separator
+                  key={service.value + 'separator'}
                   orientation='vertical'
                   height='10'
                   size='md'

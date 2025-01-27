@@ -10,14 +10,14 @@ import { useEffect } from 'react';
 
 const Home = () => {
   const state = useLocation();
-  const { targetId } = state.state || {};
+  const id = state.hash || '';
 
   useEffect(() => {
-    const element = document.getElementById(targetId);
+    const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [targetId]);
+  }, [id]);
 
   return (
     <>
