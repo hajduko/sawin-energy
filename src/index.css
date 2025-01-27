@@ -31,3 +31,101 @@
 
 .heat-grid:hover .heat-grid-item:not(:hover) { opacity: 0.4; }
 
+.privacy > h1 {
+    font-size: var(--chakra-font-sizes-5xl);
+    font-weight: 600;
+    color: var(--chakra-colors-primary);
+}
+
+.privacy > h2 {
+    font-size: var(--chakra-font-sizes-4xl);
+    font-weight: 600;
+    color: var(--chakra-colors-primary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.privacy > h3 {
+    font-size: var(--chakra-font-sizes-3xl);
+    font-weight: 600;
+    color: var(--chakra-colors-primary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.privacy > p {
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+.privacy > p > em {
+    font-style: italic;
+}
+
+.privacy > ol {
+    all: initial;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.privacy > ol > li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: var(--global-font-body, var(--font-fallback));
+    text-align: justify;
+}
+
+.privacy > ul {
+    all: initial;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.privacy > ul > li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-family: var(--global-font-body, var(--font-fallback));
+    text-align: justify;
+}
+
+.privacy > ol > ul {
+    all: initial;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.privacy > ol > ul > li {
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-family: var(--global-font-body, var(--font-fallback));
+    text-align: justify;
+}
+
+.privacy > ol > ol {
+    all: initial;
+    list-style-type: lower-alpha;
+    list-style-position: inside;
+}
+
+.privacy > ol > ol > li {
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-family: var(--global-font-body, var(--font-fallback));
+    text-align: justify;
+}
+
+.privacy > table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+
+.privacy th, .privacy td  {
+    border: 1px solid black;
+    padding: 8px;
+    
+}
