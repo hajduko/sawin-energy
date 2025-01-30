@@ -1,35 +1,27 @@
-import { Flex, Image, Input, Text } from '@chakra-ui/react';
-import { Button } from '../../components/ui/button';
-import { DialogBody, DialogCloseTrigger, DialogContent, DialogHeader, DialogRoot } from '../../components/ui/dialog';
-import { Field } from '../../components/ui/field';
-import { Checkbox } from '../../components/ui/checkbox';
+import { Box, Flex, Heading, Text, Input, Textarea } from '@chakra-ui/react';
+import { Field } from '../../../components/ui/field';
+import { Checkbox } from '../../../components/ui/checkbox';
+import { Button } from '../../../components/ui/button';
 import { Link } from 'react-router';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import { apiGatewayService, ContactFormData } from '../../util/configs/api.config';
-import popup from '../../assets/images/popup.png';
-import logo from '../../assets/sawin.svg';
 import { useState } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { apiGatewayService, RecruitmentFormData } from '../../../util/configs/api.config';
 
-interface Props {
-  open: boolean;
-  setOpen: (value: boolean) => void;
-}
-
-const Popup = ({ open, setOpen }: Props) => {
+const RecruitmentForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<ContactFormData>();
+  } = useForm<RecruitmentFormData>();
   const [submitting, setSubmitting] = useState(false);
 
-  const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
+  const onSubmit: SubmitHandler<RecruitmentFormData> = async (data) => {
     setSubmitting(true);
     try {
-      const response = await apiGatewayService.submitContactForm(data);
+      const response = await apiGatewayService.submitRecruitmentForm(data);
 
       if (response.status === 200) {
-        setOpen(false); // Close the popup
+        alert('Sikeresen elküldve!');
       }
     } catch (error) {
       // Handle error
@@ -41,21 +33,17 @@ const Popup = ({ open, setOpen }: Props) => {
   };
 
   return (
-    <DialogRoot lazyMount open={open} onOpenChange={(e) => setOpen(e.open)} size='xl' scrollBehavior='inside'>
-      <DialogContent p={6} rounded='3xl'>
-        <Image src={popup}></Image>
-        <Flex flexDirection='column' maxWidth='545px' mx='auto' align='center' pt={6}>
-          <Image src={logo} height='23px' fit='contain' />
-          <DialogHeader textAlign='center' fontSize='3xl' fontWeight='600' lineHeight={1.2}>
-            Teremtsünk értéket közösen!
-          </DialogHeader>
-          <Text textAlign='center' mb={4} fontSize='md'>
-            Kérjük add meg pár adatod, hogy felvehessük veled a kapcsolatot és megbeszéljük a tanácsadás részleteit és
-            időpontját.
-          </Text>
-        </Flex>
-        <DialogBody p={0}>
-          <Flex flexDirection='column' maxWidth='393px' mx='auto' align='center' pt={2}>
+    <Flex bg='#ebedf0' justify='center'>
+      <Box w={{ base: '95%', lg: '46rem' }} mt={20} mb={20}>
+        <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
+          Jelentkezés
+        </Heading>
+        <Heading as='h3' size={{ base: '4xl', sm: '5xl' }} textAlign='center' fontWeight='600' mb={6}>
+          Jelentkezz és dolgozzunk együtt!
+        </Heading>
+
+        <Box bgColor='white' rounded='2xl' p={6}>
+          <Flex flexDirection='column' h='100%' minH='490px'>
             <form onSubmit={handleSubmit(onSubmit)}>
               <Field label='Név' pb={4}>
                 <Input
@@ -98,6 +86,11 @@ const Popup = ({ open, setOpen }: Props) => {
                 />
               </Field>
 
+              <Field label='Bemutatkozás' pb={4}>
+                <Textarea autoresize {...register('me', { required: 'A bemutatkozás megírása kötelező!' })} />
+                {errors.me && <Text color='red'>{errors.me.message}</Text>}
+              </Field>
+
               <Checkbox
                 mb={4}
                 {...register('acceptPrivacy', {
@@ -127,15 +120,14 @@ const Popup = ({ open, setOpen }: Props) => {
                 type='submit'
                 loading={submitting}
                 loadingText='Küldés...'>
-                Jelentkezem a tanácsadásra!
+                Jelentkezem az állásra!
               </Button>
             </form>
           </Flex>
-        </DialogBody>
-        <DialogCloseTrigger top='0' insetEnd='-12' bg='bg' rounded='full' />
-      </DialogContent>
-    </DialogRoot>
+        </Box>
+      </Box>
+    </Flex>
   );
 };
 
-export default Popup;
+export default RecruitmentForm;

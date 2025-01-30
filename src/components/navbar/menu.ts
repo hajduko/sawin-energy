@@ -47,4 +47,9 @@ export const menus: Menu[] = [
       },
     ],
   },
+  {
+    name: 'Toborzás',
+    url: '/recruitment',
+    external: false,
+  },
 ];
