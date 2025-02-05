@@ -82,7 +82,16 @@ const RecruitmentPositions = () => {
           Kiket keresünk?
         </Heading>
         {products.map((prod) => (
-          <Box key={prod.id} display={prod.id === selectedId ? 'block' : 'none'} bgColor='white' rounded='2xl' p={6}>
+          <Box
+            key={prod.id}
+            display={prod.id === selectedId ? 'block' : 'none'}
+            _open={{
+              animationName: 'fade-in, scale-in',
+              animationDuration: '300ms',
+            }}
+            bgColor='white'
+            rounded='2xl'
+            p={6}>
             <Flex flexDirection='column' h='100%' minH='490px'>
               <Text fontSize='5xl' fontWeight='600' mb={4}>
                 {prod.name}
