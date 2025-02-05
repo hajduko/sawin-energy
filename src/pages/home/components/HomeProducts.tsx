@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs, Separator } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, Text, Tabs, Separator } from '@chakra-ui/react';
 
 import isover from '../../../assets/images/home/Isover.png';
 
