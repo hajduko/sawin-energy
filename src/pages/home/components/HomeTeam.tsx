@@ -1,5 +1,12 @@
-import { Box, Flex, Heading, SimpleGrid, VStack, Text, Em } from '@chakra-ui/react';
-import { Avatar } from '../../../components/ui/avatar';
+import { Box, Flex, Heading, SimpleGrid, VStack, Text, Em, Avatar } from '@chakra-ui/react';
+
+import tomi from '../../../assets/images/home/team/tomi.jpg';
+import dave from '../../../assets/images/home/team/dave.jpg';
+import gabi from '../../../assets/images/home/team/gabi.jpg';
+import kolos from '../../../assets/images/home/team/kolos.jpg';
+import laci from '../../../assets/images/home/team/laci.jpg';
+import mahan from '../../../assets/images/home/team/mahan.jpeg';
+import marcus from '../../../assets/images/home/team/marcus.jpg';
 
 const HomeTeam = () => {
   return (
@@ -17,12 +24,15 @@ const HomeTeam = () => {
             {
               name: 'Dr. Jakab Tamás',
               role: 'Cégvezető, alapító',
+              img: tomi,
               quote:
                 'A mi Impact üzletünkben a társadalmi és környezeti hasznosság és a profit kéz a kézben járnak. Nem a GDP, hanem a GNH, az Össznemzeti Boldogság indexét akarjuk növelni.',
             },
           ].map((highlight) => (
             <VStack key={highlight.name} minH='287px' p={6} bg='light' borderRadius='lg' align='center'>
-              <Avatar size='2xl' h='96px' w='96px' name={highlight.name} mb={3} />
+              <Avatar.Root size='2xl' h='96px' w='96px' mb={3}>
+                <Avatar.Image src={highlight.img} />
+              </Avatar.Root>
               <Text fontWeight='600' fontSize='lg'>
                 {highlight.name}
               </Text>
@@ -44,17 +54,20 @@ const HomeTeam = () => {
 
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} gap={6}>
           {[
-            { name: 'Horváth Márkus', role: 'Ügyvezető, operatív vezető' },
-            { name: 'Jakab Dávid', role: 'Tulajdonosi képviselő' },
-            { name: 'Kovács László', role: 'Értékesítési vezető' },
-            { name: 'Mahan Shafiei', role: 'Felülvizsgálat és fejlesztés' },
-            { name: 'Hajdu Kolos', role: 'Szoftverfejlesztés' },
+            { name: 'Horváth Márkus', role: 'Ügyvezető, operatív vezető', img: marcus },
+            { name: 'Jakab Dávid', role: 'Tulajdonosi képviselő', img: dave },
+            { name: 'Kovács László', role: 'Értékesítési vezető', img: laci },
+            { name: 'Mahan Shafiei', role: 'Felülvizsgálat és fejlesztés', img: mahan },
+            { name: 'Hajdu Kolos', role: 'Szoftverfejlesztés', img: kolos },
             { name: 'Konkolyi Péter', role: 'Építész szakág' },
-            { name: 'Vesztergom Gábor', role: 'Gépészeti szakág' },
+            { name: 'Vesztergom Gábor', role: 'Gépészeti szakág', img: gabi },
             { name: 'Jobbágy Norbert', role: 'Előgyártás' },
           ].map((member) => (
             <VStack key={member.name} p={4} bg='light' borderRadius='lg' minHeight='216px'>
-              <Avatar size='2xl' h='96px' w='96px' name={member.name} mb={3} />
+              <Avatar.Root size='2xl' h='96px' w='96px' mb={3}>
+                <Avatar.Image src={member.img} />
+              </Avatar.Root>
+
               <Text fontWeight='600' fontSize='lg' textAlign='center'>
                 {member.name}
               </Text>
