@@ -10,6 +10,17 @@ import settings_outline from '../../../assets/icons/settings-outline-green.svg';
 import home_outline from '../../../assets/icons/home-outline-green.svg';
 import car from '../../../assets/icons/car.svg';
 
+import huawei from '../../../assets/images/home/Huawei logo.png';
+
+import olimpia from '../../../assets/images/home/Olimpia.png';
+import phnix from '../../../assets/images/home/PHNIX.png';
+import raygex from '../../../assets/images/home/Raygex.png';
+
+import isover from '../../../assets/images/home/Isover.png';
+
+import wallbox from '../../../assets/images/home/Wallbox.png';
+import gewiss from '../../../assets/images/home/Gewiss.png';
+
 const HomeServices = () => {
   const services = [
     {
@@ -29,6 +40,18 @@ const HomeServices = () => {
           subtitle: 'Maximalizáld a megtakarításod!',
           description:
             'Legyen egy napelemes rendszer otthonod vagy üzemed energiatermelő központja. Így fűthetsz, hűthetsz vagy autót is tölthetsz a nappal!',
+        },
+      ],
+      brands: [
+        {
+          name: 'Huawei',
+          position: '',
+          img: huawei,
+        },
+        {
+          name: 'Deye',
+          position: '',
+          img: '',
         },
       ],
     },
@@ -51,6 +74,33 @@ const HomeServices = () => {
             'Termékeink hivatalos szervizeként biztosítjuk számodra a gyors probléma megoldást és személyre szabott garanciális feltételeket. Így tényleg biztonságban érezheted magad!',
         },
       ],
+      brands: [
+        {
+          name: 'Olimpia Splendid teljes protfólió',
+          position: 'Importőr, regionális forgalmazó és szervíz',
+          img: olimpia,
+        },
+        {
+          name: 'PHNIX Ipari/kereskedelmi hőszivattyúk',
+          position: 'Importőr, regionális forgalmazó és szervíz',
+          img: phnix,
+        },
+        {
+          name: 'MasterTherm teljes portfólió',
+          position: '',
+          img: '',
+        },
+        {
+          name: 'Raygex felületfűtési rendszerek',
+          position: 'Importőr, regionális forgalmazó és szervíz',
+          img: raygex,
+        },
+        {
+          name: 'SaWin Hydroboxok és Melegvizes hőtároló rendszerek',
+          position: 'Kizárólagos telepítő',
+          img: '',
+        },
+      ],
     },
     {
       title: 'Hőmegtartó beruházások',
@@ -71,6 +121,18 @@ const HomeServices = () => {
             'Egy régi ingatlan legsebezhetőbb pontja a régi nyílászáróknál található, ezért azok cseréje szinte mindíg indokolt, míg új építéskor nem szabad kockáztatni, hiszen egy modern otthon csak energiatakarékos nyílászárókkal készülhet!',
         },
       ],
+      brands: [
+        {
+          name: 'St Gobain Isover/Weber/Rigips',
+          position: '',
+          img: isover,
+        },
+        {
+          name: 'Sawin EaSy Facade',
+          position: 'Kizárólagos telepítő',
+          img: '',
+        },
+      ],
     },
     {
       title: 'Elektromos autó',
@@ -89,6 +151,18 @@ const HomeServices = () => {
           subtitle: 'Válts elektromos autóra könnyedén!',
           description:
             'Vegyél tartósbérletbe használt elektromos autót és használd ki, hogy konstrukciónkban a bérlet lejártakor megvásárolhatod a járművet. Céges partnerünkként lehetőséged van áfa visszaigénylésre is.',
+        },
+      ],
+      brands: [
+        {
+          name: 'Wallbox E-töltő',
+          position: '',
+          img: wallbox,
+        },
+        {
+          name: 'Gewiss E-töltő',
+          position: '',
+          img: gewiss,
         },
       ],
     },
@@ -178,6 +252,19 @@ const HomeServices = () => {
                     </GridItem>
                   ))}
                 </Grid>
+                <Flex minH='230px' w='full' justify='space-evenly' bg='white' rounded='20px' gap={4} p={6} mt={6}>
+                  {service.brands.map((brand) => (
+                    <Flex key={brand.name} flex={1} flexDirection='column' alignItems='center'>
+                      <Image src={brand.img} maxH='120px' fit='contain' />
+                      <Text fontSize='xl' fontWeight='600' mb={2} textAlign='center'>
+                        {brand.name}
+                      </Text>
+                      <Text fontSize='md' color='#475467' textAlign='center'>
+                        {brand.position}
+                      </Text>
+                    </Flex>
+                  ))}
+                </Flex>
                 <Image src={service.img} mt={12} rounded='20px' fit='cover' height='400px' width='100%' />
               </Tabs.Content>
             ))}
