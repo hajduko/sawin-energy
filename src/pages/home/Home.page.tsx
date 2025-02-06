@@ -7,7 +7,6 @@ import HomeTeam from './components/HomeTeam';
 import Footer from '../../components/footer/Footer';
 import { useLocation } from 'react-router';
 import { useEffect } from 'react';
-import HomeProducts from './components/HomeProducts';
 
 const Home = () => {
   const state = useLocation();
@@ -28,7 +27,7 @@ const Home = () => {
       <HomeHero />
       <HomeUs />
       <HomeServices />
-      <HomeProducts />
+
       <HomeWho />
       <HomeTeam />
       <Footer />

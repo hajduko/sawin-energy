@@ -18,22 +18,29 @@ export const menus: Menu[] = [
     external: false,
     children: [
       {
+        name: 'Napelemes rendszerek',
+        url: '/',
+        target: 'services',
+        external: false,
+      },
+      {
+        name: 'Hőszivattyús rendszerek',
+        url: '/heatpump',
+        external: false,
+      },
+      {
         name: 'Hőmegtartó beruházások',
         url: '/',
         target: 'services',
         external: false,
       },
       {
-        name: 'Hőszivattyú',
-        url: '/heatpump',
+        name: 'Elektromos autó',
+        url: '/',
+        target: 'services',
         external: false,
       },
     ],
-  },
-  {
-    name: 'Termékek',
-    url: 'https://www.sawinenergy.hu',
-    external: true,
   },
   {
     name: 'Pályázatok',

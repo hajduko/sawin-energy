@@ -33,7 +33,7 @@ const RecruitmentForm = () => {
   };
 
   return (
-    <Flex bg='#ebedf0' justify='center'>
+    <Flex bg='#ebedf0' justify='center' id='recruitmentForm'>
       <Box w={{ base: '95%', lg: '46rem' }} mt={20} mb={20}>
         <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary'>
           Jelentkezés

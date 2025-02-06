@@ -1,4 +1,5 @@
 import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs, Separator } from '@chakra-ui/react';
+import { HoverCardContent, HoverCardRoot, HoverCardTrigger, HoverCardArrow } from '../../../components/ui/hover-card';
 
 import solar from '../../../assets/images/home/solar.jpg';
 import heatpump from '../../../assets/images/home/heatpump.png';
@@ -76,7 +77,7 @@ const HomeServices = () => {
       ],
       brands: [
         {
-          name: 'Olimpia Splendid teljes protfólió',
+          name: 'Olimpia Splendid teljes portfólió',
           position: 'Importőr, regionális forgalmazó és szervíz',
           img: olimpia,
         },
@@ -252,17 +253,41 @@ const HomeServices = () => {
                     </GridItem>
                   ))}
                 </Grid>
-                <Flex minH='230px' w='full' justify='space-evenly' bg='white' rounded='20px' gap={4} p={6} mt={6}>
+                <Heading
+                  as='h3'
+                  size={{ base: '3xl', sm: '4xl' }}
+                  textAlign='center'
+                  fontWeight='600'
+                  lineHeight='short'
+                  mt={4}>
+                  Termékeink
+                </Heading>
+                <Flex w='full' justify='center' gap={6} mt={4}>
                   {service.brands.map((brand) => (
-                    <Flex key={brand.name} flex={1} flexDirection='column' alignItems='center'>
-                      <Image src={brand.img} maxH='120px' fit='contain' />
-                      <Text fontSize='xl' fontWeight='600' mb={2} textAlign='center'>
-                        {brand.name}
-                      </Text>
-                      <Text fontSize='md' color='#475467' textAlign='center'>
-                        {brand.position}
-                      </Text>
-                    </Flex>
+                    <HoverCardRoot size='sm' openDelay={0} closeDelay={100} key={brand.name}>
+                      <HoverCardTrigger asChild cursor='default'>
+                        <Flex
+                          bg='white'
+                          aspectRatio={1}
+                          w='full'
+                          maxW='224px'
+                          align='center'
+                          justify='center'
+                          rounded='20px'
+                          p={2}>
+                          <Image src={brand.img} h='full' aspectRatio={1} fit='contain' />
+                        </Flex>
+                      </HoverCardTrigger>
+                      <HoverCardContent bgColor='white'>
+                        <HoverCardArrow />
+                        <Text fontSize='lg' fontWeight='600' mb={2} textAlign='center'>
+                          {brand.name}
+                        </Text>
+                        <Text fontSize='md' color='#475467' textAlign='center'>
+                          {brand.position}
+                        </Text>
+                      </HoverCardContent>
+                    </HoverCardRoot>
                   ))}
                 </Flex>
                 <Image src={service.img} mt={12} rounded='20px' fit='cover' height='400px' width='100%' />

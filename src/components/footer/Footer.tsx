@@ -26,7 +26,7 @@ const Footer = () => {
                 </Link>
                 <Link to='/heatpump'>
                   <Text color='white' fontSize='md' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
-                    Hőszivattyú
+                    Hőszivattyús rendszerek
                   </Text>
                 </Link>
                 <Link to='/applications/residential'>
@@ -35,6 +35,11 @@ const Footer = () => {
                     fontSize='md'
                     fontWeight={location.pathname === '/applications/residential' ? '700' : '400'}>
                     Lakossági pályázatok
+                  </Text>
+                </Link>
+                <Link to='/recruitment'>
+                  <Text color='white' fontSize='md' fontWeight={location.pathname === '/recruitment' ? '700' : '400'}>
+                    Toborzás
                   </Text>
                 </Link>
               </Flex>
