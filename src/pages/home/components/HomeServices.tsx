@@ -12,10 +12,13 @@ import home_outline from '../../../assets/icons/home-outline-green.svg';
 import car from '../../../assets/icons/car.svg';
 
 import huawei from '../../../assets/images/home/Huawei logo.png';
+import deye from '../../../assets/images/home/Deye.png';
 
 import olimpia from '../../../assets/images/home/Olimpia.png';
 import phnix from '../../../assets/images/home/PHNIX.png';
+import mastertherm from '../../../assets/images/home/Mastertherm.png';
 import raygex from '../../../assets/images/home/Raygex.png';
+import sawin from '../../../assets/sawin.svg';
 
 import isover from '../../../assets/images/home/Isover.png';
 
@@ -52,7 +55,7 @@ const HomeServices = () => {
         {
           name: 'Deye',
           position: '',
-          img: '',
+          img: deye,
         },
       ],
     },
@@ -89,7 +92,7 @@ const HomeServices = () => {
         {
           name: 'MasterTherm teljes portfólió',
           position: '',
-          img: '',
+          img: mastertherm,
         },
         {
           name: 'Raygex felületfűtési rendszerek',
@@ -99,7 +102,7 @@ const HomeServices = () => {
         {
           name: 'SaWin Hydroboxok és Melegvizes hőtároló rendszerek',
           position: 'Kizárólagos telepítő',
-          img: '',
+          img: sawin,
         },
       ],
     },
@@ -131,7 +134,7 @@ const HomeServices = () => {
         {
           name: 'Sawin EaSy Facade',
           position: 'Kizárólagos telepítő',
-          img: '',
+          img: sawin,
         },
       ],
     },

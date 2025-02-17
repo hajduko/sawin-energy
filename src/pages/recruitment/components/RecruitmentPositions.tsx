@@ -93,7 +93,7 @@ const RecruitmentPositions = () => {
             rounded='2xl'
             p={6}>
             <Flex flexDirection='column' h='100%' minH='490px'>
-              <Text fontSize='5xl' fontWeight='600' mb={4}>
+              <Text fontSize='5xl' fontWeight='600' mb={4} color='primary'>
                 {prod.name}
               </Text>
               <Text fontSize='lg' mb={8} textAlign='justify' minH='108px'>
