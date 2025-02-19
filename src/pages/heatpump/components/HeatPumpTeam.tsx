@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Text, Image } from '@chakra-ui/react';
-import team from '../../../assets/images/heatpump/team.png';
+import team from '../../../assets/images/heatpump/team2.jpg';
 
 const HeatPumpTeam = () => {
   return (
@@ -20,7 +20,7 @@ const HeatPumpTeam = () => {
           otthonodban.
         </Text>
 
-        <Image src={team} />
+        <Image src={team} rounded='2xl' maxH='600px' w='100%' fit='cover' />
       </Box>
     </Flex>
   );

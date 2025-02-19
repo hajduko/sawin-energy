@@ -21,6 +21,8 @@ import raygex from '../../../assets/images/home/Raygex.png';
 import sawin from '../../../assets/sawin.svg';
 
 import isover from '../../../assets/images/home/Isover.png';
+import weber from '../../../assets/images/home/Weber.svg';
+import rigips from '../../../assets/images/home/Rigips.png';
 
 import wallbox from '../../../assets/images/home/Wallbox.png';
 import gewiss from '../../../assets/images/home/Gewiss.png';
@@ -127,9 +129,19 @@ const HomeServices = () => {
       ],
       brands: [
         {
-          name: 'St Gobain Isover/Weber/Rigips',
+          name: 'Saint-Gobain Isover',
           position: '',
           img: isover,
+        },
+        {
+          name: 'Saint-Gobain Rigips',
+          position: '',
+          img: rigips,
+        },
+        {
+          name: 'Saint-Gobain Weber',
+          position: '',
+          img: weber,
         },
         {
           name: 'Sawin EaSy Facade',

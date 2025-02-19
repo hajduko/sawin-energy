@@ -1,5 +1,5 @@
 import { Accordion, Box, Flex, Grid, GridItem, Heading, Text, Image } from '@chakra-ui/react';
-import process_img from '../../../../assets/images/residential/process.png';
+import process_img from '../../../../assets/images/residential/process2.jpg';
 import down_accent_arrow from '../../../../assets/icons/down_accent_arrow.svg';
 
 const ResidentialProcess = () => {
@@ -55,7 +55,8 @@ const ResidentialProcess = () => {
               src={process_img}
               w='100%'
               maxH={{ base: '500px', lg: 'auto' }}
-              fit={{ base: 'cover', lg: 'contain' }}
+              aspectRatio='1/1'
+              fit={{ base: 'cover', lg: 'cover' }}
               rounded='2xl'
             />
           </GridItem>
