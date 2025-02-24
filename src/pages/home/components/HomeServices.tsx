@@ -1,8 +1,18 @@
-import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs, Separator } from '@chakra-ui/react';
+import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs, Separator, Button, List } from '@chakra-ui/react';
 import { HoverCardContent, HoverCardRoot, HoverCardTrigger, HoverCardArrow } from '../../../components/ui/hover-card';
+import {
+  DrawerBackdrop,
+  DrawerBody,
+  DrawerCloseTrigger,
+  DrawerContent,
+  DrawerHeader,
+  DrawerRoot,
+  DrawerTitle,
+} from '../../../components/ui/drawer';
+import { useState } from 'react';
 
 import solar from '../../../assets/images/home/solar.jpg';
-import heatpump from '../../../assets/images/home/heatpump.png';
+import heatpump from '../../../assets/images/home/heatpump.jpeg';
 import insulation from '../../../assets/images/home/insulation.jpeg';
 import ecar from '../../../assets/images/home/ecar.jpg';
 
@@ -18,16 +28,20 @@ import olimpia from '../../../assets/images/home/Olimpia.png';
 import phnix from '../../../assets/images/home/PHNIX.png';
 import mastertherm from '../../../assets/images/home/Mastertherm.png';
 import raygex from '../../../assets/images/home/Raygex.png';
-import sawin from '../../../assets/sawin.svg';
+import effi from '../../../assets/images/home/Effi.png';
 
 import isover from '../../../assets/images/home/Isover.png';
 import weber from '../../../assets/images/home/Weber.svg';
 import rigips from '../../../assets/images/home/Rigips.png';
+import hilti from '../../../assets/images/home/Hilti.svg';
+import sawin from '../../../assets/sawin_white.svg';
 
 import wallbox from '../../../assets/images/home/Wallbox.png';
 import gewiss from '../../../assets/images/home/Gewiss.png';
 
 const HomeServices = () => {
+  const [open, setOpen] = useState(false);
+
   const services = [
     {
       title: 'Napelemes rendszerek',
@@ -51,13 +65,15 @@ const HomeServices = () => {
       brands: [
         {
           name: 'Huawei',
-          position: '',
+          position: 'Huawei inverterrel szerelt napelemes rendszerek',
           img: huawei,
+          highlight: false,
         },
         {
           name: 'Deye',
-          position: '',
+          position: 'Deye inverterrel szerelt napelemes rendszerek energiatárolóval kiegészítve',
           img: deye,
+          highlight: false,
         },
       ],
     },
@@ -82,29 +98,34 @@ const HomeServices = () => {
       ],
       brands: [
         {
-          name: 'Olimpia Splendid teljes portfólió',
-          position: 'Importőr, regionális forgalmazó és szervíz',
+          name: 'Olimpia Splendid',
+          position: 'Lakossági levegő-víz hőszivattyúk',
           img: olimpia,
+          highlight: false,
         },
         {
-          name: 'PHNIX Ipari/kereskedelmi hőszivattyúk',
-          position: 'Importőr, regionális forgalmazó és szervíz',
+          name: 'PHNIX',
+          position: 'Levegő-víz hőszivattyúk, lakossági és ipari méretekben',
           img: phnix,
+          highlight: false,
         },
         {
-          name: 'MasterTherm teljes portfólió',
-          position: '',
+          name: 'MasterTherm',
+          position: 'Levegő-víz és víz-víz hőszivattyúk, lakossági és ipari méretekben',
           img: mastertherm,
+          highlight: false,
         },
         {
-          name: 'Raygex felületfűtési rendszerek',
-          position: 'Importőr, regionális forgalmazó és szervíz',
+          name: 'Raygex',
+          position: 'Lakossági és kereskedelmi fűtési és hűtési mennyezeti sugárzó rendszer',
           img: raygex,
+          highlight: false,
         },
         {
-          name: 'SaWin Hydroboxok és Melegvizes hőtároló rendszerek',
-          position: 'Kizárólagos telepítő',
-          img: sawin,
+          name: 'EFFI',
+          position: 'Ipari és kereskedelmi fűtési és hűtési mennyezeti sugárzó rendszer',
+          img: effi,
+          highlight: false,
         },
       ],
     },
@@ -132,21 +153,31 @@ const HomeServices = () => {
           name: 'Saint-Gobain Isover',
           position: '',
           img: isover,
+          highlight: false,
         },
         {
           name: 'Saint-Gobain Rigips',
           position: '',
           img: rigips,
+          highlight: false,
+        },
+        {
+          name: 'Sawin Easy Facade',
+          position: 'Több információért kattintson!',
+          img: sawin,
+          highlight: true,
         },
         {
           name: 'Saint-Gobain Weber',
           position: '',
           img: weber,
+          highlight: false,
         },
         {
-          name: 'Sawin EaSy Facade',
-          position: 'Kizárólagos telepítő',
-          img: sawin,
+          name: 'Hilti',
+          position: 'Hilti függesztett homlokzati rendszer',
+          img: hilti,
+          highlight: false,
         },
       ],
     },
@@ -172,13 +203,15 @@ const HomeServices = () => {
       brands: [
         {
           name: 'Wallbox E-töltő',
-          position: '',
+          position: 'Lakossági elektromos autó töltők',
           img: wallbox,
+          highlight: false,
         },
         {
           name: 'Gewiss E-töltő',
-          position: '',
+          position: 'Kereskedelmi és társasházi elektromos autó töltő rendszerek',
           img: gewiss,
+          highlight: false,
         },
       ],
     },
@@ -201,6 +234,49 @@ const HomeServices = () => {
           <br />
           megoldásainkkal
         </Heading>
+
+        <DrawerRoot open={open} size='md'>
+          <DrawerBackdrop />
+          <DrawerContent>
+            <DrawerHeader>
+              <DrawerTitle>Sawin Easy Facade</DrawerTitle>
+            </DrawerHeader>
+            <DrawerBody>
+              <Text mb={4}>
+                Az Easy Facade a SaWin által, a St Gobain cégcsoport, a Rigips, az Isover és a Weber cégek termékei és
+                technológiái felhasználásával kifejlesztett előtétfalas hőszigetelési rendszer. Hőszigetelési
+                tulajdonságai az EPS rendszerekkel azonosak.
+              </Text>
+              <Text fontWeight='bold'>Fő előnyei</Text>
+              <List.Root gap={1}>
+                <List.Item>mechanikai tulajdonságai tökéletesek,</List.Item>
+                <List.Item>A1 tűzvédelmi besorolású (a teljes rendszer),</List.Item>
+                <List.Item>tökéletes felülettel és élekkel rendelkezik,</List.Item>
+                <List.Item>
+                  teljes mértékben száraz technológiával készül, ezért tiszta és hulladékmentes kivitelezést biztosít,
+                </List.Item>
+                <List.Item>
+                  előre vágott/gyártott elemekkel is készülhet (társasházaknál és új építésnél ajánlott lidar
+                  felméréssel és lézeres kitűzéssel),
+                </List.Item>
+                <List.Item>gyorsan (kb. fele annyi idő alatt) kivitelezhető,</List.Item>
+                <List.Item>hidegben és nagy melegben is felrakható,</List.Item>
+                <List.Item>felújítás esetén külön mechanikai és párazárást ad a meglévő falnak/vakolatnak,</List.Item>
+                <List.Item>állványozás mentesen felrakható,</List.Item>
+                <List.Item>
+                  gipszkartonos és festő szakemberek végzik a kivitelezést, szükség szerint mérnöki kitűzéssel és
+                  felügyelettel,
+                </List.Item>
+                <List.Item>
+                  alapkivitelben mosható szilikonos festékkel minimálisan olcsóbb, mint a hagyományos EPS rendszerek,
+                </List.Item>
+                <List.Item>kérés esetén vékonyvakolattal is készülhet</List.Item>
+                <List.Item>3 év teljeskörű rendszer garancia</List.Item>
+              </List.Root>
+            </DrawerBody>
+            <DrawerCloseTrigger onClick={() => setOpen(false)} />
+          </DrawerContent>
+        </DrawerRoot>
 
         <Tabs.Root
           defaultValue='solar'
@@ -282,7 +358,7 @@ const HomeServices = () => {
                     <HoverCardRoot size='sm' openDelay={0} closeDelay={100} key={brand.name}>
                       <HoverCardTrigger asChild cursor='default'>
                         <Flex
-                          bg='white'
+                          bg={brand.highlight ? 'primary' : 'white'}
                           aspectRatio={1}
                           w='full'
                           maxW='224px'
@@ -298,7 +374,12 @@ const HomeServices = () => {
                         <Text fontSize='lg' fontWeight='600' mb={2} textAlign='center'>
                           {brand.name}
                         </Text>
-                        <Text fontSize='md' color='#475467' textAlign='center'>
+                        <Text
+                          fontSize='md'
+                          color='#475467'
+                          textAlign='center'
+                          onClick={brand.highlight ? () => setOpen(true) : () => {}}
+                          cursor={brand.highlight ? 'pointer' : 'default'}>
                           {brand.position}
                         </Text>
                       </HoverCardContent>
