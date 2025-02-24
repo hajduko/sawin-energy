@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs, Separator, Button, List } from '@chakra-ui/react';
+import { Box, Flex, Grid, GridItem, Heading, Image, Card, Text, Tabs, Separator, List } from '@chakra-ui/react';
 import { HoverCardContent, HoverCardRoot, HoverCardTrigger, HoverCardArrow } from '../../../components/ui/hover-card';
 import {
   DrawerBackdrop,
