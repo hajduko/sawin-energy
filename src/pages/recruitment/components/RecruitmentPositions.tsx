@@ -56,7 +56,7 @@ const RecruitmentPositions = () => {
     {
       name: 'Külső Tanácsadó',
       id: 4,
-      desc: 'TODO',
+      desc: 'Olyan, a szakmájukat magas szinten végző vállalkozók, akik meglévő ügyfélkörükben vagy aktuális ügyleteik során hasznosíthatják SaWin Energiahatékonysággal kapcsolatos szolgáltatásait és ügyfeleiknek értékesíteni is tudják azokat. SaWin a külső Tanácsadóknak stabil és jelentős összegű bevételi lehetőséget kínál.',
       props: [
         'Energetikusokat',
         'Építész és Gépész Tervezőket',

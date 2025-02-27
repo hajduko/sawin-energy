@@ -48,6 +48,9 @@ const HomeServices = () => {
       value: 'solar',
       icon: lightning_green,
       img: solar,
+      img_desc_1: '100kW szolár rendszer, energia tároló fogadására előkészítve',
+      img_desc_2: 'Huawei inverter, DAH Solar napelem panelek',
+      img_desc_3: 'Nádszeg, ipari park',
       cards: [
         {
           title: 'Visszwattos napelemes rendszerek',
@@ -82,6 +85,9 @@ const HomeServices = () => {
       value: 'heatpump',
       icon: settings_outline,
       img: heatpump,
+      img_desc_1: '10kW hőszivattyú és melegvíz rendszer',
+      img_desc_2: 'Olimpia Splendid S2E monoblock hőszivattyú',
+      img_desc_3: 'Tényő, családi ház',
       cards: [
         {
           title: 'Lakossági és ipari hőszivattyúk',
@@ -134,6 +140,9 @@ const HomeServices = () => {
       value: 'insulation',
       icon: home_outline,
       img: insulation,
+      img_desc_1: '15cm utólagos homlokzati szigetelés',
+      img_desc_2: 'SAWIN EZ Facade átszellőztetett szigetelő rendszer',
+      img_desc_3: 'Budapest 2. kerület, társasház',
       cards: [
         {
           title: 'Ingatlanok hőszigetelése',
@@ -163,7 +172,7 @@ const HomeServices = () => {
         },
         {
           name: 'Sawin Easy Facade',
-          position: 'Több információért kattintson!',
+          position: 'További információért kattints!',
           img: sawin,
           highlight: true,
         },
@@ -386,7 +395,26 @@ const HomeServices = () => {
                     </HoverCardRoot>
                   ))}
                 </Flex>
-                <Image src={service.img} mt={12} rounded='20px' fit='cover' height='400px' width='100%' />
+                <Box
+                  bgImage={`url(${service.img})`}
+                  bgSize='cover'
+                  mt={12}
+                  rounded='20px'
+                  height='400px'
+                  width='100%'
+                  position='relative'>
+                  <Box position='absolute' right={5} top={5} bgColor='#545454aa' padding={2} rounded='5px'>
+                    <Text textAlign='right' color='white' fontWeight={600}>
+                      {service.img_desc_1}
+                    </Text>
+                    <Text textAlign='right' color='white' fontWeight={600}>
+                      {service.img_desc_2}
+                    </Text>
+                    <Text textAlign='right' color='white' fontWeight={600}>
+                      {service.img_desc_3}
+                    </Text>
+                  </Box>
+                </Box>
               </Tabs.Content>
             ))}
           </Box>

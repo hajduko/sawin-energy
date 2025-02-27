@@ -6,7 +6,7 @@ const ResidentialProcess = () => {
   const process = [
     {
       id: '0',
-      title: 'Jelentkezz az ingyenes tanácsadásra',
+      title: 'Ingyenes tanácsadáson vehetsz részt',
       text: 'Jelentkezz pályázati tanácsadásunkra és akár jelentkezésed másnapján ingyenes előzetes tanácsadáson vehetsz részt, hogy megismerjük az igényeidet és te is megismerhesd a lehetőségeidet. A tanácsadás folyamán minden pályázattal kapcsolatos kérdésedre választ kapsz, valamint megvizsgáljuk, hogy melyik pályázatra vagy jogosult és anyagilag hogyan jársz a legjobban a kívánt beruházás megvalósításakor.',
     },
     {
