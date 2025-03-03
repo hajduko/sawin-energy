@@ -25,14 +25,14 @@ const HomeUs = () => {
                 Megtérülő befektetések,
                 <br /> megújuló energia
               </Heading>
-              <Text fontSize='xl' textAlign='justify' color='#475467' mb={{ base: 4, lg: 0 }}>
+              <Text fontSize='xl' textAlign={{ base: 'left', md: 'justify' }} color='#475467' mb={{ base: 4, lg: 0 }}>
                 Cégünk innovatív, megújuló megoldások teljes palettáját szolgáltatja családod és céged számára. Mindig
                 teljeskörű szolgáltatást nyújtunk, ahol az engedélyeztetéssel, kivitelezéssel járó terhet levesszük a
                 válladról.
               </Text>
             </GridItem>
             <GridItem colSpan={1}>
-              <Text fontSize='xl' textAlign='justify' color='#475467'>
+              <Text fontSize='xl' textAlign={{ base: 'left', md: 'justify' }} color='#475467'>
                 A folyamat elején háztartásod vagy üzemed jelen és jövőbeli igényeit is pontosan meghatározzuk és ezek
                 alapján keressük meg a számodra tökéletes modern energetikai megoldást. Mindez saját fejlesztésű
                 szoftverünknek köszönhetően a szemed láttára történik. A precíz és pontos munkát csapatunk évtizedes

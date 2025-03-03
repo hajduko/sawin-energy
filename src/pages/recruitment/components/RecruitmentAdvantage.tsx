@@ -3,14 +3,15 @@ import { Box, Flex, Grid, GridItem, Heading, Text } from '@chakra-ui/react';
 const RecruitmentAdvantage = () => {
   return (
     <Flex bg='dark' justify='center'>
-      <Box w={{ base: '95%', lg: '76rem' }}>
+      <Box w={{ base: '95%', lg: '76rem' }} py={{ base: 10, md: 0 }}>
         <Grid
           templateColumns={{
             base: '1fr',
             md: '2fr 3fr 2fr',
           }}
           textAlign='center'
-          minH='380px'>
+          minH='380px'
+          gap={{ base: 4, md: 0 }}>
           <GridItem colSpan={1}>
             <Flex flexDirection='column' justify='center' h='100%'>
               <Heading as='h3' size='5xl' fontWeight='600' color='accent' mb={4}>
@@ -23,7 +24,7 @@ const RecruitmentAdvantage = () => {
           </GridItem>
           <GridItem colSpan={1}>
             <Flex flexDirection='column' justify='center' h='100%'>
-              <Heading as='h3' size='6xl' fontWeight='600' color='accent' mb={4}>
+              <Heading as='h3' size='5xl' fontWeight='600' color='accent' mb={4}>
                 Kiemelkedő kereseti lehetőség
               </Heading>
               <Text fontSize='lg' color='white'>

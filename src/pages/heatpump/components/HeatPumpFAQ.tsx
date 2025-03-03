@@ -39,7 +39,7 @@ const HeatPumpFAQ = () => {
           Hőszivattyú tudástár
         </Heading>
 
-        <Accordion.Root collapsible multiple size='lg' variant='plain' defaultValue={['0']}>
+        <Accordion.Root size='lg' variant='plain' defaultValue={['0']}>
           {faqs.map((item) => (
             <Accordion.Item
               key={item.id}

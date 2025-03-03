@@ -12,7 +12,13 @@ const HeatPumpTeam = () => {
           Egy jó berendezés csak félsiker!
         </Heading>
 
-        <Text fontSize='xl' fontWeight='500' textAlign='justify' maxWidth='922px' mx='auto' mb={{ base: 6, lg: 20 }}>
+        <Text
+          fontSize='xl'
+          fontWeight='500'
+          textAlign={{ base: 'left', md: 'justify' }}
+          maxWidth='922px'
+          mx='auto'
+          mb={{ base: 6, lg: 20 }}>
           Csapatunk hőszivattyús gépészeti rendszerek tervezésével és kivitelezésével foglalkozik. Mi nem kötünk
           kompromisszumot az előkészítő folyamatok során. Gépész tervezőink saját fejlesztésű szoftverünk segítségével a
           hőszivattyús rendszert a jelen szokásaidra és jövőbeli terveidre méretezik. Ezért tudjuk garantálni, hogy az

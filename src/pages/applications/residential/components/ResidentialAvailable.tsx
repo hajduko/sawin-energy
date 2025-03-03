@@ -30,7 +30,7 @@ const ResidentialAvailable = () => {
         <Heading as='h3' size={{ base: '4xl', sm: '5xl' }} textAlign='center' fontWeight='600'>
           Energetikai modernizáció az otthonfelújítási támogatások segítségével
         </Heading>
-        <Text fontSize='xl' textAlign='center' fontWeight='500' maxW='46rem' width='100%' mx='auto' mt={5} mb={20}>
+        <Text fontSize='xl' textAlign='center' fontWeight='500' maxW='46rem' width='100%' mx='auto' mt={5} mb={10}>
           Jelenleg két pályázati lehetőség is elérhető, melyeket akár együtt is igénybe tudsz venni otthonod energetikai
           felújítására. Teljeskörű szolgáltatásunk részeként segítünk megtalálni a számodra megfeleő pályázati
           lehetőséget, valamint a pályázati ügyintézést is vállaljuk.
@@ -41,7 +41,7 @@ const ResidentialAvailable = () => {
             md: '1fr 1fr',
           }}
           minHeight='630px'
-          mb={12}
+          mb={20}
           gap={8}
           className='heat-grid'>
           <GridItem mb={{ base: 16, md: 0 }} className='heat-grid-item' transition={'opacity 0.3s ease-in-out'}>

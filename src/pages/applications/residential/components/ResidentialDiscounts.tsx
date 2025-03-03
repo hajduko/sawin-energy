@@ -19,7 +19,7 @@ const ResidentialDiscounts = () => {
           <Heading as='h3' size='5xl' textAlign='center' fontWeight='600'>
             Mi is hozzájárulunk a támogatáshoz
           </Heading>
-          <Text fontSize='xl' textAlign='center' fontWeight='500' maxW='46rem' width='100%' mx='auto' mt={5} mb={20}>
+          <Text fontSize='xl' textAlign='center' fontWeight='500' maxW='46rem' width='100%' mx='auto' mt={5} mb={10}>
             Szerződj velünk a kivitelezésre és kedvezményesen veheted igénybe szolgáltatásainkat!{' '}
             <Text as='span' fontWeight={700}>
               Ennek keretében:

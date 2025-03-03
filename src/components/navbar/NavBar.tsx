@@ -43,7 +43,8 @@ const NavBar = () => {
         }}
         position='absolute'
         top={'51px'}
-        left={0}>
+        left={0}
+        zIndex={4}>
         <Collapsible.Content>
           <MobileNav />
         </Collapsible.Content>

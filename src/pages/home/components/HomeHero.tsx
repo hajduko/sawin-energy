@@ -11,8 +11,8 @@ const HomeHero = () => {
   return (
     <>
       <Image src={bg} position='absolute' top={0} minH='100vh' zIndex={-1} fit='cover' />
-      <Box h='100vh'>
-        <Box bgColor='#062617B2' pt={{ base: 0, lg: 16 }}>
+      <Box h={{ base: '60vh', md: '80vh' }}>
+        <Box bgColor='#062617B2' pt={{ base: 0, lg: 16 }} zIndex={2}>
           <NavBar />
         </Box>
         <Flex bg='#062617B2' justify='center' align='center' h='100%'>
@@ -34,14 +34,15 @@ const HomeHero = () => {
               </Text>
             </Heading>
             <IconButton
-              mt={40}
+              mt={{ base: '10vh', md: 40 }}
               color='dark'
               bgColor='accent'
               rounded='full'
               size='2xl'
               width='75px'
               height='75px'
-              onClick={scroll}>
+              onClick={scroll}
+              zIndex={0}>
               <FaArrowDown color='dark' />
             </IconButton>
           </Flex>

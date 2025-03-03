@@ -41,7 +41,7 @@ const Popup = ({ open, setOpen }: Props) => {
   };
 
   return (
-    <DialogRoot lazyMount open={open} onOpenChange={(e) => setOpen(e.open)} size='xl' scrollBehavior='inside'>
+    <DialogRoot lazyMount open={open} onOpenChange={(e) => setOpen(e.open)} size='xl'>
       <DialogContent p={6} rounded='3xl'>
         <Image src={popup}></Image>
         <Flex flexDirection='column' maxWidth='545px' mx='auto' align='center' pt={6}>
@@ -132,7 +132,7 @@ const Popup = ({ open, setOpen }: Props) => {
             </form>
           </Flex>
         </DialogBody>
-        <DialogCloseTrigger top='0' insetEnd='-12' bg='bg' rounded='full' />
+        <DialogCloseTrigger top={{ base: '-12', md: '0' }} insetEnd={{ base: '2', md: '-12' }} bg='bg' rounded='full' />
       </DialogContent>
     </DialogRoot>
   );

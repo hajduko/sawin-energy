@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 import NavBar from '../../../components/navbar/NavBar';
-import bg from '../../../assets/images/residential/hero_bg.jpg';
+import bg from '../../../assets/images/heatpump/team.png';
 import { FaArrowDown } from 'react-icons/fa';
 
 const RecruitmentHero = () => {
@@ -20,7 +20,7 @@ const RecruitmentHero = () => {
               align={{ base: 'center', lg: 'flex-start' }}>
               <Heading
                 as='h1'
-                size={{ base: '5xl', sm: '6xl' }}
+                size={{ base: '4xl', sm: '6xl' }}
                 fontWeight='700'
                 color='white'
                 textAlign={{ base: 'center', lg: 'left' }}>

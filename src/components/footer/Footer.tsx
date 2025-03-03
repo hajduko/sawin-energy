@@ -15,34 +15,35 @@ const Footer = () => {
               <Link to='/'>
                 <Image src={logo} height='25px' mb={8} />
               </Link>
-              <Flex
-                gap={{ base: 4, md: 10 }}
-                flexDirection={{ base: 'column', md: 'row' }}
-                align={{ base: 'center', md: 'flex-start' }}>
-                <Link to='/'>
-                  <Text color='white' fontSize='md' fontWeight={location.pathname === '/' ? '700' : '400'}>
-                    Főoldal
-                  </Text>
-                </Link>
-                <Link to='/heatpump'>
-                  <Text color='white' fontSize='md' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
-                    Hőszivattyús rendszerek
-                  </Text>
-                </Link>
-                <Link to='/applications/residential'>
-                  <Text
-                    color='white'
-                    fontSize='md'
-                    fontWeight={location.pathname === '/applications/residential' ? '700' : '400'}>
-                    Lakossági pályázatok
-                  </Text>
-                </Link>
-                <Link to='/recruitment'>
-                  <Text color='white' fontSize='md' fontWeight={location.pathname === '/recruitment' ? '700' : '400'}>
-                    Toborzás
-                  </Text>
-                </Link>
-              </Flex>
+            </Flex>
+
+            <Flex
+              gap={{ base: 4, md: 10 }}
+              flexDirection={{ base: 'column', md: 'row' }}
+              align={{ base: 'flex-start', md: 'flex-start' }}>
+              <Link to='/'>
+                <Text color='white' fontSize='md' fontWeight={location.pathname === '/' ? '700' : '400'}>
+                  Főoldal
+                </Text>
+              </Link>
+              <Link to='/heatpump'>
+                <Text color='white' fontSize='md' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
+                  Hőszivattyús rendszerek
+                </Text>
+              </Link>
+              <Link to='/applications/residential'>
+                <Text
+                  color='white'
+                  fontSize='md'
+                  fontWeight={location.pathname === '/applications/residential' ? '700' : '400'}>
+                  Lakossági pályázatok
+                </Text>
+              </Link>
+              <Link to='/recruitment'>
+                <Text color='white' fontSize='md' fontWeight={location.pathname === '/recruitment' ? '700' : '400'}>
+                  Toborzás
+                </Text>
+              </Link>
             </Flex>
           </GridItem>
           <GridItem area='contact'>
@@ -72,7 +73,13 @@ const Footer = () => {
             </Link>
           </GridItem>
           <GridItem area='footer' pt={6} mt={14} borderTopColor='white' borderTopWidth='2px'>
-            <Flex align='center' width='100%' justify='space-between' px={{ base: 4, lg: 0 }}>
+            <Flex
+              align={{ base: 'flex-start', md: 'center' }}
+              flexDirection={{ base: 'column', md: 'row' }}
+              width='100%'
+              justify='space-between'
+              px={{ base: 4, lg: 0 }}
+              gap={{ base: 2, md: 0 }}>
               <Text color='white' fontSize='md'>
                 2024 - SaWin Energy © Minden jog fenntartva
               </Text>

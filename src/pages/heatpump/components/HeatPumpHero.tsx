@@ -40,7 +40,7 @@ const HeatPumpHero = ({ dialogOpen, setDialogOpen }: Props) => {
             <Flex direction='column' h='100%' align={{ base: 'center', lg: 'flex-start' }} justify='space-between'>
               <Heading
                 as='h1'
-                size='6xl'
+                size={{ base: '5xl', md: '6xl' }}
                 fontWeight='700'
                 color='dark'
                 lineHeight='shorter'
