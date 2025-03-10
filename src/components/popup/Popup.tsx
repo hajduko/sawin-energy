@@ -27,7 +27,7 @@ const Popup = ({ open, setOpen }: Props) => {
     setSubmitting(true);
     try {
       let response;
-      if (location.pathname == '/heatpump') {
+      if (location.pathname == '/heatpump/') {
         response = await apiGatewayService.submitHeatpumpContactForm(data);
       } else {
         response = await apiGatewayService.submitApplicationContactForm(data);
