@@ -26,7 +26,12 @@ const Popup = ({ open, setOpen }: Props) => {
   const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
     setSubmitting(true);
     try {
-      const response = await apiGatewayService.submitContactForm(data);
+      let response;
+      if (location.pathname == '/heatpump') {
+        response = await apiGatewayService.submitHeatpumpContactForm(data);
+      } else {
+        response = await apiGatewayService.submitApplicationContactForm(data);
+      }
 
       if (response.status === 200) {
         setOpen(false); // Close the popup

@@ -36,9 +36,19 @@ class ApiGatewayService {
   /**
    * Submit contact form data to API Gateway
    */
-  async submitContactForm(formData: ContactFormData): Promise<AxiosResponse> {
+  async submitHeatpumpContactForm(formData: ContactFormData): Promise<AxiosResponse> {
     try {
-      const response = await this.api.post('/lead', formData);
+      const response = await this.api.post('/lead/heatpump', formData);
+      return response;
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      throw error;
+    }
+  }
+
+  async submitApplicationContactForm(formData: ContactFormData): Promise<AxiosResponse> {
+    try {
+      const response = await this.api.post('/lead/application', formData);
       return response;
     } catch (error) {
       console.error('Error submitting contact form:', error);
