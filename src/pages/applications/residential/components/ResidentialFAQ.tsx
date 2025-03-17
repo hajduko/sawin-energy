@@ -27,17 +27,17 @@ const ResidentialFAQ = () => {
       eoft: [
         'Nagykorú, cselekvőképes természetes személyek, akik rendelkeznek magyar adóazonosító jellel.',
         'Magyar állampolgárok, vagy az EGT más tagállamának állampolgárai, akik (lakcímkártyával igazoltan) legalább egy éve magyarországi állandó lakóhellyel vagy tartózkodási hellyel rendelkeznek.',
-        'Eleget tesznek az adósságfék szabályának: a 600.000 Ft-nál kevesebbet keresők fizetésük legfeljebb 50%-át, az ezt meghaladó bevételűek legfeljebb 50%-át fordíthatják törlesztésre.',
+        'Eleget tesznek az adósságfék szabályának: a 600.000 Ft-nál kevesebbet keresők fizetésük legfeljebb 50%-át, az ezt meghaladó bevételűek legfeljebb 60%-át fordíthatják törlesztésre.',
         'Nincs a bruttó minimálbért meghaladó köz-, vagy adótartozásuk.',
         'Nincs 60 napnál régebb, a bruttó minimálbért meghaladó közüzemi számlatartozásuk.',
         'Sem az igénylő, sem adóstársa nem szerepel elmaradással a KHR-ben, illetve velük szemben veszteségleírással rendezett elmaradás sem szerepel.',
       ],
       voft: [
-        'Legalább egy gyermeket váró szülők (a magzat betöltötte a 12. hetet).',
-        'Legalább egy gyermeket nevelő szülők (vér szerinti vagy örökbefogadott gyermek, aki még nem töltötte be a 25. életévét, vagy ha betöltötte, megváltozott munkaképességű).',
+        'Legalább egy gyermeket váró szülők (a magzat betöltötte a 12. hetet). (A nyugdíjas igénylők ez alól a feltétel alól mentesülnek.)',
+        'Legalább egy gyermeket nevelő szülők (vér szerinti vagy örökbefogadott gyermek, aki még nem töltötte be a 25. életévét, vagy ha betöltötte, megváltozott munkaképességű). (A nyugdíjas igénylők ez alól a feltétel alól mentesülnek.)',
         'Az igénylő magyar állampolgár vagy olyan személy, aki a szabad mozgás és tartózkodás jogával rendelkezik Magyarországon.',
         'Azonos lakóhellyel rendelkező házas vagy élettársak a támogatást együttesen igényelhetik.',
-        'Legalább 1 éves, folyamatos társadalombiztosítási (TB) jogviszony igazolása szükséges (legfeljebb 30 napos megszakítással). Kivétel: GYOD-ban, ápolási díjban részesülők, illetve megváltozott munkaképességű személyek. (Együttes igénylés esetén elég, ha csak az egyik igénylő tudja igazolni.)',
+        'Legalább 1 éves, folyamatos társadalombiztosítási (TB) jogviszony igazolása szükséges (legfeljebb 30 napos megszakítással). Kivétel: Nyugdíjas igénylők, GYOD-ban, ápolási díjban részesülők, illetve megváltozott munkaképességű személyek. (Együttes igénylés esetén elég, ha csak az egyik igénylő tudja igazolni.)',
         'Az igénylő(k)nek nem lehet 5000 forintot meghaladó köztartozása.',
       ],
     },
@@ -99,6 +99,11 @@ const ResidentialFAQ = () => {
       voft: [
         'Egy gyermek csak egy igénylésnél vehető figyelembe.',
         'A 2021-2022-es otthonfelújítási támogatást korábban részben kihasználók a fennmaradó keretösszeg erejéig igényelhetnek támogatást.',
+        'A kedvezmény egyedülállóként is igénybe vehető, de bizonyos élethelyzetekben speciális szabályok vonatkoznak rá:',
+        'Ha válást követően az összes gyermek az igénylőhöz került, akkor a teljes támogatás jár.',
+        'Ha válás után nem él az összes gyermek az igénylővel, de nincs olyan gyermek, aki a volt párnál él, akkor is megilleti a teljes támogatás.',
+        'Ha a gyermekek megosztva lettek elhelyezve, akkor csak a támogatás felét lehet igénybe venni, kivéve, ha a másik fél lemond a támogatásról.',
+        'Ha válás után megosztva lettek elhelyezve a gyermekek, de az igénylő új kapcsolatából származó összes gyermek vele él, akkor a teljes kedvezmény is elérhető.',
       ],
     },
   ];

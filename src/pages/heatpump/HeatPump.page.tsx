@@ -11,16 +11,19 @@ import HeatPumpCTA2 from './components/HeatPumpCTA2';
 import HeatPumpFAQ from './components/HeatPumpFAQ';
 import Footer from '../../components/footer/Footer';
 import { Helmet } from 'react-helmet-async';
+import FeedBackPopUp from '../../components/feedbackpopup/FeedBackPopUp';
 
 const HeatPump = () => {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
+  const [feedBackOpen, setFeedBackOpen] = useState<boolean>(false);
 
   return (
     <>
       <Helmet>
         <title>Hőszivattyú - Sawin Energy</title>
       </Helmet>
-      <Popup open={dialogOpen} setOpen={setDialogOpen} />
+      <Popup open={dialogOpen} setOpen={setDialogOpen} setFeedBackOpen={setFeedBackOpen} />
+      <FeedBackPopUp open={feedBackOpen} setOpen={setFeedBackOpen} />
       <HeatPumpHero dialogOpen={dialogOpen} setDialogOpen={setDialogOpen} />
       <HeatPumpResults />
       <HeatPumpSolutions />

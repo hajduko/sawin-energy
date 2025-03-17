@@ -7,7 +7,11 @@ import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { apiGatewayService, RecruitmentFormData } from '../../../util/configs/api.config';
 
-const RecruitmentForm = () => {
+interface Props {
+  setFeedBackOpen: (value: boolean) => void;
+}
+
+const RecruitmentForm = ({ setFeedBackOpen }: Props) => {
   const {
     register,
     handleSubmit,
@@ -21,7 +25,7 @@ const RecruitmentForm = () => {
       const response = await apiGatewayService.submitRecruitmentForm(data);
 
       if (response.status === 200) {
-        alert('Sikeresen elküldve!');
+        setFeedBackOpen(true);
       }
     } catch (error) {
       // Handle error

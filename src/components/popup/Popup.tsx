@@ -13,9 +13,10 @@ import { useState } from 'react';
 interface Props {
   open: boolean;
   setOpen: (value: boolean) => void;
+  setFeedBackOpen: (value: boolean) => void;
 }
 
-const Popup = ({ open, setOpen }: Props) => {
+const Popup = ({ open, setOpen, setFeedBackOpen }: Props) => {
   const {
     register,
     handleSubmit,
@@ -35,6 +36,7 @@ const Popup = ({ open, setOpen }: Props) => {
 
       if (response.status === 200) {
         setOpen(false); // Close the popup
+        setFeedBackOpen(true);
       }
     } catch (error) {
       // Handle error
