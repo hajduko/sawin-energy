@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, SimpleGrid, VStack, Text, Em, Avatar } from '@chakra-ui/react';
 
-import tomi from '../../../assets/images/home/team/tomi.jpg';
+import tomi from '../../../assets/images/home/team/tomi2.jpg';
 import dave from '../../../assets/images/home/team/dave.jpg';
 import gabi from '../../../assets/images/home/team/gabi.jpg';
 import kolos from '../../../assets/images/home/team/kolos.jpg';
