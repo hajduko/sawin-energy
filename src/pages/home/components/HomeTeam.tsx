@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, SimpleGrid, VStack, Text, Em, Avatar } from '@chakra-ui/react';
 
-import tomi from '../../../assets/images/home/team/tomi2.jpg';
+import tomi from '../../../assets/images/home/team/tomi3.png';
 import dave from '../../../assets/images/home/team/dave.jpg';
 import gabi from '../../../assets/images/home/team/gabi.jpg';
 import kolos from '../../../assets/images/home/team/kolos.jpg';
@@ -57,11 +57,11 @@ const HomeTeam = () => {
             { name: 'Horváth Márkus', role: 'Ügyvezető, operatív vezető', img: marcus },
             { name: 'Jakab Dávid', role: 'Tulajdonosi képviselő', img: dave },
             { name: 'Kovács László', role: 'Értékesítési vezető', img: laci },
+            { name: 'Molnár Mónika', role: 'Kommunikációs és Pályázati vezető' },
             { name: 'Mahan Shafiei', role: 'Felülvizsgálat és fejlesztés', img: mahan },
             { name: 'Hajdu Kolos', role: 'Szoftverfejlesztés', img: kolos },
             { name: 'Konkolyi Péter', role: 'Építész szakág' },
             { name: 'Vesztergom Gábor', role: 'Gépészeti szakág', img: gabi },
-            { name: 'Jobbágy Norbert', role: 'Előgyártás' },
           ].map((member) => (
             <VStack key={member.name} p={4} bg='light' borderRadius='lg' minHeight='216px'>
               <Avatar.Root size='2xl' h='96px' w='96px' mb={3}>

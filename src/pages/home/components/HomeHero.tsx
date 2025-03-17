@@ -29,7 +29,6 @@ const HomeHero = () => {
             lineHeight={{ base: '60px', sm: '80px', md: '100px', lg: '130px' }}
             fontWeight='700'
             color='accent'
-            mt={16}
             pl={{ base: 0, lg: 40 }}
             textIndent={{ base: 0, lg: -40 }}
             textAlign={{ base: 'center', lg: 'left' }}
