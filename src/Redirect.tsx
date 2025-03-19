@@ -1,5 +1,5 @@
 const Redirect = () => {
-  window.location.href = 'https://app.airrange.io/#/element/xr3b_uKZPu1njdtxMdw3nx0hQ7';
+  window.location.href = 'https://app.airrange.io/#/element/xr3b_6yjn9MeydSh4T7JmNTKBn';
   return <></>;
 };
 
