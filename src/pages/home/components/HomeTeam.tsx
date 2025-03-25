@@ -7,6 +7,7 @@ import kolos from '../../../assets/images/home/team/kolos.jpg';
 import laci from '../../../assets/images/home/team/laci.png';
 import mahan from '../../../assets/images/home/team/mahan.jpg';
 import marcus from '../../../assets/images/home/team/marcus.jpg';
+import moni from '../../../assets/images/home/team/moni.jpg';
 
 const HomeTeam = () => {
   return (
@@ -23,7 +24,7 @@ const HomeTeam = () => {
           {[
             {
               name: 'Dr. Jakab Tamás',
-              role: 'Cégvezető, alapító',
+              role: 'Alapító',
               img: tomi,
               quote:
                 'A mi Impact üzletünkben a társadalmi és környezeti hasznosság és a profit kéz a kézben járnak. Nem a GDP, hanem a GNH, az Össznemzeti Boldogság indexét akarjuk növelni.',
@@ -55,9 +56,9 @@ const HomeTeam = () => {
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} gap={6}>
           {[
             { name: 'Horváth Márkus', role: 'Ügyvezető, operatív vezető', img: marcus },
-            { name: 'Jakab Dávid', role: 'Tulajdonosi képviselő', img: dave },
+            { name: 'Jakab Dávid', role: 'Cégvezető, műszaki vezető', img: dave },
             { name: 'Kovács László', role: 'Értékesítési vezető', img: laci },
-            { name: 'Molnár Mónika', role: 'Kommunikációs és Pályázati vezető' },
+            { name: 'Molnár Mónika', role: 'Tanácsadási vezető', img: moni },
             { name: 'Mahan Shafiei', role: 'Felülvizsgálat és fejlesztés', img: mahan },
             { name: 'Hajdu Kolos', role: 'Szoftverfejlesztés', img: kolos },
             { name: 'Konkolyi Péter', role: 'Építész szakág' },
