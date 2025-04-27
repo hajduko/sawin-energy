@@ -58,7 +58,7 @@ const HomeTeam = () => {
             { name: 'Horváth Márkus', role: 'Ügyvezető, operatív vezető', img: marcus },
             { name: 'Jakab Dávid', role: 'Cégvezető, műszaki vezető', img: dave },
             { name: 'Kovács László', role: 'Értékesítési vezető', img: laci },
-            { name: 'Molnár Mónika', role: 'Tanácsadási vezető', img: moni },
+            { name: 'Fodor Mónika', role: 'Tanácsadási vezető', img: moni },
             { name: 'Mahan Shafiei', role: 'Felülvizsgálat és fejlesztés', img: mahan },
             { name: 'Hajdu Kolos', role: 'Szoftverfejlesztés', img: kolos },
             { name: 'Konkolyi Péter', role: 'Építész szakág' },
