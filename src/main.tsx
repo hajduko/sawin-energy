@@ -7,6 +7,8 @@ import { ColorModeProvider } from './components/ui/color-mode.tsx';
 import { system } from './util/configs/theme.config.ts';
 import { BrowserRouter } from 'react-router';
 import { HelmetProvider } from 'react-helmet-async';
+import { MenuContext } from './api/contexts/MenuContext.ts';
+import { menu } from './util/menu.ts';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,7 +16,9 @@ createRoot(document.getElementById('root')!).render(
       <BrowserRouter>
         <ChakraProvider value={system}>
           <ColorModeProvider defaultTheme='light'>
-            <App />
+            <MenuContext.Provider value={menu}>
+              <App />
+            </MenuContext.Provider>
           </ColorModeProvider>
         </ChakraProvider>
       </BrowserRouter>

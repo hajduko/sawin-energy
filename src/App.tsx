@@ -6,8 +6,8 @@ import Privacy from './pages/privacy/Privacy.page';
 import Page404 from './pages/404/404.page';
 import Residential from './pages/applications/residential/Residential.page';
 import ScrollToTop from './components/scrolltotop/ScrollToTop';
-import Recruitment from './pages/recruitment/Recruitment';
 import Redirect from './Redirect';
+import Recruitment from './pages/recruitment/Recruitment';
 import RealEstate from './pages/realestate/RealEstate.page';
 
 function App() {

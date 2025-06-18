@@ -1,16 +1,19 @@
+import { useContext } from 'react';
 import { Stack } from '@chakra-ui/react';
-import { menus } from '../menu';
 import NavItemWithChildren from './NavItemWithChildren';
 import NavItemNoChildren from './NavItemNoChildren';
+import { MenuContext } from '../../../api/contexts/MenuContext';
 
 const DesktopNav = () => {
+  const menu = useContext(MenuContext).filter((item) => item.available);
+
   return (
     <Stack direction='row' gap={8}>
-      {menus.map((menu) =>
-        menu.children && menu.children.length > 0 ? (
-          <NavItemWithChildren key={menu.name} menu={menu} />
+      {menu.map((item) =>
+        item.children && item.children.length > 0 ? (
+          <NavItemWithChildren key={item.name} menu={item} />
         ) : (
-          <NavItemNoChildren key={menu.name} menu={menu} />
+          <NavItemNoChildren key={item.name} menu={item} />
         )
       )}
     </Stack>

@@ -1,4 +1,4 @@
-import { Box, Text, VStack, Avatar } from '@chakra-ui/react';
+import { Text, VStack, Avatar } from '@chakra-ui/react';
 import TeamMemberDrawer from './TeamMemberDrawer';
 import { IHighlightTeamMember } from './team';
 

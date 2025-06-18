@@ -1,5 +1,5 @@
 import { Text } from '@chakra-ui/react';
-import { Menu } from '../menu';
+import { Menu } from '../../../util/menu';
 import LinkComponent from '../LinkComponent';
 
 type Props = {

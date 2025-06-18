@@ -39,11 +39,6 @@ const Footer = () => {
                   Lakossági pályázatok
                 </Text>
               </Link>
-              <Link to='/recruitment'>
-                <Text color='white' fontSize='md' fontWeight={location.pathname === '/recruitment' ? '700' : '400'}>
-                  Toborzás
-                </Text>
-              </Link>
             </Flex>
           </GridItem>
           <GridItem area='contact'>
