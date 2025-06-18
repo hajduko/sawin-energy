@@ -8,6 +8,7 @@ import Residential from './pages/applications/residential/Residential.page';
 import ScrollToTop from './components/scrolltotop/ScrollToTop';
 import Recruitment from './pages/recruitment/Recruitment';
 import Redirect from './Redirect';
+import RealEstate from './pages/realestate/RealEstate.page';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='heatpump' element={<HeatPump />} />
           <Route path='applications/residential' element={<Residential />} />
           <Route path='recruitment' element={<Recruitment />} />
+          <Route path='realestate' element={<RealEstate />} />
           <Route path='privacy' element={<Privacy />} />
           <Route path='faluprogram' element={<Redirect />} />
           <Route path='*' element={<Page404 />} />

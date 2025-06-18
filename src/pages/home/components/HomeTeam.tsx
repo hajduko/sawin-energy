@@ -1,13 +1,8 @@
-import { Box, Flex, Heading, SimpleGrid, VStack, Text, Em, Avatar } from '@chakra-ui/react';
+import { Box, Flex, Heading, SimpleGrid } from '@chakra-ui/react';
+import TeamMemberCard from './TeamMemberCard';
+import HighlightTeamMemberCard from './HighlightTeamMemberCard';
 
-import tomi from '../../../assets/images/home/team/tomi3.png';
-import dave from '../../../assets/images/home/team/dave.jpg';
-import gabi from '../../../assets/images/home/team/gabi.jpg';
-import kolos from '../../../assets/images/home/team/kolos.jpg';
-import laci from '../../../assets/images/home/team/laci.png';
-import mahan from '../../../assets/images/home/team/mahan.jpg';
-import marcus from '../../../assets/images/home/team/marcus.jpg';
-import moni from '../../../assets/images/home/team/moni.jpg';
+import { highlightTeamMembers, teamMembers } from './team';
 
 const HomeTeam = () => {
   return (
@@ -20,62 +15,15 @@ const HomeTeam = () => {
           Egy jó berendezés csak félsiker!
         </Heading>
 
-        <SimpleGrid columns={{ base: 1, md: 1 }} gap={6} mb={8}>
-          {[
-            {
-              name: 'Dr. Jakab Tamás',
-              role: 'Alapító',
-              img: tomi,
-              quote:
-                'A mi Impact üzletünkben a társadalmi és környezeti hasznosság és a profit kéz a kézben járnak. Nem a GDP, hanem a GNH, az Össznemzeti Boldogság indexét akarjuk növelni.',
-            },
-          ].map((highlight) => (
-            <VStack key={highlight.name} minH='287px' p={6} bg='light' borderRadius='lg' align='center'>
-              <Avatar.Root size='2xl' h='96px' w='96px' mb={3}>
-                <Avatar.Image src={highlight.img} />
-              </Avatar.Root>
-              <Text fontWeight='600' fontSize='lg'>
-                {highlight.name}
-              </Text>
-              <Text color='primary' fontSize='md'>
-                {highlight.role}
-              </Text>
-              <Text
-                mt={2}
-                color='gray.800'
-                fontSize='sm'
-                hyphens='auto'
-                textAlign='center'
-                w={{ base: '100%', md: '75%' }}>
-                <Em>"{highlight.quote}"</Em>
-              </Text>
-            </VStack>
+        <SimpleGrid columns={1} gap={6} mb={6}>
+          {highlightTeamMembers.map((highlight) => (
+            <HighlightTeamMemberCard key={highlight.name} {...highlight} />
           ))}
         </SimpleGrid>
 
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} gap={6}>
-          {[
-            { name: 'Horváth Márkus', role: 'Ügyvezető, operatív vezető', img: marcus },
-            { name: 'Jakab Dávid', role: 'Cégvezető, műszaki vezető', img: dave },
-            { name: 'Kovács László', role: 'Értékesítési vezető', img: laci },
-            { name: 'Fodor Mónika', role: 'Tanácsadási vezető', img: moni },
-            { name: 'Mahan Shafiei', role: 'Felülvizsgálat és fejlesztés', img: mahan },
-            { name: 'Hajdu Kolos', role: 'Szoftverfejlesztés', img: kolos },
-            { name: 'Konkolyi Péter', role: 'Építész szakág' },
-            { name: 'Vesztergom Gábor', role: 'Gépészeti szakág', img: gabi },
-          ].map((member) => (
-            <VStack key={member.name} p={4} bg='light' borderRadius='lg' minHeight='216px'>
-              <Avatar.Root size='2xl' h='96px' w='96px' mb={3}>
-                <Avatar.Image src={member.img} />
-              </Avatar.Root>
-
-              <Text fontWeight='600' fontSize='lg' textAlign='center'>
-                {member.name}
-              </Text>
-              <Text color='primary' fontSize='md' textAlign='center'>
-                {member.role}
-              </Text>
-            </VStack>
+          {teamMembers.map((member) => (
+            <TeamMemberCard key={member.name} {...member} />
           ))}
         </SimpleGrid>
       </Box>

@@ -140,8 +140,8 @@ const HomeServices = () => {
       value: 'insulation',
       icon: home_outline,
       img: insulation,
-      img_desc_1: '15cm utólagos homlokzati szigetelés',
-      img_desc_2: 'SAWIN EZ Facade átszellőztetett szigetelő rendszer',
+      img_desc_1: '15 cm utólagos homlokzati szigetelés',
+      img_desc_2: 'SaWin Easy Facade átszellőztetett szigetelő rendszer',
       img_desc_3: 'Budapest 2. kerület, társasház',
       cards: [
         {
@@ -171,7 +171,7 @@ const HomeServices = () => {
           highlight: false,
         },
         {
-          name: 'Sawin Easy Facade',
+          name: 'SaWin Easy Facade',
           position: 'További információért kattints!',
           img: sawin,
           highlight: true,
@@ -403,17 +403,26 @@ const HomeServices = () => {
                   height='400px'
                   width='100%'
                   position='relative'>
-                  <Box position='absolute' right={5} top={5} bgColor='#545454aa' padding={2} rounded='5px'>
-                    <Text textAlign='right' color='white' fontWeight={600}>
-                      {service.img_desc_1}
-                    </Text>
-                    <Text textAlign='right' color='white' fontWeight={600}>
-                      {service.img_desc_2}
-                    </Text>
-                    <Text textAlign='right' color='white' fontWeight={600}>
-                      {service.img_desc_3}
-                    </Text>
-                  </Box>
+                  {service.img_desc_1 && (
+                    <Box
+                      position='absolute'
+                      right={5}
+                      bottom={5}
+                      bgColor='white'
+                      padding={2}
+                      rounded='10px'
+                      shadow='2px 2px 2px 1px rgba(0, 0, 0, .4)'>
+                      <Text textAlign='left' color='black' fontSize='sm' fontWeight='600'>
+                        {service.img_desc_1}
+                      </Text>
+                      <Text textAlign='left' color='black' fontSize='sm'>
+                        {service.img_desc_2}
+                      </Text>
+                      <Text textAlign='right' color='gray.500' fontSize='sm' mt={2}>
+                        📍 {service.img_desc_3}
+                      </Text>
+                    </Box>
+                  )}
                 </Box>
               </Tabs.Content>
             ))}

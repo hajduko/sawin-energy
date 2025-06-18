@@ -55,6 +55,11 @@ export const menus: Menu[] = [
     ],
   },
   {
+    name: 'Ingatlan',
+    url: '/realestate',
+    external: false,
+  },
+  {
     name: 'Toborzás',
     url: '/recruitment',
     external: false,

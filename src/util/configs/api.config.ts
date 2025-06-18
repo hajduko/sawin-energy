@@ -21,6 +21,14 @@ export interface RecruitmentFormData {
   acceptPrivacy: boolean;
 }
 
+export interface RealEstateFormData {
+  name: string;
+  email: string;
+  phone: string;
+  postalCode?: string;
+  me?: string;
+}
+
 class ApiGatewayService {
   private readonly api: AxiosInstance;
 
@@ -65,6 +73,19 @@ class ApiGatewayService {
       return response;
     } catch (error) {
       console.error('Error submitting recruitment form:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Submit real estate form data to API Gateway
+   */
+  async submitRealEstateForm(formData: RealEstateFormData): Promise<AxiosResponse> {
+    try {
+      const response = await this.api.post('/realestate', formData);
+      return response;
+    } catch (error) {
+      console.error('Error submitting real estate form:', error);
       throw error;
     }
   }
