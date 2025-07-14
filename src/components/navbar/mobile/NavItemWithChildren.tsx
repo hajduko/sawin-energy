@@ -1,10 +1,10 @@
-import { Menu } from '../../../util/menu';
+import { IMenuItem } from '../../../util/menu';
 import { useDisclosure, Text, Collapsible, Stack, Box, HStack } from '@chakra-ui/react';
 import LinkComponent from '../LinkComponent';
 import { FaChevronDown } from 'react-icons/fa';
 
 type Props = {
-  menu: Menu;
+  menu: IMenuItem;
 };
 
 const NavItemWithChildren = ({ menu }: Props) => {

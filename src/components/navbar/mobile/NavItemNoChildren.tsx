@@ -1,9 +1,9 @@
 import { Text } from '@chakra-ui/react';
-import { Menu } from '../../../util/menu';
+import { IMenuItem } from '../../../util/menu';
 import LinkComponent from '../LinkComponent';
 
 type Props = {
-  menu: Menu;
+  menu: IMenuItem;
 };
 
 const NavItemNoChildren = ({ menu }: Props) => {

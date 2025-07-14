@@ -1,11 +1,11 @@
 import { Box, HStack, Stack, Text } from '@chakra-ui/react';
 import { HoverCardContent, HoverCardRoot, HoverCardTrigger } from '../../ui/hover-card';
 import { FaChevronDown } from 'react-icons/fa';
-import { Menu } from '../../../util/menu';
+import { IMenuItem } from '../../../util/menu';
 import ChildNavItem from './ChildNavItem';
 
 type Props = {
-  menu: Menu;
+  menu: IMenuItem;
 };
 
 const NavItemWithChildren = ({ menu }: Props) => {

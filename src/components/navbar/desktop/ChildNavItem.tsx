@@ -1,8 +1,8 @@
 import { Text } from '@chakra-ui/react';
-import { Menu } from '../../../util/menu';
+import { IMenuItem } from '../../../util/menu';
 import LinkComponent from '../LinkComponent';
 
-const ChildNavItem = ({ name, url, external, target }: Menu) => {
+const ChildNavItem = ({ name, url, external, target }: IMenuItem) => {
   return (
     <LinkComponent url={url} external={external} target={target}>
       <Text
