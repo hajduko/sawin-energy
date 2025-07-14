@@ -23,16 +23,16 @@ const RealEstateMission = () => {
               korszerűtlen ingatlanod!
             </Heading>
             <Text fontSize='xl' textAlign={{ base: 'left', md: 'justify' }} color='#475467' mb={{ base: 4, lg: 0 }}>
-              Küldetésünk, hogy a korszerűtlen, magas rezsiköltségű ingatlanokat új életre keltsük - teljeskörűen, a
-              tervezéstől a kivitelezésig.
+              Küldetésünk, hogy a korszerűtlen, magas rezsiköltségű ingatlanokat a tervezéstől a kivitelezésig új életre
+              keltsük és az értéknövekménnyel adjuk el.
             </Text>
           </GridItem>
           <GridItem colSpan={1}>
             <Text fontSize='xl' textAlign={{ base: 'left', md: 'justify' }} color='#475467'>
-              A célunk, hogy olyan modern, fenntartható és értékálló otthonokat teremtsünk, amelyek nemcsak
-              energiahatékonyak, de piaci értékük is jelentős mértékben növekszik. Ma még kevés az ilyen típusú
-              ingatlan, pedig a kereslet és az ár prémium is óriási - mi szakértelmünknek köszönhetően éppen ebben
-              tudunk Neked segíteni!
+              Az Eladó, a Vevő vagy a SaWIngatlan pénzéből modern, fenntartható és értékálló otthonokat teremtünk,
+              amelyek nemcsak energiahatékonyak, de piaci értékük is jelentős mértékben növekszik. Ma még kevés az ilyen
+              típusú ingatlan, pedig a kereslet és az ár prémium is óriási - mi szakértelmünknek köszönhetően éppen
+              ebben tudunk Neked segíteni!
             </Text>
           </GridItem>
         </Grid>

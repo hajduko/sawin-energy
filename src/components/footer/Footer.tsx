@@ -50,11 +50,11 @@ const Footer = () => {
                 </Text>
               </Flex>
             </Link>
-            <Link to='tel:+36706189151'>
+            <Link to='tel:+36300706484'>
               <Flex align='center' gap={6} mb={4}>
                 <MdOutlinePhone color='white' size='24px' />
                 <Text fontSize='md' color='white' fontWeight='600'>
-                  +36 70 618 9151
+                  +36 30 070 6484
                 </Text>
               </Flex>
             </Link>

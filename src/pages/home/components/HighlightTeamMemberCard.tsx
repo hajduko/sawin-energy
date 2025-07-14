@@ -14,7 +14,8 @@ const HighlightTeamMemberCard = (member: IHighlightTeamMember) => {
         justify='center'
         textAlign='center'
         cursor='pointer'
-        gap={3}>
+        gap={3}
+        _hover={{ shadow: '2px 2px 8px 2px rgba(0, 0, 0, .3)' }}>
         <Avatar.Root size='2xl' h='96px' w='96px' mb={3}>
           <Avatar.Image src={member.img} />
           <Avatar.Fallback name={member.name} />

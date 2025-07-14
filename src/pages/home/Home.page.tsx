@@ -27,7 +27,6 @@ const Home = () => {
       <HomeHero />
       <HomeUs />
       <HomeServices />
-
       <HomeWho />
       <HomeTeam />
       <Footer />

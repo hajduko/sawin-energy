@@ -51,11 +51,11 @@ const TeamMemberDrawer = ({ member, children }: ITeamMemberDrawerProps) => {
                   )}
                 </GridItem>
                 <GridItem area='bio'>
-                  <Text>
-                    {member.bio?.map((paragraph) => (
-                      <Text textAlign='justify'>{paragraph}</Text>
-                    ))}
-                  </Text>
+                  {member.bio?.map((paragraph, index) => (
+                    <Text key={index} textAlign='justify' mb={2}>
+                      {paragraph}
+                    </Text>
+                  ))}
                 </GridItem>
               </Grid>
             </Drawer.Body>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Flex, Grid, GridItem, Heading, Text, Image, Input, Textarea } from '@chakra-ui/react';
 import { Field } from '../../../components/ui/field';
 import { Button } from '../../../components/ui/button';
@@ -69,7 +68,7 @@ const RealEstateContact = ({ setFeedBackOpen }: Props) => {
               <form onSubmit={handleSubmit(onSubmit)}>
                 <Field label='Név' pb={4}>
                   <Input
-                    placeholder='Gipsz Jakab'
+                    placeholder='Próba Péter'
                     h='44px'
                     bg='white'
                     {...register('name', { required: 'A név megadása kötelező!' })}
@@ -80,7 +79,7 @@ const RealEstateContact = ({ setFeedBackOpen }: Props) => {
                 <Field label='Email' pb={4}>
                   <Input
                     type='email'
-                    placeholder='gipsz.jakab@gmail.com'
+                    placeholder='proba.peter@gmail.com'
                     h='44px'
                     bg='white'
                     {...register('email', { required: 'Az email-cím megadása kötelező!' })}

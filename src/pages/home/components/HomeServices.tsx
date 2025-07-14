@@ -9,7 +9,7 @@ import {
   DrawerRoot,
   DrawerTitle,
 } from '../../../components/ui/drawer';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import solar from '../../../assets/images/home/solar.jpg';
 import heatpump from '../../../assets/images/home/heatpump.jpeg';
@@ -295,7 +295,7 @@ const HomeServices = () => {
           display={{ base: 'none', md: 'block' }}>
           <Tabs.List>
             {services.map((service) => (
-              <>
+              <React.Fragment key={service.value}>
                 <Tabs.Trigger
                   key={service.value}
                   value={service.value}
@@ -312,7 +312,7 @@ const HomeServices = () => {
                   my='auto'
                   borderColor='gray.300'
                 />
-              </>
+              </React.Fragment>
             ))}
           </Tabs.List>
 

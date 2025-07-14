@@ -34,7 +34,7 @@ const RealEstatePackages = () => {
         description:
           'Ingyenesen elkészítjük az ingatlanodra szabott felújítási tervet, költségkalkulációt, energetikai és megtérülési számításokat és az értéknövekményt, de a kivitelezést nem kezdjük el, azt már a Vevő költségére végezzük. Az ingatlant így - egyedi fejlesztési lehetőséggel, elkészült tervvel, jövőbeli értékbecsléssel – értékesítjük, ami különösen vonzó a befektetői kör számára.',
         points: [
-          'Jutalékunk a csomagban: 2% értékesítési jutalék és jutalék az az értéknövekmény nyereségének 20%-a az értékesítés után',
+          'Jutalékunk a csomagban: 2% értékesítési jutalék és értékesítési prémiumként az eladott ingatlan értéknövekmény nyereségének 25%-a.',
           'Ideális választás, ha befektetés nélkül szeretnéd a jelenleginél magasabb áron értékesíteni ingatlanod, vagy ha ingatlanod régóta értékesítésre vár, de nem jelentkeznek rá vevők. Ebben az esetben a leendő vevővel osztozol az Energiahatékonysági beruházás értéknövekményén.',
         ],
       },
@@ -48,8 +48,8 @@ const RealEstatePackages = () => {
         description:
           'Speciális esetekbe elérhető ajánlatunk. Ilyenkor a SaWin csoport finanszírozza az Energiahatékonysági felújítást, hogy az ingatlan magasabb áron értékesíthető legyen, neked nem kell befektetned.',
         points: [
-          'Esetenként meghatározott biztosítékot kérünk, ezért - jelzálog, vételi jog értékesítési tilalom - bejegyzése lehet szükséges.',
-          'Jutalékként az ingatlan előre meghatározott jelen értékén felüli profit 50%-át kérjük.',
+          'Jutalékunk a csomagban: 2% értékesítési jutalék és értékesítési prémiumként az eladott ingatlan értéknövekmény nyereségének 50%-a.',
+          'Ideális választás, ha biztosan, befektetés nélkül a legnagyobb nyereséggel szeretnéd a jelenleginél magasabb áron értékesíteni ingatlanod, vagy ha ingatlanod régóta értékesítésre vár, de nem jelentkeznek rá vevők. Ebben az esetben a SaWIngatlannal osztozol az Energiahatékonysági beruházás értéknövekményén, ezért jogi garanciát kérünk arra, hogy csak mi értékesíthetjük az Ingatlanodat.',
         ],
       },
     },

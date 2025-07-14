@@ -5,7 +5,13 @@ import { ITeamMember } from './team';
 const TeamMemberCard = (member: ITeamMember) => {
   return (
     <TeamMemberDrawer member={member}>
-      <VStack p={4} bg='light' borderRadius='lg' minHeight='216px' cursor='pointer'>
+      <VStack
+        p={4}
+        bg='light'
+        borderRadius='lg'
+        minHeight='216px'
+        _hover={{ shadow: '0px 0px 8px 2px rgba(0, 0, 0, 0.3)' }}
+        cursor='pointer'>
         <Avatar.Root size='2xl' h='96px' w='96px' mb={3}>
           <Avatar.Image src={member.img} />
           <Avatar.Fallback name={member.name} />
