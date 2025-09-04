@@ -15,7 +15,7 @@ const RealEstate = () => {
   return (
     <>
       <Helmet>
-        <title>Ingatlan - Sawin Energy</title>
+        <title>Ingatlan - SaWin Energy</title>
       </Helmet>
       <Popup open={feedBackOpen} setOpen={setFeedBackOpen} />
       <RealEstateHero />

@@ -20,7 +20,7 @@ const HeatPump = () => {
   return (
     <>
       <Helmet>
-        <title>Hőszivattyú - Sawin Energy</title>
+        <title>Hőszivattyú - SaWin Energy</title>
       </Helmet>
       <Popup open={dialogOpen} setOpen={setDialogOpen} setFeedBackOpen={setFeedBackOpen} />
       <FeedBackPopUp open={feedBackOpen} setOpen={setFeedBackOpen} />

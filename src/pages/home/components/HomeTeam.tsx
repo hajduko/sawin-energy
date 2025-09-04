@@ -1,8 +1,10 @@
-import { Box, Flex, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Box, Flex, Heading, SimpleGrid, Image } from '@chakra-ui/react';
 import TeamMemberCard from './TeamMemberCard';
 import HighlightTeamMemberCard from './HighlightTeamMemberCard';
 
 import { highlightTeamMembers, teamMembers } from './team';
+
+import org_chart from '../../../assets/images/home/org_chart.svg';
 
 const HomeTeam = () => {
   return (
@@ -26,6 +28,17 @@ const HomeTeam = () => {
             <TeamMemberCard key={member.name} {...member} />
           ))}
         </SimpleGrid>
+
+        <Heading as='h2' size='md' textAlign='center' fontWeight='600' color='primary' mt={20}>
+          Felépítésünk
+        </Heading>
+        <Heading as='h3' size='5xl' textAlign='center' fontWeight='600' lineHeight='short' mb={6}>
+          Az értékteremtés szervezeti felépítése
+        </Heading>
+
+        <Flex w='full' align='center' justify='center' rounded='20px'>
+          <Image src={org_chart} h='full' fit='contain' rounded='20px' />
+        </Flex>
       </Box>
     </Flex>
   );

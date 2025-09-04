@@ -27,7 +27,7 @@ const Residential = () => {
   return (
     <>
       <Helmet>
-        <title>Lakossági pályázatok - Sawin Energy</title>
+        <title>Lakossági pályázatok - SaWin Energy</title>
       </Helmet>
       <Popup open={dialogOpen} setOpen={setDialogOpen} setFeedBackOpen={setFeedBackOpen} />
       <FeedBackPopUp open={feedBackOpen} setOpen={setFeedBackOpen} />

@@ -7,7 +7,7 @@ const Privacy = () => {
   return (
     <>
       <Helmet>
-        <title>Adatvédelmi nyilatkozat - Sawin Energy</title>
+        <title>Adatvédelmi nyilatkozat - SaWin Energy</title>
       </Helmet>
       <Box bgColor='#ebedf0' pt={{ base: 0, lg: 16 }}>
         <NavBar />

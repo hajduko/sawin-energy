@@ -13,7 +13,7 @@ const Recruitment = () => {
   return (
     <>
       <Helmet>
-        <title>Toborzás - Sawin Energy</title>
+        <title>Toborzás - SaWin Energy</title>
       </Helmet>
       <RecruitmentFeedBackPopUp open={dialogOpen} setOpen={setDialogOpen} />
       <RecruitmentHero />

@@ -7,7 +7,7 @@ const Page404 = () => {
   return (
     <>
       <Helmet>
-        <title>A keresett oldal nem található - Sawin Energy</title>
+        <title>A keresett oldal nem található - SaWin Energy</title>
       </Helmet>
       <Box h='100vh' bgColor='#ebedf0' position='relative' pt={{ base: 0, lg: 16 }}>
         <NavBar />

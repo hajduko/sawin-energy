@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Főoldal - Sawin Energy</title>
+        <title>Főoldal - SaWin Energy</title>
       </Helmet>
       <HomeHero />
       <HomeUs />
