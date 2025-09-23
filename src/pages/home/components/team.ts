@@ -60,7 +60,7 @@ export const teamMembers: ITeamMember[] = [
     ],
   },
   {
-    name: 'Fodor Mónika',
+    name: 'Molnár Mónika',
     role: 'Értékesítési vezető',
     email: 'fodor.monika@sawin.hu',
     img: moni,
@@ -87,7 +87,7 @@ export const teamMembers: ITeamMember[] = [
     email: 'mahan@sawin.hu',
     img: mahan,
     bio: [
-      'Fejlesztési vezetőként Mahan a SaWin innovatív szoftvermegoldásainak mozgatórugója. Gépészmérnöki modellezés szakon szerzett mesterdiplomát a Budapesti Műszaki és Gazdaságtudományi Egyetemen.',
+      'Mahan a SaWin innovatív szoftvermegoldásainak és gyártás folyamatainak a mozgatórugója. Gépészmérnöki modellezés szakon szerzett mesterdiplomát a Budapesti Műszaki és Gazdaságtudományi Egyetemen.',
       'Kulcsszerepet játszott a vállalat szoftverfolyamatainak rendszerezésében, és a nagy teljesítményű Impact energiahatékonysági szoftver egyik kulcsfontosságú fejlesztője volt. Jelenleg tehetséges tervezőcsapatunk élén áll, és olyan megoldások létrehozásán dolgozik, amelyek egyszerre intelligensek és hatékonyak.',
     ],
   },
