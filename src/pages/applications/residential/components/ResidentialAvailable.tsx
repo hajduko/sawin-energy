@@ -4,12 +4,12 @@ import sol_2 from '../../../../assets/images/residential/sol_2.jpg';
 
 const ResidentialAvailable = () => {
   const items_1 = [
-    { id: 1, name: 'Projektösszeg:', data: '7 millió Ft' },
-    { id: 2, name: 'Vissza nem térítendő:', data: '3 millió Ft' },
-    { id: 3, name: 'Támogatott hitel:', data: '3 millió Ft' },
+    { id: 1, name: 'Projektösszeg:', data: '10 millió Ft' },
+    { id: 2, name: 'Vissza nem térítendő:', data: '5 millió Ft' },
+    { id: 3, name: 'Támogatott hitel:', data: '5 millió Ft' },
     { id: 4, name: 'Hitel kamat:', data: '0%' },
-    { id: 5, name: 'Futamidő:', data: 'max. 12 év' },
-    { id: 6, name: 'Önerő:', data: '1 millió Ft' },
+    { id: 5, name: 'Futamidő:', data: 'max. 15 év' },
+    { id: 6, name: 'Önerő:', data: '5%' },
   ];
 
   const items_2 = [

@@ -20,11 +20,6 @@ const Popup = ({ open, setOpen }: Props) => {
             <Text as='b'>Köszönjük,</Text> hogy regisztráltál ingyenes tanácsadásunkra. Személyes tanácsadód rövidesen
             felveszi veled a kapcsolatot a megadott elérhetőségeiden.
           </Text>
-          <Text textAlign='center' mb={4} fontSize='md'>
-            <Text as='b'>Fontos!</Text> A megadott email címedre küldtünk egy levelet, melyben egy időpont foglaló
-            linket találsz. Kérünk ezen a linken keresztül válaszd ki a számodra megfelelő időpontot és foglald le a
-            tanácsadásod pontos időpontját.
-          </Text>
         </Flex>
         <DialogCloseTrigger rounded='full' />
       </DialogContent>

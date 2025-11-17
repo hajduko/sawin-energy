@@ -7,7 +7,6 @@ import Page404 from './pages/404/404.page';
 import Residential from './pages/applications/residential/Residential.page';
 import ScrollToTop from './components/scrolltotop/ScrollToTop';
 import RealEstate from './pages/realestate/RealEstate.page';
-import Redirect from './Redirect';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
           <Route path='applications/residential' element={<Residential />} />
           <Route path='privacy' element={<Privacy />} />
           <Route path='realestate' element={<RealEstate />} />
-          <Route path='faluprogram' element={<Redirect />} />
           <Route path='*' element={<Page404 />} />
         </Route>
       </Routes>

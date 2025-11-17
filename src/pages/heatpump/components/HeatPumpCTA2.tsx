@@ -42,7 +42,7 @@ const HeatPumpCTA2 = ({ dialogOpen, setDialogOpen }: Props) => {
           </Box>
           <Text fontSize='xl' color='light' zIndex={3} mb={{ base: '4', md: '0' }}>
             Teljeskörű pályázati ügyintézést vállalunk, ha a hőszivattyús beruházásodat valamelyik elérhető támogatásból
-            szeretnéd megvalósítani. Legyen szó az Energetikai otthonfelújítási támogatásról vagy a 3+3 milliós
+            szeretnéd megvalósítani. Legyen szó az Energetikai otthonfelújítási támogatásról vagy a 5+5 milliós
             otthonfelújítási programról, tapasztalt kollégáink segítenek eligazodni a feltételek között.
           </Text>
           <Text fontSize='sm' color='light' zIndex={3} mb={{ base: '4', md: '0' }}>

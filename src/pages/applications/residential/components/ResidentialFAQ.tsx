@@ -8,11 +8,11 @@ const ResidentialFAQ = () => {
       id: '0',
       question: 'Mely ingatlanokra igényelhető a támogatás?',
       eoft: [
-        'Az igénylőnek tulajdoni hányaddal vagy holtig, de legalább a hitel futamidejének végéig tartó haszonélvezeti joggal kell rendelkeznie az érintett ingatlanban.',
+        'Az igénylőnek tulajdoni hányaddal vagy holtig, de legalább a hitel futam idejének végéig tartó haszonélvezeti joggal kell rendelkeznie az érintett ingatlanban.',
         'Az ingatlan egy 2007. január 1. előtt használatbavételi engedélyt kapott, életvitelszerűen lakott egy- vagy többlakásos családi ház.',
-        'Az igénylő vagy közeli hozzátartozója állandó lakóhelyének vagy tartózkodási helyének kell lennie az igénylésben szereplő ingatlannak legalább 2024. december 19.-től kezdőden. (lakcímkártyával igazolandó).',
+        'Az igénylő vagy közeli hozzátartozója állandó lakóhelyének vagy tartózkodási helyének kell lennie az igénylésben szereplő ingatlannak legalább a pályázat beadását megelőzően. (lakcímkártyával igazolandó).',
         'Az ingatlanban csak lakáscélú energetikai felhasználás történhet.',
-        'Adásvétel esetén elfogadott 2024 december 20. előtt készült, ügyvéd által ellenjegyzett adásvételi vagy ajándékozási szerződés.',
+        'Adásvétel esetén elfogadott a pályázat beadását megelőzően készült, ügyvéd által ellenjegyzett adásvételi vagy ajándékozási szerződés.',
       ],
       voft: [
         'Az igénylő(k) és az érintett gyermek(ek) állandó lakcímmel kell, hogy rendelkeznek a felújítandó ingatlanban.',
@@ -45,7 +45,7 @@ const ResidentialFAQ = () => {
       id: '2',
       question: 'Mekkora az elérhető vissza nem térítendő támogatás mértéke?',
       eoft: [
-        'A pályázat két részből áll, egy vissza nem térítendő támogatásból és egy kamatmentes hitelből. A támogatás és a hitel csak együtt igényelhető. A beruházás maximális mértéke 7 millió forint lehet. Ebből 1 millió forint (kisebb összegű pályázat esetén a projekt érték 1/7 része) az önerő, a fennmaradó 6 millió forintot pedig megosztva 50-50%-ban a támogatás és a hitel teszi ki. Kisebb pályázati összeg esetén a támogatás és a hitel is arányosan csökken. A projekt minimális önrészen felüli összköltsége 2,5 millió forint lehet.',
+        'A pályázat két részből áll, egy vissza nem térítendő támogatásból és egy kamatmentes hitelből. A támogatás és a hitel csak együtt igényelhető. A beruházás maximális mértéke 10 millió forint lehet. Ebből 5%, az önerő, a fennmaradó projekt összeget pedig megosztva 50-50%-ban a támogatás és a hitel teszi ki. Kisebb pályázati összeg esetén a támogatás és a hitel is arányosan csökken. A projekt minimális önrészen felüli összköltsége 2,5 millió forint lehet.',
       ],
       voft: [
         'A vissza nem térítendő támogatás a számlával igazolt felújítási költségek 50 százaléka, de maximum 3 millió forint lehet. Minden pályázó 6 millió forint kamat támogatott hitelre is jogosult. A hitel a beruházás megkezdése előtt lehívható. Az állami támogatás a beruházás megvalósítása után utófinanszírozásban igényelhető. A támogatás lehívásakor a hitel összege csökken a támogatás mértékével és a törlesztő részeltet már csak a fennmaradó hitelrész után kell fizetni. A támogatás lehívásakor a törlesztő részlete újra számolják a csökkentett hitelösszegre.',
@@ -56,7 +56,7 @@ const ResidentialFAQ = () => {
       question: 'A támogatás részletei',
       eoft: [
         'A támogatás előfinanszírozásban is elérhető, a hitellel egy időben, de külön folyósítják közvetlenül az igénylővel szerződött kivitelező részére.',
-        'A vissza nem térítendő támogatás a projekt elvárt önerőn felüli részének 50 százaléka, de maximum 3 millió forint lehet.',
+        'A vissza nem térítendő támogatás a projekt elvárt önerőn felüli részének 50 százaléka, de maximum 5 millió forint lehet.',
       ],
       voft: [
         'A vissza nem térítendő támogatás mértéke a számlával igazolt felújítási költségek 50 százaléka, de maximum 3 millió forint lehet.',
@@ -69,8 +69,8 @@ const ResidentialFAQ = () => {
       question: 'A támogatás mellé igényelhető kölcsön részletei',
       eoft: [
         'A támogatás mellé a kölcsönt mindenképpen igényelni kell! A kölcsön teljesen kamatmentes, így a legjutányosabb konstrukció, ami jelenleg elérhető. Nem jelzáloghitel, azonban a hitel végtörlesztéséig elidegeníthetetlenségi kötelezettséget kell vállalni, vagyis az ingatlan nem értékesíthető.',
-        'Futamidő: maximum 12 év (türelmi és rendelkezésre tartási idővel együtt).',
-        'Rendelkezésre tartási idő: 6-24 hónap (indokolt esetben 6 hónappal meghosszabbítható).',
+        'Futamidő: maximum 15 év (türelmi és rendelkezésre tartási idővel együtt).',
+        'Rendelkezésre tartási idő: 12-24 hónap (indokolt esetben 6 hónappal meghosszabbítható).',
         'Türelmi idő: a rendelkezésre tartási idő végétől számított 3 hónap.',
         'Előtörlesztés: részleges előtörlesztés csak eredményességmérés után lehetséges, előtte kizárólag teljes előtörlesztés engedélyezett, vagyis a vissza nem térítendő támogatást is vissza kell fizetni.',
         'Lakástakarék-pénztári megtakarítások: felhasználhatók a kölcsön elő- vagy végtörlesztésére.',
@@ -94,7 +94,7 @@ const ResidentialFAQ = () => {
       eoft: [
         'A beruházással legalább 30%-os energetikai megtakarítást kell elérni, amit energetikai tanúsítvánnyal igazolni kell.',
         'Ha az igénylő a kölcsön futam idejének végéig betölti a 75. életévét, szükséges egy olyan adóstárs bevonása, aki megfelel az életkori és jövedelmi elvárásoknak is.',
-        'Elfogadható a 2024. december 19-ig kelt, ügyvéd által ellenjegyzett vagy közjegyző által hitelesített adásvételi szerződés. A kölcsönkérelem feltétele, hogy a szerződést a Földhivatalnál érkeztetni kell és széljegyre kell kerüljön. Elfogadható továbbá ajándékozási szerződés, haszonélvezeti szerződés, vagy egyéb tulajdonjogot igazoló okirat.',
+        'Elfogadható a pályázat benyújtása előtt kelt, ügyvéd által ellenjegyzett vagy közjegyző által hitelesített adásvételi szerződés. A kölcsönkérelem feltétele, hogy a szerződést a Földhivatalnál érkeztetni kell és széljegyre kell kerüljön. Elfogadható továbbá ajándékozási szerződés, haszonélvezeti szerződés, vagy egyéb tulajdonjogot igazoló okirat.',
       ],
       voft: [
         'Egy gyermek csak egy igénylésnél vehető figyelembe.',
