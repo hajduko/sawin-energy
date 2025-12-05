@@ -1,17 +1,17 @@
 import { Box, Flex, Grid, GridItem, Heading, Text, Image, Input, Textarea } from '@chakra-ui/react';
-import { Field } from '../../../components/ui/field';
-import { Button } from '../../../components/ui/button';
+import { Field } from '../../../../components/ui/field';
+import { Button } from '../../../../components/ui/button';
 import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { apiGatewayService, RealEstateFormData } from '../../../util/configs/api.config';
+import { apiGatewayService, RealEstateFormData } from '../../../../util/configs/api.config';
 
-import mission from '../../../assets/images/realestate/mission.jpg';
+import mission from '../../../../assets/images/realestate/mission.jpg';
 
 interface Props {
   setFeedBackOpen: (value: boolean) => void;
 }
 
-const RealEstateContact = ({ setFeedBackOpen }: Props) => {
+const HomeContact = ({ setFeedBackOpen }: Props) => {
   const {
     register,
     handleSubmit,
@@ -37,7 +37,7 @@ const RealEstateContact = ({ setFeedBackOpen }: Props) => {
   };
 
   return (
-    <Flex bg='#ebedf0' justify='center' id='realEstateContact'>
+    <Flex bg='#ebedf0' justify='center' id='homeContact'>
       <Box w={{ base: '95%', lg: '76rem' }} mb={{ base: 12, md: 20 }} mt={{ base: 12, md: 20 }}>
         <Heading as='h2' size='md' fontWeight='600' color='primary' mb={2}>
           Kapcsolat
@@ -138,4 +138,4 @@ const RealEstateContact = ({ setFeedBackOpen }: Props) => {
   );
 };
 
-export default RealEstateContact;
+export default HomeContact;

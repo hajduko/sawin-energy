@@ -6,7 +6,9 @@ import Privacy from './pages/privacy/Privacy.page';
 import Page404 from './pages/404/404.page';
 import Residential from './pages/applications/residential/Residential.page';
 import ScrollToTop from './components/scrolltotop/ScrollToTop';
-import RealEstate from './pages/realestate/RealEstate.page';
+import RealestateSellers from './pages/realestate/sellers/realestateSellers.page';
+import RealestateAgents from './pages/realestate/agents/realestateAgents.page';
+import Recruitment from './pages/recruitment/Recruitment.page';
 
 function App() {
   return (
@@ -15,10 +17,21 @@ function App() {
       <Routes>
         <Route path='/'>
           <Route index element={<Home />} />
-          <Route path='heatpump' element={<HeatPump />} />
-          <Route path='applications/residential' element={<Residential />} />
+          <Route path='hoszivattyu'>
+            <Route path='' element={<HeatPump />} />
+            <Route path='termekek' element={'TODO'} />
+          </Route>
+          <Route path='hoszigeteles'>
+            <Route path='' element={'TODO'} />
+            <Route path='termekek' element={'TODO'} />
+          </Route>
+          <Route path='ingatlan'>
+            <Route path='eladoknak' element={<RealestateSellers />} />
+            <Route path='ingatlanosoknak' element={<RealestateAgents />} />
+          </Route>
+          <Route path='palyazatok/lakossagi' element={<Residential />} />
+          <Route path='toborzas' element={<Recruitment />} />
           <Route path='privacy' element={<Privacy />} />
-          <Route path='realestate' element={<RealEstate />} />
           <Route path='*' element={<Page404 />} />
         </Route>
       </Routes>

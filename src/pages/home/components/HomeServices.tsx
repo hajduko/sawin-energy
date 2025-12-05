@@ -30,10 +30,10 @@ import mastertherm from '../../../assets/images/home/Mastertherm.png';
 import raygex from '../../../assets/images/home/Raygex.png';
 import effi from '../../../assets/images/home/Effi.png';
 
-import isover from '../../../assets/images/home/Isover.png';
-import weber from '../../../assets/images/home/Weber.svg';
-import rigips from '../../../assets/images/home/Rigips.png';
-import hilti from '../../../assets/images/home/Hilti.svg';
+import carboland from '../../../assets/images/home/carboland.jpg';
+import froewis from '../../../assets/images/home/fröwis.png';
+import illbruck from '../../../assets/images/home/illbruck.png';
+import ceresit from '../../../assets/images/home/ceresit.gif';
 import sawin from '../../../assets/sawin_white.svg';
 
 import wallbox from '../../../assets/images/home/Wallbox.png';
@@ -159,15 +159,15 @@ const HomeServices = () => {
       ],
       brands: [
         {
-          name: 'Saint-Gobain Isover',
+          name: 'Carboland',
           position: '',
-          img: isover,
+          img: carboland,
           highlight: false,
         },
         {
-          name: 'Saint-Gobain Rigips',
+          name: 'Fröwis',
           position: '',
-          img: rigips,
+          img: froewis,
           highlight: false,
         },
         {
@@ -177,15 +177,15 @@ const HomeServices = () => {
           highlight: true,
         },
         {
-          name: 'Saint-Gobain Weber',
+          name: 'Illbruck',
           position: '',
-          img: weber,
+          img: illbruck,
           highlight: false,
         },
         {
-          name: 'Hilti',
-          position: 'Hilti függesztett homlokzati rendszer',
-          img: hilti,
+          name: 'Ceresit',
+          position: '',
+          img: ceresit,
           highlight: false,
         },
       ],

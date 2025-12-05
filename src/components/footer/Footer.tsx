@@ -62,7 +62,7 @@ const Footer = () => {
               <Flex align='center' gap={6}>
                 <MdOutlineHouse color='white' size='24px' />
                 <Text fontSize='md' color='white' fontWeight='600'>
-                  1051 Budapest, Nádor utca 11.
+                  9027 Győr, Kandó Kálmán u. 7.
                 </Text>
               </Flex>
             </Link>

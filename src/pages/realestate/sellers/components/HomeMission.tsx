@@ -1,7 +1,7 @@
 import { Box, Flex, Grid, GridItem, Heading, Text, Image } from '@chakra-ui/react';
-import mission from '../../../assets/images/realestate/mission.jpg';
+import mission from '../../../../assets/images/realestate/mission.jpg';
 
-const RealEstateMission = () => {
+const HomeMission = () => {
   return (
     <Flex bg='#ebedf0' justify='center'>
       <Box w={{ base: '95%', lg: '76rem' }} mb={{ base: 12, md: 20 }} mt={{ base: 12, md: 20 }}>
@@ -29,7 +29,7 @@ const RealEstateMission = () => {
           </GridItem>
           <GridItem colSpan={1}>
             <Text fontSize='xl' textAlign={{ base: 'left', md: 'justify' }} color='#475467'>
-              Az Eladó, a Vevő vagy a SaWIngatlan pénzéből modern, fenntartható és értékálló otthonokat teremtünk,
+              Az Eladó, a Vevő vagy a SaWingatlan pénzéből modern, fenntartható és értékálló otthonokat teremtünk,
               amelyek nemcsak energiahatékonyak, de piaci értékük is jelentős mértékben növekszik. Ma még kevés az ilyen
               típusú ingatlan, pedig a kereslet és az ár prémium is óriási - mi szakértelmünknek köszönhetően éppen
               ebben tudunk Neked segíteni!
@@ -43,4 +43,4 @@ const RealEstateMission = () => {
   );
 };
 
-export default RealEstateMission;
+export default HomeMission;

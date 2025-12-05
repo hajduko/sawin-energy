@@ -1,15 +1,15 @@
 import { Box, Flex, Heading, Image, Card, Tabs, Separator, List } from '@chakra-ui/react';
 
-import check from '../../../assets/icons/realestatecheck.png';
+import check from '../../../../assets/icons/realestatecheck.png';
 
-import turnkey from '../../../assets/images/realestate/turnkey.png';
-import financing from '../../../assets/images/realestate/financing.png';
-import plan from '../../../assets/images/realestate/plan.png';
+import turnkey from '../../../../assets/images/realestate/turnkey.png';
+import financing from '../../../../assets/images/realestate/financing.png';
+import plan from '../../../../assets/images/realestate/plan.png';
 
-import key from '../../../assets/icons/key.svg';
-import clipboard from '../../../assets/icons/clipboard.svg';
+import key from '../../../../assets/icons/key.svg';
+import clipboard from '../../../../assets/icons/clipboard.svg';
 
-const RealEstatePackages = () => {
+const HomePackages = () => {
   const services = [
     {
       title: 'Kulcsrakész csomag',
@@ -196,4 +196,4 @@ const RealEstatePackages = () => {
   );
 };
 
-export default RealEstatePackages;
+export default HomePackages;

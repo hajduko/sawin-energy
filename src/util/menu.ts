@@ -29,7 +29,7 @@ export const menu: IMenuItem[] = [
       },
       {
         name: 'Hőszivattyús rendszerek',
-        url: '/heatpump',
+        url: '/hoszivattyu',
         available: true,
         external: false,
       },
@@ -58,21 +58,84 @@ export const menu: IMenuItem[] = [
       {
         name: 'Lakossági pályázatok',
         available: true,
-        url: '/applications/residential',
+        url: '/palyazatok/lakossagi',
         external: false,
       },
     ],
   },
   {
-    name: 'Ingatlan',
-    url: '/realestate',
-    available: false,
+    name: 'Toborzás',
+    url: '/toborzas',
+    available: true,
     external: false,
   },
   {
-    name: 'Toborzás',
-    url: '/recruitment',
-    available: false,
+    name: 'Ingatlan',
+    url: '/ingatlan/eladoknak',
+    available: true,
+    external: false,
+  },
+];
+
+export const heatpumpMenu: IMenuItem[] = [
+  {
+    name: 'Főoldal',
+    url: '/',
+    available: true,
+    external: false,
+  },
+  {
+    name: 'Hőszivattyú',
+    url: '/hoszivattyu',
+    available: true,
+    external: false,
+  },
+  // {
+  //   name: 'Termékeink',
+  //   url: '/hoszivattyu/termekek',
+  //   available: true,
+  //   external: false,
+  // },
+];
+
+export const isolationMenu: IMenuItem[] = [
+  {
+    name: 'Főoldal',
+    url: '/',
+    available: true,
+    external: false,
+  },
+  {
+    name: 'Hőszivattyú',
+    url: '/hoszigeteles',
+    available: true,
+    external: false,
+  },
+  {
+    name: 'Termékeink',
+    url: '/hoszigeteles/termekek',
+    available: true,
+    external: false,
+  },
+];
+
+export const realestateMenu: IMenuItem[] = [
+  {
+    name: 'Főoldal',
+    url: '/',
+    available: true,
+    external: false,
+  },
+  {
+    name: 'Eladóknak',
+    url: '/ingatlan/eladoknak',
+    available: true,
+    external: false,
+  },
+  {
+    name: 'Ingatlanosoknak',
+    url: '/ingatlan/ingatlanosoknak',
+    available: true,
     external: false,
   },
 ];

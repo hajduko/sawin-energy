@@ -1,11 +1,11 @@
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
-import NavBar from '../../../components/navbar/NavBar';
-import bg from '../../../assets/images/home/hero_bg.jpg';
+import NavBar from '../../../../components/navbar/NavBar';
+import bg from '../../../../assets/images/home/hero_bg.jpg';
 import { FaArrowRight } from 'react-icons/fa';
 
-const RealEstateHero = () => {
+const ForAgentsHero = () => {
   return (
-    <Box h={{ base: '60vh', md: '70vh' }} bgImg={`url(${bg})`} bgSize='cover'>
+    <Box h={{ base: '60vh', md: '80vh' }} bgImg={`url(${bg})`} bgSize='cover'>
       <Box h='full' w='full' bgColor='#062617B2'>
         <Flex
           h='full'
@@ -24,14 +24,17 @@ const RealEstateHero = () => {
             fontSize={{ base: '5xl', sm: '5xl', md: '6xl', lg: '7xl' }}
             lineHeight='150%'
             fontWeight='700'
-            color='accent'
+            color='white'
             textAlign='center'>
-            Teremtsünk együtt új értéket
+            A SaWingatlan nem versenytárs,
             <br />
-            <Text as='span' color='white'>
-              eladó ingatlanodnak!
+            <Text as='span' color='accent'>
+              hanem lehetőség!
             </Text>
           </Heading>
+          <Text fontSize='lg' color='white' textAlign='center' lineHeight='tall'>
+            Támogatjuk az ingatlanközvetítők munkáját, új piacokat és magasabb értékesítést biztosítunk partnereinknek.
+          </Text>
           <Button
             size='2xl'
             mt={4}
@@ -44,12 +47,12 @@ const RealEstateHero = () => {
             fontSize='lg'
             fontWeight='600'
             onClick={() => {
-              const element = document.getElementById('realEstateContact');
+              const element = document.getElementById('agentContact');
               if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
               }
             }}>
-            Eladom az ingatlanom!
+            Csatlakozom hozzátok!
             <Box
               bg={'light'}
               h={'47px'}
@@ -68,4 +71,4 @@ const RealEstateHero = () => {
   );
 };
 
-export default RealEstateHero;
+export default ForAgentsHero;

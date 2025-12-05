@@ -5,10 +5,10 @@ import {
   TimelineItem,
   TimelineRoot,
   TimelineTitle,
-} from '../../../components/ui/timeline';
+} from '../../../../components/ui/timeline';
 import { FaArrowRight } from 'react-icons/fa';
 
-const RealEstateProcess = () => {
+const HomeProcess = () => {
   return (
     <>
       <Flex bg='#ebedf0' justify='center'>
@@ -168,7 +168,7 @@ const RealEstateProcess = () => {
             fontSize='lg'
             fontWeight='600'
             onClick={() => {
-              const element = document.getElementById('realEstateContact');
+              const element = document.getElementById('homeContact');
               if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
               }
@@ -192,4 +192,4 @@ const RealEstateProcess = () => {
   );
 };
 
-export default RealEstateProcess;
+export default HomeProcess;
