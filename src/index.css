@@ -1,131 +1,144 @@
 .chakra-timeline__separator {
-    margin-left: 22px;
-    border-width: 2px;
+  margin-left: 22px;
+  border-width: 2px;
 }
 
 .chakra-segment-group__root {
-    min-height: 56px;
-    padding: 6px;
-    background-color: white;
-    border-radius: 8px;
-    
+  min-height: 56px;
+  padding: 6px;
+  background-color: white;
+  border-radius: 8px;
 }
 
 .chakra-segment-group__item {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: #667085;
-    padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #667085;
+  padding: 0;
 }
 
-.chakra-segment-group__item[data-state="checked"] {
-    color: #07f258;
+.chakra-segment-group__item[data-state='checked'] {
+  color: #07f258;
 }
 
 .chakra-segment-group__indicator {
-    background-color: #017649;
+  background-color: #017649;
 }
 
-.home-who-grid:hover .home-who-item:not(:hover) { opacity: 0.7; }
+.home-who-grid:hover .home-who-item:not(:hover) {
+  opacity: 0.7;
+}
 
-.heat-grid:hover .heat-grid-item:not(:hover) { opacity: 0.4; }
+.heat-grid:hover .heat-grid-item:not(:hover) {
+  opacity: 0.4;
+}
 
 .privacy > h1 {
-    font-size: var(--chakra-font-sizes-5xl);
-    font-weight: 600;
-    color: var(--chakra-colors-primary);
+  font-size: var(--chakra-font-sizes-5xl);
+  font-weight: 600;
+  color: var(--chakra-colors-primary);
 }
 
 .privacy > h2 {
-    font-size: var(--chakra-font-sizes-4xl);
-    font-weight: 600;
-    color: var(--chakra-colors-primary);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  font-size: var(--chakra-font-sizes-4xl);
+  font-weight: 600;
+  color: var(--chakra-colors-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .privacy > h3 {
-    font-size: var(--chakra-font-sizes-3xl);
-    font-weight: 600;
-    color: var(--chakra-colors-primary);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  font-size: var(--chakra-font-sizes-3xl);
+  font-weight: 600;
+  color: var(--chakra-colors-primary);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .privacy > p {
-    text-align: justify;
-    margin-bottom: 0.5rem;
+  text-align: justify;
+  margin-bottom: 0.5rem;
 }
 
 .privacy > p > em {
-    font-style: italic;
+  font-style: italic;
 }
 
 .privacy > ol {
-    all: initial;
-    list-style-type: decimal;
-    list-style-position: inside;
+  all: initial;
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 
 .privacy > ol > li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-family: var(--global-font-body, var(--font-fallback));
-    text-align: justify;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--global-font-body, var(--font-fallback));
+  text-align: justify;
 }
 
 .privacy > ul {
-    all: initial;
-    list-style-type: disc;
-    list-style-position: inside;
+  all: initial;
+  list-style-type: disc;
+  list-style-position: inside;
 }
 
 .privacy > ul > li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    font-family: var(--global-font-body, var(--font-fallback));
-    text-align: justify;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--global-font-body, var(--font-fallback));
+  text-align: justify;
 }
 
 .privacy > ol > ul {
-    all: initial;
-    list-style-type: circle;
-    list-style-position: inside;
+  all: initial;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 .privacy > ol > ul > li {
-    margin-bottom: 0.5rem;
-    margin-left: 2rem;
-    font-size: 1rem;
-    font-family: var(--global-font-body, var(--font-fallback));
-    text-align: justify;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-family: var(--global-font-body, var(--font-fallback));
+  text-align: justify;
 }
 
 .privacy > ol > ol {
-    all: initial;
-    list-style-type: lower-alpha;
-    list-style-position: inside;
+  all: initial;
+  list-style-type: lower-alpha;
+  list-style-position: inside;
 }
 
 .privacy > ol > ol > li {
-    margin-bottom: 0.5rem;
-    margin-left: 2rem;
-    font-size: 1rem;
-    font-family: var(--global-font-body, var(--font-fallback));
-    text-align: justify;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-family: var(--global-font-body, var(--font-fallback));
+  text-align: justify;
 }
 
 .privacy > table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid black;
 }
 
-.privacy th, .privacy td  {
-    border: 1px solid black;
-    padding: 8px;
-    
+.privacy th,
+.privacy td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.popup-ai {
+  position: fixed;
+  left: 40px !important;
+  bottom: 40px !important;
+}
+
+.embed-ai {
+  width: 80% !important;
 }

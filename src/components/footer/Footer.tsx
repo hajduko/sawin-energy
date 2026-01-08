@@ -39,6 +39,11 @@ const Footer = () => {
                   Lakossági pályázatok
                 </Text>
               </Link>
+              <Link to='/judith'>
+                <Text color='white' fontSize='md' fontWeight={location.pathname === '/judith' ? '700' : '400'}>
+                  Judith AI
+                </Text>
+              </Link>
             </Flex>
           </GridItem>
           <GridItem area='contact'>
@@ -76,7 +81,7 @@ const Footer = () => {
               px={{ base: 4, lg: 0 }}
               gap={{ base: 2, md: 0 }}>
               <Text color='white' fontSize='md'>
-                2024 - SaWin Energy © Minden jog fenntartva
+                2026 - SaWin Energy © Minden jog fenntartva
               </Text>
               <Link to='/privacy'>
                 <Text color='white' fontSize='md'>

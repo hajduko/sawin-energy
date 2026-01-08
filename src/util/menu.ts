@@ -14,6 +14,7 @@ export const menu: IMenuItem[] = [
     available: true,
     external: false,
   },
+
   {
     name: 'Szolgáltatások',
     url: '',

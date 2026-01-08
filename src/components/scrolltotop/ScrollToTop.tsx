@@ -33,8 +33,8 @@ const ScrollToTop = () => {
       right='40px'
       bgColor='primary'
       rounded='full'
-      h='56px'
-      w='56px'
+      h='64px'
+      w='64px'
       onClick={() => scrollToTop()}
       zIndex={999}>
       <Image src={arrow} />

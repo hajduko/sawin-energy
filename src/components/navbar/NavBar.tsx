@@ -1,9 +1,10 @@
-import { Box, Flex, IconButton, useDisclosure, Image, Collapsible } from '@chakra-ui/react';
+import { Box, Flex, IconButton, useDisclosure, Image, Collapsible, Text } from '@chakra-ui/react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router';
 import logo from '../../assets/sawin.svg';
 import DesktopNav from './desktop/DesktopNav';
 import MobileNav from './mobile/MobileNav';
+import LinkComponent from './LinkComponent';
 
 const NavBar = () => {
   const { open, onToggle } = useDisclosure();
@@ -18,10 +19,21 @@ const NavBar = () => {
       rounded={{ base: 'none', lg: 'full' }}
       position='relative'>
       <Flex minH={'51px'} align={'center'} justify={'space-between'}>
-        <Flex>
+        <Flex gap={4}>
           <Link to='/'>
             <Image src={logo} height='25px' />
           </Link>
+          <LinkComponent url='/judith' external={false}>
+            <Text
+              color='dark'
+              _hover={{
+                color: 'primary',
+              }}
+              fontSize='xl'
+              fontWeight='700'>
+              AI Judith
+            </Text>
+          </LinkComponent>
         </Flex>
 
         <Flex display={{ base: 'none', md: 'flex' }} mx={4}>

@@ -9,6 +9,7 @@ import ScrollToTop from './components/scrolltotop/ScrollToTop';
 import RealestateSellers from './pages/realestate/sellers/realestateSellers.page';
 import RealestateAgents from './pages/realestate/agents/realestateAgents.page';
 import Recruitment from './pages/recruitment/Recruitment.page';
+import Judith from './pages/judith/Judith.page';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path='eladoknak' element={<RealestateSellers />} />
             <Route path='ingatlanosoknak' element={<RealestateAgents />} />
           </Route>
+          <Route path='judith' element={<Judith />} />
           <Route path='palyazatok/lakossagi' element={<Residential />} />
           <Route path='toborzas' element={<Recruitment />} />
           <Route path='privacy' element={<Privacy />} />
