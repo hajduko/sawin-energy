@@ -62,7 +62,7 @@ export const teamMembers: ITeamMember[] = [
   {
     name: 'Molnár Mónika',
     role: 'Értékesítési vezető',
-    email: 'fodor.monika@sawin.hu',
+    email: 'molnar.monika@sawin.hu',
     img: moni,
     bio: [
       'Több évtizedes tapasztalata van az ingatlanszakma minden területén. Az ingatlanüzemeltetést követően ingatlan fejlesztéssel, majd az elmúlt 15 évben ingatlan értékesítéssel foglalkozott.',

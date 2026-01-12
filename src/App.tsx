@@ -6,9 +6,6 @@ import Privacy from './pages/privacy/Privacy.page';
 import Page404 from './pages/404/404.page';
 import Residential from './pages/applications/residential/Residential.page';
 import ScrollToTop from './components/scrolltotop/ScrollToTop';
-import RealestateSellers from './pages/realestate/sellers/realestateSellers.page';
-import RealestateAgents from './pages/realestate/agents/realestateAgents.page';
-import Recruitment from './pages/recruitment/Recruitment.page';
 import Judith from './pages/judith/Judith.page';
 
 function App() {
@@ -26,13 +23,8 @@ function App() {
             <Route path='' element={'TODO'} />
             <Route path='termekek' element={'TODO'} />
           </Route>
-          <Route path='ingatlan'>
-            <Route path='eladoknak' element={<RealestateSellers />} />
-            <Route path='ingatlanosoknak' element={<RealestateAgents />} />
-          </Route>
           <Route path='judith' element={<Judith />} />
           <Route path='palyazatok/lakossagi' element={<Residential />} />
-          <Route path='toborzas' element={<Recruitment />} />
           <Route path='privacy' element={<Privacy />} />
           <Route path='*' element={<Page404 />} />
         </Route>

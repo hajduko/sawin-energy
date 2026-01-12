@@ -63,7 +63,7 @@ const Footer = () => {
                 </Text>
               </Flex>
             </Link>
-            <Link to='https://maps.app.goo.gl/PT61SbnRXygy87zA9'>
+            <Link to='https://maps.app.goo.gl/nBnbT7rNrRfZ3fGb9'>
               <Flex align='center' gap={6}>
                 <MdOutlineHouse color='white' size='24px' />
                 <Text fontSize='md' color='white' fontWeight='600'>

@@ -17,7 +17,7 @@ const Privacy = () => {
           <h1>Adatvédelmi és Adatkezelési Szabályzat</h1>
           <h2>Bevezetés</h2>
           <p>
-            SaWin Energy Kft. (1051 Budapest Nádor utca 11., adó sz.:10436253-2-42) mint a www.sawin.hu weboldal, a
+            SaWin Kft. (9027 Győr, Kandó Kálmán utca 7., adó sz.:10436253-2-08) mint a www.sawin.hu weboldal, a
             <a href='https://www.sawinenergy.hu'> www.sawinenergy.hu </a>
             termék oldal valamint az IMPACT Energiahatékonysági Beruházás Tervező Szoftver üzemeltetője (a továbbiakban:
             Szolgáltató, adatkezelő) alá veti magát a következő tájékoztatónak.
@@ -39,14 +39,14 @@ const Privacy = () => {
           </p>
           <p>A tájékoztató módosításai a fenti címen történő közzététellel lépnek hatályba.</p>
           <p>Az adatkezelő és elérhetőségei:</p>
-          <p>Név: SaWin Energy Kft.</p>
-          <p>Székhely: 1051 Budapest Nádor utca 11.</p>
-          <p>adó sz.: 10436253-2-41</p>
+          <p>Név: SaWin Kft.</p>
+          <p>Székhely: 9027 Győr, Kandó Kálmán utca 7.</p>
+          <p>adó sz.: 10436253-2-08</p>
           <p>
             E-mail:
-            <a href='mailto:info@ezinnovations.eu'> info@sawin.hu </a>
+            <a href='mailto:info@sawin.hu'> info@sawin.hu </a>
           </p>
-          <p>Telefon: +36-70-6189151</p>
+          <p>Telefon: +36 30 070 6484</p>
           <h2>Fogalom meghatározások</h2>
           <ol>
             <li>
