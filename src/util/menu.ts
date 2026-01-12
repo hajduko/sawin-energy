@@ -64,18 +64,6 @@ export const menu: IMenuItem[] = [
       },
     ],
   },
-  {
-    name: 'Toborzás',
-    url: '/toborzas',
-    available: true,
-    external: false,
-  },
-  {
-    name: 'Ingatlan',
-    url: '/ingatlan/eladoknak',
-    available: true,
-    external: false,
-  },
 ];
 
 export const heatpumpMenu: IMenuItem[] = [
