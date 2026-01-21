@@ -26,16 +26,16 @@ const Footer = () => {
                   Főoldal
                 </Text>
               </Link>
-              <Link to='/heatpump'>
-                <Text color='white' fontSize='md' fontWeight={location.pathname === '/heatpump' ? '700' : '400'}>
+              <Link to='/hoszivattyu'>
+                <Text color='white' fontSize='md' fontWeight={location.pathname === '/hoszivattyu' ? '700' : '400'}>
                   Hőszivattyús rendszerek
                 </Text>
               </Link>
-              <Link to='/applications/residential'>
+              <Link to='/palyazatok/lakossagi'>
                 <Text
                   color='white'
                   fontSize='md'
-                  fontWeight={location.pathname === '/applications/residential' ? '700' : '400'}>
+                  fontWeight={location.pathname === '/palyazatok/lakossagi' ? '700' : '400'}>
                   Lakossági pályázatok
                 </Text>
               </Link>
