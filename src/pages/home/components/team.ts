@@ -39,7 +39,7 @@ export const highlightTeamMembers: IHighlightTeamMember[] = [
 export const teamMembers: ITeamMember[] = [
   {
     name: 'Horváth Márkus',
-    role: 'Ügyvezető, Operatív vezető',
+    role: 'Ügyvezető',
     email: 'marcus@sawin.hu',
     img: marcus,
     bio: [
@@ -50,7 +50,7 @@ export const teamMembers: ITeamMember[] = [
   },
   {
     name: 'Jakab Dávid',
-    role: 'Cégvezető, Műszaki vezető',
+    role: 'Ügyvezető',
     email: 'dave@sawin.hu',
     img: dave,
     bio: [
@@ -61,7 +61,7 @@ export const teamMembers: ITeamMember[] = [
   },
   {
     name: 'Molnár Mónika',
-    role: 'Értékesítési vezető',
+    role: 'Értékesítési Vezető',
     email: 'molnar.monika@sawin.hu',
     img: moni,
     bio: [
@@ -72,18 +72,18 @@ export const teamMembers: ITeamMember[] = [
   },
   {
     name: 'Kovács László',
-    role: 'Hőszigetelési üzletág vezető',
+    role: 'Cégvezető',
     email: 'laci@sawin.hu',
     img: laci,
     bio: [
-      'Építőmérnök és közlekedésmérnök diplomával egy hőszigeteléssel foglalkozó családi vállalkozás volt az első munkahelye, ahol elméleti és gyakorlati tapasztalatot szerzett minden fajta épület hőszigetelésében és a vállalatirányításba is beletanult. Először párhuzamos tevékenységként, majd kizárólagosan szakértő Ingatlan Tanácsadóvá vált. 20 éve foglalkozik Ingatlan értékesítéssel, közben több alkalommal volt az ország legeredményesebb ingatlan értékesítője.',
+      'Mérnöki diplomával egy hőszigeteléssel foglalkozó családi vállalkozás volt az első munkahelye, ahol elméleti és gyakorlati tapasztalatot szerzett minden fajta épület hőszigetelésében és a vállalatirányításba is beletanult. Először párhuzamos tevékenységként, majd kizárólagosan szakértő Ingatlan Tanácsadóvá vált. 20 éve foglalkozik Ingatlan értékesítéssel, közben több alkalommal volt az ország legeredményesebb ingatlan értékesítője.',
       'Ezeket a tapasztalatot kamatoztatva lett a SaWin hőszigetelési üzletágának vezetője. Legfőbb feladata a SaWin által fejlesztett forradalmian új Easy Panel és Easy Facade hőszigetelési rendszerek piacra vezetése és egy kivitelezői hálózat felépítése.',
     ],
   },
 
   {
     name: 'Shafiei Mahan',
-    role: 'Sawin Manufacturing vezető',
+    role: 'Vezető Tervező',
     email: 'mahan@sawin.hu',
     img: mahan,
     bio: [
@@ -93,7 +93,7 @@ export const teamMembers: ITeamMember[] = [
   },
   {
     name: 'Hajdu Kolos',
-    role: 'Electrics és IOT vezető',
+    role: 'Fejlesztési Vezető',
     email: 'kolos@sawin.hu',
     img: kolos,
     bio: [
@@ -103,7 +103,7 @@ export const teamMembers: ITeamMember[] = [
   },
   {
     name: 'Perness Norbert',
-    role: 'Technikai vezető',
+    role: 'Technikai Vezető',
     email: 'perness@sawin.hu',
     img: norbi,
     bio: [
@@ -114,12 +114,12 @@ export const teamMembers: ITeamMember[] = [
   },
   {
     name: 'Vesztergom Gábor',
-    role: 'Gépészeti üzletág vezető',
+    role: 'Kivitelezési Üzletág Vezető',
     email: 'gabi@sawin.hu',
     img: gabi,
     bio: [
       'A gépészet minden területén nagy tapasztalattal rendelkező szakember, aki a tekintélyes múltú gépész családi vállalkozásban kezdte karrierjét. A SaWin csapatához történt csatlakozása előtt 8 évig Svédországban szerelt hőszivattyús rendszereket, majd vezette egy cég hőszivattyús üzletágat.',
-      'Gábor erőssége a kreativitás, a problémák azonnali felmérése és azok gyors megoldása. Tapasztalata és személyisége alapján méltó vezetője a SaWin gépész diviziójának.',
+      'Gábor erőssége a kreativitás, a problémák azonnali felmérése és azok gyors megoldása. Tapasztalata és személyisége alapján méltó vezetője a SaWin kivitelezés diviziójának.',
     ],
   },
 ];
