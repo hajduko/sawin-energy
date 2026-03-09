@@ -11,7 +11,7 @@ export default function QAnswerWidget() {
 
     el.innerHTML = `
       <iframe
-        src="https://app.qanswer.ai/widget?kb=teszt&amp;user=Andr%C3%A1s%20Kakucs&amp;type=text&amp;isSharepoint=true"
+        src="https://app.qanswer.ai/widget?kb=SaWin%20Judith&amp;user=marcushorv&amp;type=text&amp;isSharepoint=true"
         id="qanswer-widget"
         class="embed-ai"
         allow="microphone; clipboard-write"
